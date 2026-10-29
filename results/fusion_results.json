@@ -1,0 +1,102 @@
+{
+  "kind": "synthetic_worked_example",
+  "cases": [
+    {
+      "scenario": "initial",
+      "synthetic": true,
+      "concentration_unit": "ug/m3",
+      "values": [
+        20.0,
+        22.0
+      ],
+      "standard_uncertainties": [
+        2.0,
+        4.0
+      ],
+      "gates": [
+        1,
+        1
+      ],
+      "status": "computed",
+      "weights": [
+        0.8,
+        0.2
+      ],
+      "estimate": 20.4,
+      "variance": 3.2000000000000006,
+      "standard_uncertainty": 1.788854381999832
+    },
+    {
+      "scenario": "increased_uncertainty_source_1",
+      "synthetic": true,
+      "concentration_unit": "ug/m3",
+      "values": [
+        20.0,
+        22.0
+      ],
+      "standard_uncertainties": [
+        4.0,
+        4.0
+      ],
+      "gates": [
+        1,
+        1
+      ],
+      "status": "computed",
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "estimate": 21.0,
+      "variance": 8.0,
+      "standard_uncertainty": 2.8284271247461903
+    },
+    {
+      "scenario": "expired_calibration_source_1",
+      "synthetic": true,
+      "concentration_unit": "ug/m3",
+      "values": [
+        20.0,
+        22.0
+      ],
+      "standard_uncertainties": [
+        4.0,
+        4.0
+      ],
+      "gates": [
+        0,
+        1
+      ],
+      "status": "computed",
+      "weights": [
+        0.0,
+        1.0
+      ],
+      "estimate": 22.0,
+      "variance": 16.0,
+      "standard_uncertainty": 4.0
+    },
+    {
+      "scenario": "both_ineligible",
+      "synthetic": true,
+      "concentration_unit": "ug/m3",
+      "values": [
+        20.0,
+        22.0
+      ],
+      "standard_uncertainties": [
+        4.0,
+        4.0
+      ],
+      "gates": [
+        0,
+        0
+      ],
+      "status": "no_eligible_source",
+      "weights": null,
+      "estimate": null,
+      "variance": null,
+      "standard_uncertainty": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source_sha256": "f0da594d8506e937ed9134840687c746ebb099a354440b7c5062b981b28b4234",
+  "verifier": "PyMuPDF 1.26.6",
+  "rows_checked": 12610,
+  "rows_matching": 12610,
+  "source_date_rows": 12610,
+  "series_matching_rows": {
+    "NO2": 800,
+    "NO": 788,
+    "O3": 774,
+    "SO2": 535,
+    "CO": 29,
+    "PM10": 2222,
+    "PM2.5": 2222,
+    "PM1": 5240
+  },
+  "unmatched_source_rows": 0,
+  "failures": [],
+  "source_parse_anomalies": [],
+  "scope": "Every annex timestamp and printed numeric value checked against a second PDF text engine; not scientific validation."
+}

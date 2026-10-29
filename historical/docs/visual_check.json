@@ -1,0 +1,23 @@
+{
+  "checked_pdf_pages": [
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    30,
+    98,
+    268,
+    270,
+    427,
+    584,
+    626,
+    637,
+    1085
+  ],
+  "check_scope": "Representative plots, annex headers, date/column ordering, transitions and blank PM1 cells were visually checked. Full numeric/timestamp coverage is supplied by independent engine verification.",
+  "visual_findings": "Annex units not printed; PM1 missing cells are visible in the source; CO date label19 is visible; source row ordering is retained."
+}

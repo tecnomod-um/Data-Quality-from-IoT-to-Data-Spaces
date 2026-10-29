@@ -1,0 +1,2626 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix ex: <https://example.org/dq-profile#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:revision:dataset:certificate-transcriptions> a dcat:Dataset ;
+    dct:title "Anonymized certificate-derived assertions; original reports unverified" ;
+    dcat:distribution <urn:revision:distribution:normalized-jsonld> ;
+    dqv:hasQualityMeasurement <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:expanded_uncertainty_at_limit>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:regression_a>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:regression_b>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:u_between_sensors>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:relative_error:context-3f7a6044a4cc>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:relative_error:context-708e4665fcee>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:relative_error:context-3f7a6044a4cc>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:relative_error:context-708e4665fcee>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:relative_error:context-3f7a6044a4cc>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:relative_error:context-708e4665fcee>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:relative_error:context-d6b1094b23eb>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:relative_error:context-f3ce2859e187>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:relative_error:context-d6b1094b23eb>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:relative_error:context-f3ce2859e187>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:relative_error:context-d6b1094b23eb>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:relative_error:context-f3ce2859e187>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:relative_error:context-433fa3dc8db3>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:relative_error:context-681ba9840f4d>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:relative_error:context-433fa3dc8db3>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:relative_error:context-681ba9840f4d>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:relative_error:context-433fa3dc8db3>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:relative_error:context-681ba9840f4d>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-3add45a0d284>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-ca08e76b7000>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-d654b1fb22bd>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-3add45a0d284>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-ca08e76b7000>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-d654b1fb22bd>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:response_time_up>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:limit_of_detection>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-3add45a0d284>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-ca08e76b7000>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-d654b1fb22bd>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:repeatability_r>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:response_time_down>,
+        <urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:response_time_up> .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 4.2e-01 ;
+    prov:wasDerivedFrom <urn:sha256:e0548f298d871f76abcc62cedf03f43b8eb2959a72e50d7842680ae7c7a62f4f> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 2.5e+00 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 9.86e-02 ;
+    prov:wasDerivedFrom <urn:sha256:c78d75b4b4f082b35c223f041c834f120a343061b7feff6e26051a1b1eb007d9> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.8e-01 ;
+    ex:thresholdMin -1.8e-01 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.733e-01 ;
+    prov:wasDerivedFrom <urn:sha256:4cb67eca3cfef67b2194c3e4793e86008670c9a4730955a39672e935f5a31c37> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 5.6e-02 ;
+    prov:wasDerivedFrom <urn:sha256:77cb5072571a3352fce4a1371e1c0d9f53b33d7951cef77681e4ca40deeb261c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 5.8e-02 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 3.1e-01 ;
+    prov:wasDerivedFrom <urn:sha256:4ca67dccbc65f59f86b7c9ab45cceb523b5328d6d55577a0688dde9de4065bc6> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 2.5e+00 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 3.09e-02 ;
+    prov:wasDerivedFrom <urn:sha256:858291d614645a6e2eb119da61fa8acadf5221089760b3c62407862d5271bb64> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.8e-01 ;
+    ex:thresholdMin -1.8e-01 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0047e+00 ;
+    prov:wasDerivedFrom <urn:sha256:f97e15dc67e6cd376817e7a35c6116bd3c6502893cae7d90a3e5d61259672a9d> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 5.6e-02 ;
+    prov:wasDerivedFrom <urn:sha256:ed5cd18321748d2676e417151165c6b8f908d574ece8f936a0bd5e9f99a76d73> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 5.8e-02 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 5.7e-01 ;
+    prov:wasDerivedFrom <urn:sha256:1cbd6e3532164b131daee0f647ae6b79f481c334d6123445668d0b67c2a29b36> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 2.5e+00 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 4.5e-02 ;
+    prov:wasDerivedFrom <urn:sha256:24383f92275677514edd2d0694d334b00a9e9ed52fbd1496d75356fa5866b7c9> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.8e-01 ;
+    ex:thresholdMin -1.8e-01 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0211e+00 ;
+    prov:wasDerivedFrom <urn:sha256:66d8e3b3074a4ab5d8737949028f620a45290228d6fee628489b8d8b04ef7644> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 5.6e-02 ;
+    prov:wasDerivedFrom <urn:sha256:328342a157bb8c1ff57a3801345f5e4f1aad4225a2c52a6fb5f2ddbc43181766> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-12-13/2025-01-21" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 5.8e-02 ;
+    ex:unit "mg/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 1.055e+01 ;
+    prov:wasDerivedFrom <urn:sha256:536f5d9720025fcbbc352f9ffb6f0c4a11dda48b5f752608a07c7506276a64a1> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value -8.791e-01 ;
+    prov:wasDerivedFrom <urn:sha256:a605050a7f47f07f4b7536c3cd7ba6230baae922696a23ec6aba3f88d01930e4> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 9.8e+00 ;
+    ex:thresholdMin -9.8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0275e+00 ;
+    prov:wasDerivedFrom <urn:sha256:080a9e8503b05c003e3e3c61cf847ebdf6df45288b06cb2c8ec4de44a88f01aa> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 1.843e+00 ;
+    prov:wasDerivedFrom <urn:sha256:b39729abb95ef74986a544840f8cbbbcabc89bd7ffef9ef004e2a68251ca047e> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 7.6e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 2.946e+01 ;
+    prov:wasDerivedFrom <urn:sha256:9b37687af1d0930662443c81021d388d408379f1b236052d694537fc734bea9c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 7.64e-02 ;
+    prov:wasDerivedFrom <urn:sha256:57a961089dcf7ce2ebe521ee40a75ffb5600138e307d4175db43835b9968066d> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 9.8e+00 ;
+    ex:thresholdMin -9.8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.27e-01 ;
+    prov:wasDerivedFrom <urn:sha256:66f484e29c861c36ad840717aeb987b89d3374b68a7c70bc648e8d793c4007ac> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 1.843e+00 ;
+    prov:wasDerivedFrom <urn:sha256:d038794f5504a5e939f8d2cd086d1adb9aadd233f6e663811ca4cd5d284283d9> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 7.6e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 6.27e+00 ;
+    prov:wasDerivedFrom <urn:sha256:31b77816dd5dc62d4dcfc46419cb14ecf5e83815cb8578172f9fd867e3d0c903> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 2.0955e+00 ;
+    prov:wasDerivedFrom <urn:sha256:721a24730bfa221f1947734801e14a1fa27e18894b1710bd442b26407b6af49a> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 9.8e+00 ;
+    ex:thresholdMin -9.8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.849e-01 ;
+    prov:wasDerivedFrom <urn:sha256:af92ec78e5d3065bd0ebf71fc438d71f821dc06ff98f00e1844a29e3c5f36d56> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 1.843e+00 ;
+    prov:wasDerivedFrom <urn:sha256:fb3e037e79493a55682fac97affe5c36c5f6b2268af5656a1b15c25576de2b7b> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-02/2024-12-11" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 7.6e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 4.846e+01 ;
+    prov:wasDerivedFrom <urn:sha256:b14f662d3199ed1f7b71264a8496645b66584fa8d65dc2657c7b0116b4e95201> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 9.37e-02 ;
+    prov:wasDerivedFrom <urn:sha256:c76b94feff026d426e1e8ab3ad325b97294bafe4bed7721cfb1d90a1ec0eab08> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 6.4e+00 ;
+    ex:thresholdMin -6.4e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.1205e+00 ;
+    prov:wasDerivedFrom <urn:sha256:bdaa58e3c74ae98a74396533c162ea461a294c1307fb0b53ed3e11a0045afd41> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 4.06e-01 ;
+    prov:wasDerivedFrom <urn:sha256:264bdf12ecb0d7c2a422a69ecd1ba17fdff96f84eb5741bd33c05874f8321691> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 2.4e+00 ;
+    prov:wasDerivedFrom <urn:sha256:5d06fc30cfc118f7c027e8a800940fdd99798d7e882a3fc096f00bfa63e1a656> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 5.23e-02 ;
+    prov:wasDerivedFrom <urn:sha256:57ca5cc7133d7c7d4164cb7c93e224e4c86403c5295af67af5f215593f5dbe24> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 6.4e+00 ;
+    ex:thresholdMin -6.4e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0008e+00 ;
+    prov:wasDerivedFrom <urn:sha256:888aa1c44059802e1b120ad57bdda12accffb9b8de3c67f89de457471bbe740c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 4.06e-01 ;
+    prov:wasDerivedFrom <urn:sha256:0c1dc3549757322022ef82a9f6094dd3274ee49bdf847394fd590417fc4f083f> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 2.296e+01 ;
+    prov:wasDerivedFrom <urn:sha256:bd76887f5f87f5eeec4e04e4e85043bee16ac3a2914051a9029b8ef9cd0a3515> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value -2.66e-01 ;
+    prov:wasDerivedFrom <urn:sha256:b25ca150790b28100cab3192e74fa5ebcb237da67454b1ec92edef40b125c762> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 6.4e+00 ;
+    ex:thresholdMin -6.4e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.442e-01 ;
+    prov:wasDerivedFrom <urn:sha256:2bce4729303cd7ed54d0a36918428db23b1ae39fde4e2027e4d7944b2d7d9a0b> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 4.06e-01 ;
+    prov:wasDerivedFrom <urn:sha256:525f7c0ec547ab7f79a11d8d163892fb00983bb3eb5a19bd8c77cfdcc6ce16ac> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-05-02/2025-06-10" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 3.568e+01 ;
+    prov:wasDerivedFrom <urn:sha256:e77b2c64e347930df06eca99ff8d9e3a0d7ce50c2fee3e0a8af4667b69a1e741> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 2.2436e+00 ;
+    prov:wasDerivedFrom <urn:sha256:e105d27d5d80ce60d10b8d6c1aff604fb1ed35b44db9f8bf5919c86580d83797> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 9.8e+00 ;
+    ex:thresholdMin -9.8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.1259e+00 ;
+    prov:wasDerivedFrom <urn:sha256:6b17c6979ae4152aeebfce99e3c14a87ef81932ae7bf7cd0836bbeead7f8de0a> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 7.368e+00 ;
+    prov:wasDerivedFrom <urn:sha256:97ed8e71c7f0cdfb79b7858357d1527f0b97dc4a0d01b364261ea4f85ac59b83> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 1.536e+01 ;
+    prov:wasDerivedFrom <urn:sha256:26259a1ceb38c06c8aaaa1c5bad4a5eaf5d03eb5ec5b12046fc00945e8cf6475> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 7.6134e+00 ;
+    prov:wasDerivedFrom <urn:sha256:16f8f5e14dc6c7f666efe520389b64c93784aa2f932a453d8d509ddf89ca951d> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 9.8e+00 ;
+    ex:thresholdMin -9.8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 8.765e-01 ;
+    prov:wasDerivedFrom <urn:sha256:2a77d5399e962b90f896576e7d0f0c4e207283cfa59ef17009c06616f0e112c8> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 7.368e+00 ;
+    prov:wasDerivedFrom <urn:sha256:c7e9284cb2d1a0a1a8cb5e529f4924e72e2c414211cfc0a22989739df960d8ed> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 2.869e+01 ;
+    prov:wasDerivedFrom <urn:sha256:f8d40ce5420a80f0dc7e8f141330ea0181e03a3c1b595ffc1395229aa69b0d95> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value -2.3316e+00 ;
+    prov:wasDerivedFrom <urn:sha256:faa41f32a506d8812301014d82f7af272e5e03c86de7be6065c3dd00d197d5c3> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 9.8e+00 ;
+    ex:thresholdMin -9.8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.034e-01 ;
+    prov:wasDerivedFrom <urn:sha256:b1de052099fee390919b2bd3b4b51fc5461c0f3169330c633d9fd1df163c8737> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 7.368e+00 ;
+    prov:wasDerivedFrom <urn:sha256:90de5bbf4bafdcaa478565bd59bd906250e254eac3f7e354236f5c4e98c05dbf> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2025-07-29/2025-09-06" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 5.94e+00 ;
+    prov:wasDerivedFrom <urn:sha256:eb2905b1e60ae0310659e88bd397a754463ff286d7dfc9fd9b8a341f07a5cd6b> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 2.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value -8.94e-02 ;
+    prov:wasDerivedFrom <urn:sha256:20fc1cd0d57f5745c919276162d10693d7731fd5f2e2e280d1d3302d9322a134> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 3e+00 ;
+    ex:thresholdMin -3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.424e-01 ;
+    prov:wasDerivedFrom <urn:sha256:89202d185fd4af7a7faa24d322da008e66be4ff908905f25507d1cca662a5fe7> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 1.757e+00 ;
+    prov:wasDerivedFrom <urn:sha256:f51f1e2f55047ae485a02a57ca69748aef5546282965897325e9e5d77d0175f0> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 5.29e+00 ;
+    prov:wasDerivedFrom <urn:sha256:c3c058eccd36b7375cd76703a2a955c1d0a207fd57a4f580695c69662d724d2f> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 2.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 1.6156e+00 ;
+    prov:wasDerivedFrom <urn:sha256:f10a095a99f2f360c3ff088d0a1633fded37183ac90f752316f3c83405f9fad0> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 3e+00 ;
+    ex:thresholdMin -3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0175e+00 ;
+    prov:wasDerivedFrom <urn:sha256:daa9da0d1d5a585dd36c96e7c5cc2ca82d1695d7d212512afb2546fdf2c7d3f5> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 1.757e+00 ;
+    prov:wasDerivedFrom <urn:sha256:94df7c5a5925d8e4061e960766ae0d7df56976151787ac39b1901d33e2f08efc> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 1.82e+00 ;
+    prov:wasDerivedFrom <urn:sha256:a81f9b99c574e5f5fb57364621880388ea43e9bc4db6599c18a2bc03547388bd> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 2.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value -7.969e-01 ;
+    prov:wasDerivedFrom <urn:sha256:cf3eeb879aff13fe3bb004e9a517e9e2a04ed37ecafcc0121e4a9995c704ea53> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 3e+00 ;
+    ex:thresholdMin -3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0163e+00 ;
+    prov:wasDerivedFrom <urn:sha256:2a0b8a9018a9c7765bd6a38d78abf820849371dd7bcd8040412ef1e156ab0f64> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 1.757e+00 ;
+    prov:wasDerivedFrom <urn:sha256:abb233c43e6d41df438a345dd480903361da196618acd43f35331e58215c56b7> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-07/2026-04-15" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM10" ;
+    ex:thresholdMax 3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 1.21e+00 ;
+    prov:wasDerivedFrom <urn:sha256:1f81799591983dec3eef17ce90c29bf85f831b6b48ed4703e4733739366efc06> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value -2.212e-01 ;
+    prov:wasDerivedFrom <urn:sha256:f427982125edc2c575e3a6170781a6bac2d14b42dd96a8b3226f78a56d354616> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 3e+00 ;
+    ex:thresholdMin -3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0049e+00 ;
+    prov:wasDerivedFrom <urn:sha256:b6042296a6930eb7c17b6e73c072b57283201c2e459c72521b94f3dab9284ae4> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 7.04e-01 ;
+    prov:wasDerivedFrom <urn:sha256:0c1c9d48575491a0fefcea4ee041f852352c656d18bef1cd9c5f4cc197040a96> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 4.21e+00 ;
+    prov:wasDerivedFrom <urn:sha256:a378d95d7c826536beb69c037de75658e40aad97838a7ab8b897370f4e735631> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 2.632e-01 ;
+    prov:wasDerivedFrom <urn:sha256:0573847996439f37b131ef53770ff0d7c86b44d77dac68addf8adedc92711398> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 3e+00 ;
+    ex:thresholdMin -3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0584e+00 ;
+    prov:wasDerivedFrom <urn:sha256:573664ff49a11a2f072c907e5ae91d11e7f8782d73fa1f3e2e2bf96e24566572> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 7.04e-01 ;
+    prov:wasDerivedFrom <urn:sha256:e4919d23d3965cbf99d279e28975e08a46007a7eff634e57f86fa068c1f235b7> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 1.33e+00 ;
+    prov:wasDerivedFrom <urn:sha256:bc7f0b184c7787ff38aa5f4a71d8ac58dba99bc4272770fa24b492c605efa6ef> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value -3.553e-01 ;
+    prov:wasDerivedFrom <urn:sha256:f4e7904b0a5cef355b034b1b6d158a8d69ed948ab3ef4f50502ba125d9de095e> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 3e+00 ;
+    ex:thresholdMin -3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 1.0021e+00 ;
+    prov:wasDerivedFrom <urn:sha256:b7d428e98cc69ff1c3545b662f6f185f0f6fc77638a24acff974821292b63347> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 7.04e-01 ;
+    prov:wasDerivedFrom <urn:sha256:5fbd1476f2cdb9056d5e9cfd27d9328902fbb4c80397569f3b8598493c7d0111> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2026-03-10/2026-04-18" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "PM2.5" ;
+    ex:thresholdMax 3e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 7.1e-01 ;
+    prov:wasDerivedFrom <urn:sha256:f4097b52254acac0a12ca654b09b7bfb811777d0a3d10a0aaca0ef189076d76c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 8.75e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 1.677e-01 ;
+    prov:wasDerivedFrom <urn:sha256:0d8d375229a595ea8ef0ff2cb18d4afec0da33d99e03fa5d1e63e5438212374a> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.4e+00 ;
+    ex:thresholdMin -1.4e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.985e-01 ;
+    prov:wasDerivedFrom <urn:sha256:fda5776e6b9be4a068a1e1350bea5a3287f224a73017096f2e51481e9943067e> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 8.1e-02 ;
+    prov:wasDerivedFrom <urn:sha256:e059dfb8a90309049eaa7343ad692ede339f55004503b0a8f72067c2f97b5e0f> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.06e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 4.063e+01 ;
+    prov:wasDerivedFrom <urn:sha256:d789d14dc1d0b64811c0127f8d71c102feec96a5d843ffdb33de8fcb9fe02355> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 8.75e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 7.45e-02 ;
+    prov:wasDerivedFrom <urn:sha256:9e35f141b637da6b3a12c0938fedaaddf7f05e80165880a90a75ef7c135c1076> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.4e+00 ;
+    ex:thresholdMin -1.4e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.417e-01 ;
+    prov:wasDerivedFrom <urn:sha256:f99cd88b19cb4b26464f34fd50e2360ba9313307bd364b3829702a8a73783a76> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 8.1e-02 ;
+    prov:wasDerivedFrom <urn:sha256:a18bc7ae1c26378ecba215a11f7e6539bebf3b97cc6b36c201e7cedb580d154a> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.06e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:expanded_uncertainty_at_limit> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+    dqv:value 2.692e+01 ;
+    prov:wasDerivedFrom <urn:sha256:86abf638a5d8792a610492fb4a4cf5b890c7a1f0839f79ef3df98356e9193b8f> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 8.75e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:regression_a> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_a ;
+    dqv:value 8.97e-02 ;
+    prov:wasDerivedFrom <urn:sha256:6e62a145393394a624c888a6ddf44366c9054cc847aa2d1fa3ffeae6ab76b762> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.4e+00 ;
+    ex:thresholdMin -1.4e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:regression_b> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:regression_b ;
+    dqv:value 9.613e-01 ;
+    prov:wasDerivedFrom <urn:sha256:3f8cd445d0ab4c0094357d9fcfb49c4ef10cb2dcbd0e0f13bff9cb67484111c8> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.29e+00 ;
+    ex:thresholdMin 7.8e-01 ;
+    ex:unit "1"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:u_between_sensors> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:SensorGroup:D1-D3> ;
+    dqv:isMeasurementOf ex:u_between_sensors ;
+    dqv:value 8.1e-02 ;
+    prov:wasDerivedFrom <urn:sha256:3f5fa3032ed9313d483b0dec9d9dafd1fb1abc796afe7f95ff7efe735b2539b0> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "2024-11-22/2024-12-31" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.06e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 1.856e+01 ;
+    prov:wasDerivedFrom <urn:sha256:e1f2ab885a847b8c59120b358a1a249f0c3073d8475b58689eb2bf0ff39b115a> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.74e+02 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:relative_error:context-3f7a6044a4cc> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 4e-01 ;
+    prov:wasDerivedFrom <urn:sha256:6c54816c3b381b88cb1666bbe363054f51fc9eba51b7640e373937e0bcec2389> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 5020 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:relative_error:context-708e4665fcee> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 5.9e-01 ;
+    prov:wasDerivedFrom <urn:sha256:6038a6712d486f037384ee765be0407f012c53948c09f75c28eeee8f442dbea8> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 2010 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 1.889e+01 ;
+    prov:wasDerivedFrom <urn:sha256:d277b4e473885f3274b6f1cb9f1f2e61cb173711ef3d4321eba84a596db8ab6e> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 5.8e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 4e+01 ;
+    prov:wasDerivedFrom <urn:sha256:86bbe40c81d59b5c7a97a2cfc236aa2d67d9f53f13968e3c8085d0d18b335851> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 4e+01 ;
+    prov:wasDerivedFrom <urn:sha256:8c4d2b6b3e2d9d4c1a4d79e0992aae0c76621dc7f9e66acafec84310ed5640be> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 1.584e+01 ;
+    prov:wasDerivedFrom <urn:sha256:05c2c53939fb03e7c015971e5835fcf43439e388a69648a5c9108e14a5fa0a80> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.74e+02 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:relative_error:context-3f7a6044a4cc> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 3.2e-01 ;
+    prov:wasDerivedFrom <urn:sha256:eb1ec4145b5545142d217469ce7e15f6f98b57cfd4679a59cba0408a5cdefed9> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 5020 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:relative_error:context-708e4665fcee> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 6.5e-01 ;
+    prov:wasDerivedFrom <urn:sha256:a17c89a9cb946ae1e93364541403901939b154c57aac873954b79c527194dbe2> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 2010 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 1.467e+01 ;
+    prov:wasDerivedFrom <urn:sha256:2f1e22373af773d90980170ec8dae44c00700d1a93854bd253ee09259db3e7ff> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 5.8e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 4.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:26a2f2f71a5ba67ee22858b3becc106e9b6a918b3976e1ccd9829d7216677862> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 4.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:1d493a7edbeab620c319d8f3263468571bc2c274006e2a45ab83a66276573729> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 1.155e+01 ;
+    prov:wasDerivedFrom <urn:sha256:f12ce463be4830597df8507d285d328c25a54eb6864d92d2cd9623b34f25eb70> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.74e+02 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:relative_error:context-3f7a6044a4cc> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 2e-01 ;
+    prov:wasDerivedFrom <urn:sha256:75aa4800009a4afaa46bb179e8b5708a437e51d48fb870b6f2bd97e1187e5f38> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 5020 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:relative_error:context-708e4665fcee> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 6.3e-01 ;
+    prov:wasDerivedFrom <urn:sha256:41e8f16c7b896717143ebbf1e043484d63b6b584667d1779ae8575f1f32692e4> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 2010 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 1.008e+01 ;
+    prov:wasDerivedFrom <urn:sha256:0d073506b7af1a73f1c44f50aca1e7e138297ed22f7b2a869b0305dc8f45a608> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 5.8e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 4e+01 ;
+    prov:wasDerivedFrom <urn:sha256:68ba7a565fa1234e02deecdf58ce29154e1e1257c3ece6caf17437549467b7e8> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 4e+01 ;
+    prov:wasDerivedFrom <urn:sha256:411e9d41bb076893156a8ba4c173ce7ea3cd6b1692859886505ef1bff3e25f24> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "CO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 6.7e+00 ;
+    prov:wasDerivedFrom <urn:sha256:7d25408aaa758b27b511009d48deeeb1ead8801130ae88294289fb087bcddcd5> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.9e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:relative_error:context-d6b1094b23eb> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 5.4e+00 ;
+    prov:wasDerivedFrom <urn:sha256:9bbc75c9fc6478f35cf3267c517c4dbcc67c05c1423042f54a5def73b0ff19db> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 26 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:relative_error:context-f3ce2859e187> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 2.56e+00 ;
+    prov:wasDerivedFrom <urn:sha256:db6453c2ab959ccb0d51c9a535086912ca013de05a4b8d4aeabf1f41f9d02624> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 105 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 5.47e+00 ;
+    prov:wasDerivedFrom <urn:sha256:ab005beb73d445c828e9fb73499c5c075ce4b39260e37f0e9976d7c625170559> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 7.6e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2.7e+01 ;
+    prov:wasDerivedFrom <urn:sha256:fa3aceb989dacebf283e974a52e66028c077f77ee45246489ca13bb9f593e036> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 2.7e+01 ;
+    prov:wasDerivedFrom <urn:sha256:a52d509868169eca1e0a7b39b1bd88ce4f80931c342b6249db9edfda1e824831> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 9.78e+00 ;
+    prov:wasDerivedFrom <urn:sha256:7e27390fdd1ade0ea51d2c1a2307ff214d563327bc038d71695a9136af19bbe1> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.9e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:relative_error:context-d6b1094b23eb> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 9.25e+00 ;
+    prov:wasDerivedFrom <urn:sha256:07676f876d0c2db3bbd08986534f976e8ad203469ee54c812d3e2373263842b1> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 26 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:relative_error:context-f3ce2859e187> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 3.45e+00 ;
+    prov:wasDerivedFrom <urn:sha256:ca43573fd40433a554eb750c01d2193d90add35ee5c1c83911c5a3f930f993ac> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 105 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 6.53e+00 ;
+    prov:wasDerivedFrom <urn:sha256:02810b6d59f5565598e45ea15572a8e475b5e532f0753bd623a0f87e8a0d1508> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 7.6e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2e+01 ;
+    prov:wasDerivedFrom <urn:sha256:d8697524d3b37d86103709310e3245867df6780a03239ff26c7e11ce7d16e86f> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 2.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:358cc0eedd940bb945ba91b17d34da5cfdff886aea0f4d8fd1dc047ba3b53282> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 1.43e+01 ;
+    prov:wasDerivedFrom <urn:sha256:a963948caad6a1f5afa87efad51f7a5f5eef7109acd8351ad1740b87cab0d3de> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.9e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:relative_error:context-d6b1094b23eb> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 1.203e+01 ;
+    prov:wasDerivedFrom <urn:sha256:4f8a3a6758e0e31c2c9713f2fab29f8946ced8aad3b350267862541fabbd9ab9> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 26 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:relative_error:context-f3ce2859e187> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 2.82e+00 ;
+    prov:wasDerivedFrom <urn:sha256:d5def2bbe754282fc3ad35bff39a572c1864bd682718e0d9274c900ab1440df5> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 105 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 6.74e+00 ;
+    prov:wasDerivedFrom <urn:sha256:16a4865d01f9416b6645557d2599b14888be4b94e5a75eff37e8fd9c629d4900> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 7.6e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:2ffee34b09f2c4b3f7c5d7a3af80abebd7ef850864b1f4155e9ac93af378be1e> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 3.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:4d3075d8d26a5c921947d6ef9d3ae24feb0ec0d7734e2c3e4e56343951e7ac9c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 6.3e+00 ;
+    prov:wasDerivedFrom <urn:sha256:bfdd59ed606e48fb95e586419d23b10feec02cc05efc8a86d3558d4d90b23a13> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 1.25e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 4.29e+00 ;
+    prov:wasDerivedFrom <urn:sha256:b42b376b1d15efc897f361f27a5bd12d47b17b81250d32c2c4322790515d68cd> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2e+01 ;
+    prov:wasDerivedFrom <urn:sha256:2d4da703e2ca089c0fb77d950fd4a975031e1506fa17f536d33947ce59cace5a> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:0c4487a5332f5947817ec619bc0d77239cc65df86c5d9c1f19120cd5f2f90047> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 7.72e+00 ;
+    prov:wasDerivedFrom <urn:sha256:ce3ebb1f4519e60354721f26c60ee99a5ab40a68ed4c433a305466f6bbd60525> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 1.25e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 4.96e+00 ;
+    prov:wasDerivedFrom <urn:sha256:fd83d793c4ba8887012c93cc6fdf5af6ec299cf879dd5e98878e49d9841377d7> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2e+01 ;
+    prov:wasDerivedFrom <urn:sha256:a8603b50c79b4ae4b211d1d543142761d895691d853de0c315bce34d645a88b8> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 3.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:1a6ba26b285e59aed8e6ede55e45d30c00afe3917142a1de079a649de34f7843> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 9.84e+00 ;
+    prov:wasDerivedFrom <urn:sha256:48d619f3ed6fbb1655e2175659eee4801012ca667864723730407344e89e6924> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 1.25e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 5e+00 ;
+    prov:wasDerivedFrom <urn:sha256:c737c56124bfa0b765efcc20ff9dc965ac8b3e439e981071efc593f34b15f30b> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 5e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2e+01 ;
+    prov:wasDerivedFrom <urn:sha256:cd77cf9d398d568706b50f959d1145e7bc1b4b60d4b9ad96ee5b5429a812132c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 2.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:92ca657dff76eaadfe265c5e23f05c687453732d88a05ab2a8bdd5eb78b04743> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "NO" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 4.07e+00 ;
+    prov:wasDerivedFrom <urn:sha256:64b74c659fbe0fe97c95d4557316c0e30158e0dab3920086e210da3c2884db89> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 2e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:relative_error:context-433fa3dc8db3> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 3.06e+00 ;
+    prov:wasDerivedFrom <urn:sha256:a4ade51245fee7b6d9b2ee4c0c75af5b5d8c4d9a4e7aabbc7e63e0009f02f4b1> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 60 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:relative_error:context-681ba9840f4d> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 2.41e+00 ;
+    prov:wasDerivedFrom <urn:sha256:5249ba5c1417ec3dd6d161263385126a0f49b7761f8bda62df3bc21e87e047f9> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 50 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 6.32e+00 ;
+    prov:wasDerivedFrom <urn:sha256:c7c91bca379a7c029ffb72599188a6e5f09137a962ea83025a0208f7189ea6e1> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2e+01 ;
+    prov:wasDerivedFrom <urn:sha256:7d514af9b935c6616fa79af1170684dccbc0ea8392b06e555dd922e5e5fbe337> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 4.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:32271e63057ae2e4a9ced966483ac88c8d070c97120927cda710744b5b9432d1> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 8.21e+00 ;
+    prov:wasDerivedFrom <urn:sha256:26f47e89d11cbf548e6d4c78a73f39cea108746f25e20a8d7ae0441d2281622c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 2e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:relative_error:context-433fa3dc8db3> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 2.11e+00 ;
+    prov:wasDerivedFrom <urn:sha256:f55b07df82257c8a32fba7cf013cada9632b8624756b304b6095ad893bc877ce> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 60 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:relative_error:context-681ba9840f4d> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 3.83e+00 ;
+    prov:wasDerivedFrom <urn:sha256:7a8100619ba5133374121e80d81114fd32481a70ddcd89248cc76b4013283586> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 50 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 6.49e+00 ;
+    prov:wasDerivedFrom <urn:sha256:5490f6a228dd354da13b3fb43959700dd5a8ec073e61b56ec3282bcbd07b9446> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:e96f60ccdad32f6e39ff953b7cc9ccd0277ceaa30f4dc6bf98bcb7c439110c6f> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 3.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:b7833ded39fe9df301a9d80f55afeb649db0c2b23049f0e3347119f906e2958d> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 8.2e+00 ;
+    prov:wasDerivedFrom <urn:sha256:75ae28af60432bd6c25d5a77f3c12c48dab79b39acbc1aed094330b782bb612b> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 2e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:relative_error:context-433fa3dc8db3> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 1.53e+00 ;
+    prov:wasDerivedFrom <urn:sha256:82965fad987db3ae119e4d0fcb9857d373ff5b18349cb692c41fdcb61c94abc5> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 60 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:relative_error:context-681ba9840f4d> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 2.28e+00 ;
+    prov:wasDerivedFrom <urn:sha256:d0a375a66d6d408f2ff4127880f872bc3337baa2fd4fbc0b2b3c3d1a6ecee03c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 50 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 6.56e+00 ;
+    prov:wasDerivedFrom <urn:sha256:9ee2e4374812690321243b10ee60d2d67300e2c2474eedf1aaabb8a41fa09f8b> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 8e+00 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:dbd650aa6687350386ce63ebd8ef21ab458a47dd69e234fca5a4b6150b6a9135> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 2e+01 ;
+    prov:wasDerivedFrom <urn:sha256:72ca439e6ee18979ae3c37dba716140de1038ccb813b7a2ac0f265a5044d46a6> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "O3" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 1.648e+01 ;
+    prov:wasDerivedFrom <urn:sha256:6b6fadc497be5a1dc673ca94db6c26bf6d8c47aaf95b72e8dc0152d33acf11bc> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-3add45a0d284> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 1.4e+00 ;
+    prov:wasDerivedFrom <urn:sha256:06074ad2c5dd297560f59b6c8616f9cbf9f3b4ac7456621656e4420a4769b771> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 132 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-ca08e76b7000> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 6.48e+00 ;
+    prov:wasDerivedFrom <urn:sha256:981e4de2dd0f63fa4b16dd7cf483f38083a9a25ca5120b3a78938c917beaeb8f> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 19 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-d654b1fb22bd> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 2.69e+00 ;
+    prov:wasDerivedFrom <urn:sha256:d1487e290c0cedc9179f1730e8894daac0b030af22644308f8500627cd86dc1c> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 47 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 9.75e+00 ;
+    prov:wasDerivedFrom <urn:sha256:1aaf417cea8bef5a0619b3c6e2c3273eb3c63dff7e211aa358c956656db49d2e> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.06e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:81ef8f780339ab4c735d88489f5811959802b520cd0d711772f88de7c2499eda> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D1> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:de3e7f1a4a91fc3407b4da1f6efdd15bcdfe8faacb2b96d755b8e48673784e01> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 1.178e+01 ;
+    prov:wasDerivedFrom <urn:sha256:64749df6ca92cbed67a747f01a0db07007b199125d9efd354495d7141bc8dc5d> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-3add45a0d284> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 1.91e+00 ;
+    prov:wasDerivedFrom <urn:sha256:cb015aa441ee43177703bb5cb0dc486ef15dfdae23c29386ed1bc2dd5f122412> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 132 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-ca08e76b7000> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 8.96e+00 ;
+    prov:wasDerivedFrom <urn:sha256:b51b55f2a5a17da3fb2866205b3f737b1b5af2dc1afca78a8337d86bcff649c9> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 19 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-d654b1fb22bd> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 4.95e+00 ;
+    prov:wasDerivedFrom <urn:sha256:f961c3a3b36412523e00718530aade4257f3520ef6c13ea90b10938160c7dbe2> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 47 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 9.8e+00 ;
+    prov:wasDerivedFrom <urn:sha256:195d2f948243b33141b936172727cbd2cf272be337322a239d2c0f0d92bab132> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.06e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 2.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:e6d404aa256b5d11a5818a9d375a713a32af7606896a2f109510267e139ede11> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D2> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 3.7e+01 ;
+    prov:wasDerivedFrom <urn:sha256:7cdd0911ca2992374652d09ac6ca55ec70744ef34603e16ffeb24b69b0a13faa> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:limit_of_detection> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:limit_of_detection ;
+    dqv:value 1.945e+01 ;
+    prov:wasDerivedFrom <urn:sha256:dd489d1f0320fb0fb730047bdbe2b7a1f217a95a3b2c5ad0d019a06ade009e43> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.5e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-3add45a0d284> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 1.26e+00 ;
+    prov:wasDerivedFrom <urn:sha256:26af74be2e7b591d0a1ae8f27bd0c4327a075008def5c2c814d3db323a7e8fa6> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 132 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-ca08e76b7000> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 7.09e+00 ;
+    prov:wasDerivedFrom <urn:sha256:d8f7d47a0d0f436b211c4b39938666c96001b80798ddbf4d1dcc65f0c8c1e79e> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 19 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-d654b1fb22bd> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:relative_error ;
+    dqv:value 3.25e+00 ;
+    prov:wasDerivedFrom <urn:sha256:c96bd142a09650695aad04c2f5acec921e75931a8eb4ef121a2263228afd2e66> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled concentration 47 ppb" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.5e+01 ;
+    ex:unit "percent"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:repeatability_r> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:repeatability_r ;
+    dqv:value 1.008e+01 ;
+    prov:wasDerivedFrom <urn:sha256:4696fcc559cba1b456e847ce87a0a21938eca48af84134f667c5e3d516894a07> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 1.06e+01 ;
+    ex:unit "ug/m3"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:response_time_down> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_down ;
+    dqv:value 4e+01 ;
+    prov:wasDerivedFrom <urn:sha256:88d028d02cca737d556d8f1ed0ac11c53d9e8fcc4f000b663b8961630308ff01> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:response_time_up> a dqv:QualityMeasurement ;
+    dqv:computedOn <urn:ngsi-ld:Device:D3> ;
+    dqv:isMeasurementOf ex:response_time_up ;
+    dqv:value 3.3e+01 ;
+    prov:wasDerivedFrom <urn:sha256:147243914df7606fdd432eba02e35f81cde6b3d2cd03265e00a88202f13015be> ;
+    prov:wasGeneratedBy <urn:revision:activity:transcription-mapping> ;
+    ex:contextWindow "controlled laboratory Step 1; 1 h averaging period" ;
+    ex:evidenceIntegrityStatus "source-unverified" ;
+    ex:refProperty "SO2" ;
+    ex:thresholdMax 3.6e+02 ;
+    ex:unit "s"^^xsd:string .
+
+<urn:revision:agent:mapping-script> a prov:SoftwareAgent .
+
+<urn:revision:distribution:normalized-jsonld> a dcat:Distribution ;
+    dcat:mediaType "application/ld+json" .
+
+<urn:sha256:02810b6d59f5565598e45ea15572a8e475b5e532f0753bd623a0f87e8a0d1508> a prov:Entity .
+
+<urn:sha256:0573847996439f37b131ef53770ff0d7c86b44d77dac68addf8adedc92711398> a prov:Entity .
+
+<urn:sha256:05c2c53939fb03e7c015971e5835fcf43439e388a69648a5c9108e14a5fa0a80> a prov:Entity .
+
+<urn:sha256:06074ad2c5dd297560f59b6c8616f9cbf9f3b4ac7456621656e4420a4769b771> a prov:Entity .
+
+<urn:sha256:07676f876d0c2db3bbd08986534f976e8ad203469ee54c812d3e2373263842b1> a prov:Entity .
+
+<urn:sha256:080a9e8503b05c003e3e3c61cf847ebdf6df45288b06cb2c8ec4de44a88f01aa> a prov:Entity .
+
+<urn:sha256:0c1c9d48575491a0fefcea4ee041f852352c656d18bef1cd9c5f4cc197040a96> a prov:Entity .
+
+<urn:sha256:0c1dc3549757322022ef82a9f6094dd3274ee49bdf847394fd590417fc4f083f> a prov:Entity .
+
+<urn:sha256:0c4487a5332f5947817ec619bc0d77239cc65df86c5d9c1f19120cd5f2f90047> a prov:Entity .
+
+<urn:sha256:0d073506b7af1a73f1c44f50aca1e7e138297ed22f7b2a869b0305dc8f45a608> a prov:Entity .
+
+<urn:sha256:0d8d375229a595ea8ef0ff2cb18d4afec0da33d99e03fa5d1e63e5438212374a> a prov:Entity .
+
+<urn:sha256:147243914df7606fdd432eba02e35f81cde6b3d2cd03265e00a88202f13015be> a prov:Entity .
+
+<urn:sha256:16a4865d01f9416b6645557d2599b14888be4b94e5a75eff37e8fd9c629d4900> a prov:Entity .
+
+<urn:sha256:16f8f5e14dc6c7f666efe520389b64c93784aa2f932a453d8d509ddf89ca951d> a prov:Entity .
+
+<urn:sha256:195d2f948243b33141b936172727cbd2cf272be337322a239d2c0f0d92bab132> a prov:Entity .
+
+<urn:sha256:1a6ba26b285e59aed8e6ede55e45d30c00afe3917142a1de079a649de34f7843> a prov:Entity .
+
+<urn:sha256:1aaf417cea8bef5a0619b3c6e2c3273eb3c63dff7e211aa358c956656db49d2e> a prov:Entity .
+
+<urn:sha256:1cbd6e3532164b131daee0f647ae6b79f481c334d6123445668d0b67c2a29b36> a prov:Entity .
+
+<urn:sha256:1d493a7edbeab620c319d8f3263468571bc2c274006e2a45ab83a66276573729> a prov:Entity .
+
+<urn:sha256:1f81799591983dec3eef17ce90c29bf85f831b6b48ed4703e4733739366efc06> a prov:Entity .
+
+<urn:sha256:20fc1cd0d57f5745c919276162d10693d7731fd5f2e2e280d1d3302d9322a134> a prov:Entity .
+
+<urn:sha256:24383f92275677514edd2d0694d334b00a9e9ed52fbd1496d75356fa5866b7c9> a prov:Entity .
+
+<urn:sha256:26259a1ceb38c06c8aaaa1c5bad4a5eaf5d03eb5ec5b12046fc00945e8cf6475> a prov:Entity .
+
+<urn:sha256:264bdf12ecb0d7c2a422a69ecd1ba17fdff96f84eb5741bd33c05874f8321691> a prov:Entity .
+
+<urn:sha256:26a2f2f71a5ba67ee22858b3becc106e9b6a918b3976e1ccd9829d7216677862> a prov:Entity .
+
+<urn:sha256:26af74be2e7b591d0a1ae8f27bd0c4327a075008def5c2c814d3db323a7e8fa6> a prov:Entity .
+
+<urn:sha256:26f47e89d11cbf548e6d4c78a73f39cea108746f25e20a8d7ae0441d2281622c> a prov:Entity .
+
+<urn:sha256:2a0b8a9018a9c7765bd6a38d78abf820849371dd7bcd8040412ef1e156ab0f64> a prov:Entity .
+
+<urn:sha256:2a77d5399e962b90f896576e7d0f0c4e207283cfa59ef17009c06616f0e112c8> a prov:Entity .
+
+<urn:sha256:2bce4729303cd7ed54d0a36918428db23b1ae39fde4e2027e4d7944b2d7d9a0b> a prov:Entity .
+
+<urn:sha256:2d4da703e2ca089c0fb77d950fd4a975031e1506fa17f536d33947ce59cace5a> a prov:Entity .
+
+<urn:sha256:2f1e22373af773d90980170ec8dae44c00700d1a93854bd253ee09259db3e7ff> a prov:Entity .
+
+<urn:sha256:2ffee34b09f2c4b3f7c5d7a3af80abebd7ef850864b1f4155e9ac93af378be1e> a prov:Entity .
+
+<urn:sha256:31b77816dd5dc62d4dcfc46419cb14ecf5e83815cb8578172f9fd867e3d0c903> a prov:Entity .
+
+<urn:sha256:32271e63057ae2e4a9ced966483ac88c8d070c97120927cda710744b5b9432d1> a prov:Entity .
+
+<urn:sha256:328342a157bb8c1ff57a3801345f5e4f1aad4225a2c52a6fb5f2ddbc43181766> a prov:Entity .
+
+<urn:sha256:358cc0eedd940bb945ba91b17d34da5cfdff886aea0f4d8fd1dc047ba3b53282> a prov:Entity .
+
+<urn:sha256:3f5fa3032ed9313d483b0dec9d9dafd1fb1abc796afe7f95ff7efe735b2539b0> a prov:Entity .
+
+<urn:sha256:3f8cd445d0ab4c0094357d9fcfb49c4ef10cb2dcbd0e0f13bff9cb67484111c8> a prov:Entity .
+
+<urn:sha256:411e9d41bb076893156a8ba4c173ce7ea3cd6b1692859886505ef1bff3e25f24> a prov:Entity .
+
+<urn:sha256:41e8f16c7b896717143ebbf1e043484d63b6b584667d1779ae8575f1f32692e4> a prov:Entity .
+
+<urn:sha256:4696fcc559cba1b456e847ce87a0a21938eca48af84134f667c5e3d516894a07> a prov:Entity .
+
+<urn:sha256:48d619f3ed6fbb1655e2175659eee4801012ca667864723730407344e89e6924> a prov:Entity .
+
+<urn:sha256:4ca67dccbc65f59f86b7c9ab45cceb523b5328d6d55577a0688dde9de4065bc6> a prov:Entity .
+
+<urn:sha256:4cb67eca3cfef67b2194c3e4793e86008670c9a4730955a39672e935f5a31c37> a prov:Entity .
+
+<urn:sha256:4d3075d8d26a5c921947d6ef9d3ae24feb0ec0d7734e2c3e4e56343951e7ac9c> a prov:Entity .
+
+<urn:sha256:4f8a3a6758e0e31c2c9713f2fab29f8946ced8aad3b350267862541fabbd9ab9> a prov:Entity .
+
+<urn:sha256:5249ba5c1417ec3dd6d161263385126a0f49b7761f8bda62df3bc21e87e047f9> a prov:Entity .
+
+<urn:sha256:525f7c0ec547ab7f79a11d8d163892fb00983bb3eb5a19bd8c77cfdcc6ce16ac> a prov:Entity .
+
+<urn:sha256:536f5d9720025fcbbc352f9ffb6f0c4a11dda48b5f752608a07c7506276a64a1> a prov:Entity .
+
+<urn:sha256:5490f6a228dd354da13b3fb43959700dd5a8ec073e61b56ec3282bcbd07b9446> a prov:Entity .
+
+<urn:sha256:573664ff49a11a2f072c907e5ae91d11e7f8782d73fa1f3e2e2bf96e24566572> a prov:Entity .
+
+<urn:sha256:57a961089dcf7ce2ebe521ee40a75ffb5600138e307d4175db43835b9968066d> a prov:Entity .
+
+<urn:sha256:57ca5cc7133d7c7d4164cb7c93e224e4c86403c5295af67af5f215593f5dbe24> a prov:Entity .
+
+<urn:sha256:5d06fc30cfc118f7c027e8a800940fdd99798d7e882a3fc096f00bfa63e1a656> a prov:Entity .
+
+<urn:sha256:5fbd1476f2cdb9056d5e9cfd27d9328902fbb4c80397569f3b8598493c7d0111> a prov:Entity .
+
+<urn:sha256:6038a6712d486f037384ee765be0407f012c53948c09f75c28eeee8f442dbea8> a prov:Entity .
+
+<urn:sha256:64749df6ca92cbed67a747f01a0db07007b199125d9efd354495d7141bc8dc5d> a prov:Entity .
+
+<urn:sha256:64b74c659fbe0fe97c95d4557316c0e30158e0dab3920086e210da3c2884db89> a prov:Entity .
+
+<urn:sha256:66d8e3b3074a4ab5d8737949028f620a45290228d6fee628489b8d8b04ef7644> a prov:Entity .
+
+<urn:sha256:66f484e29c861c36ad840717aeb987b89d3374b68a7c70bc648e8d793c4007ac> a prov:Entity .
+
+<urn:sha256:68ba7a565fa1234e02deecdf58ce29154e1e1257c3ece6caf17437549467b7e8> a prov:Entity .
+
+<urn:sha256:6b17c6979ae4152aeebfce99e3c14a87ef81932ae7bf7cd0836bbeead7f8de0a> a prov:Entity .
+
+<urn:sha256:6b6fadc497be5a1dc673ca94db6c26bf6d8c47aaf95b72e8dc0152d33acf11bc> a prov:Entity .
+
+<urn:sha256:6c54816c3b381b88cb1666bbe363054f51fc9eba51b7640e373937e0bcec2389> a prov:Entity .
+
+<urn:sha256:6e62a145393394a624c888a6ddf44366c9054cc847aa2d1fa3ffeae6ab76b762> a prov:Entity .
+
+<urn:sha256:721a24730bfa221f1947734801e14a1fa27e18894b1710bd442b26407b6af49a> a prov:Entity .
+
+<urn:sha256:72ca439e6ee18979ae3c37dba716140de1038ccb813b7a2ac0f265a5044d46a6> a prov:Entity .
+
+<urn:sha256:75aa4800009a4afaa46bb179e8b5708a437e51d48fb870b6f2bd97e1187e5f38> a prov:Entity .
+
+<urn:sha256:75ae28af60432bd6c25d5a77f3c12c48dab79b39acbc1aed094330b782bb612b> a prov:Entity .
+
+<urn:sha256:77cb5072571a3352fce4a1371e1c0d9f53b33d7951cef77681e4ca40deeb261c> a prov:Entity .
+
+<urn:sha256:7a8100619ba5133374121e80d81114fd32481a70ddcd89248cc76b4013283586> a prov:Entity .
+
+<urn:sha256:7cdd0911ca2992374652d09ac6ca55ec70744ef34603e16ffeb24b69b0a13faa> a prov:Entity .
+
+<urn:sha256:7d25408aaa758b27b511009d48deeeb1ead8801130ae88294289fb087bcddcd5> a prov:Entity .
+
+<urn:sha256:7d514af9b935c6616fa79af1170684dccbc0ea8392b06e555dd922e5e5fbe337> a prov:Entity .
+
+<urn:sha256:7e27390fdd1ade0ea51d2c1a2307ff214d563327bc038d71695a9136af19bbe1> a prov:Entity .
+
+<urn:sha256:81ef8f780339ab4c735d88489f5811959802b520cd0d711772f88de7c2499eda> a prov:Entity .
+
+<urn:sha256:82965fad987db3ae119e4d0fcb9857d373ff5b18349cb692c41fdcb61c94abc5> a prov:Entity .
+
+<urn:sha256:858291d614645a6e2eb119da61fa8acadf5221089760b3c62407862d5271bb64> a prov:Entity .
+
+<urn:sha256:86abf638a5d8792a610492fb4a4cf5b890c7a1f0839f79ef3df98356e9193b8f> a prov:Entity .
+
+<urn:sha256:86bbe40c81d59b5c7a97a2cfc236aa2d67d9f53f13968e3c8085d0d18b335851> a prov:Entity .
+
+<urn:sha256:888aa1c44059802e1b120ad57bdda12accffb9b8de3c67f89de457471bbe740c> a prov:Entity .
+
+<urn:sha256:88d028d02cca737d556d8f1ed0ac11c53d9e8fcc4f000b663b8961630308ff01> a prov:Entity .
+
+<urn:sha256:89202d185fd4af7a7faa24d322da008e66be4ff908905f25507d1cca662a5fe7> a prov:Entity .
+
+<urn:sha256:8c4d2b6b3e2d9d4c1a4d79e0992aae0c76621dc7f9e66acafec84310ed5640be> a prov:Entity .
+
+<urn:sha256:90de5bbf4bafdcaa478565bd59bd906250e254eac3f7e354236f5c4e98c05dbf> a prov:Entity .
+
+<urn:sha256:92ca657dff76eaadfe265c5e23f05c687453732d88a05ab2a8bdd5eb78b04743> a prov:Entity .
+
+<urn:sha256:94df7c5a5925d8e4061e960766ae0d7df56976151787ac39b1901d33e2f08efc> a prov:Entity .
+
+<urn:sha256:97ed8e71c7f0cdfb79b7858357d1527f0b97dc4a0d01b364261ea4f85ac59b83> a prov:Entity .
+
+<urn:sha256:981e4de2dd0f63fa4b16dd7cf483f38083a9a25ca5120b3a78938c917beaeb8f> a prov:Entity .
+
+<urn:sha256:9b37687af1d0930662443c81021d388d408379f1b236052d694537fc734bea9c> a prov:Entity .
+
+<urn:sha256:9bbc75c9fc6478f35cf3267c517c4dbcc67c05c1423042f54a5def73b0ff19db> a prov:Entity .
+
+<urn:sha256:9e35f141b637da6b3a12c0938fedaaddf7f05e80165880a90a75ef7c135c1076> a prov:Entity .
+
+<urn:sha256:9ee2e4374812690321243b10ee60d2d67300e2c2474eedf1aaabb8a41fa09f8b> a prov:Entity .
+
+<urn:sha256:a17c89a9cb946ae1e93364541403901939b154c57aac873954b79c527194dbe2> a prov:Entity .
+
+<urn:sha256:a18bc7ae1c26378ecba215a11f7e6539bebf3b97cc6b36c201e7cedb580d154a> a prov:Entity .
+
+<urn:sha256:a378d95d7c826536beb69c037de75658e40aad97838a7ab8b897370f4e735631> a prov:Entity .
+
+<urn:sha256:a4ade51245fee7b6d9b2ee4c0c75af5b5d8c4d9a4e7aabbc7e63e0009f02f4b1> a prov:Entity .
+
+<urn:sha256:a52d509868169eca1e0a7b39b1bd88ce4f80931c342b6249db9edfda1e824831> a prov:Entity .
+
+<urn:sha256:a605050a7f47f07f4b7536c3cd7ba6230baae922696a23ec6aba3f88d01930e4> a prov:Entity .
+
+<urn:sha256:a81f9b99c574e5f5fb57364621880388ea43e9bc4db6599c18a2bc03547388bd> a prov:Entity .
+
+<urn:sha256:a8603b50c79b4ae4b211d1d543142761d895691d853de0c315bce34d645a88b8> a prov:Entity .
+
+<urn:sha256:a963948caad6a1f5afa87efad51f7a5f5eef7109acd8351ad1740b87cab0d3de> a prov:Entity .
+
+<urn:sha256:ab005beb73d445c828e9fb73499c5c075ce4b39260e37f0e9976d7c625170559> a prov:Entity .
+
+<urn:sha256:abb233c43e6d41df438a345dd480903361da196618acd43f35331e58215c56b7> a prov:Entity .
+
+<urn:sha256:af92ec78e5d3065bd0ebf71fc438d71f821dc06ff98f00e1844a29e3c5f36d56> a prov:Entity .
+
+<urn:sha256:b14f662d3199ed1f7b71264a8496645b66584fa8d65dc2657c7b0116b4e95201> a prov:Entity .
+
+<urn:sha256:b1de052099fee390919b2bd3b4b51fc5461c0f3169330c633d9fd1df163c8737> a prov:Entity .
+
+<urn:sha256:b25ca150790b28100cab3192e74fa5ebcb237da67454b1ec92edef40b125c762> a prov:Entity .
+
+<urn:sha256:b39729abb95ef74986a544840f8cbbbcabc89bd7ffef9ef004e2a68251ca047e> a prov:Entity .
+
+<urn:sha256:b42b376b1d15efc897f361f27a5bd12d47b17b81250d32c2c4322790515d68cd> a prov:Entity .
+
+<urn:sha256:b51b55f2a5a17da3fb2866205b3f737b1b5af2dc1afca78a8337d86bcff649c9> a prov:Entity .
+
+<urn:sha256:b6042296a6930eb7c17b6e73c072b57283201c2e459c72521b94f3dab9284ae4> a prov:Entity .
+
+<urn:sha256:b7833ded39fe9df301a9d80f55afeb649db0c2b23049f0e3347119f906e2958d> a prov:Entity .
+
+<urn:sha256:b7d428e98cc69ff1c3545b662f6f185f0f6fc77638a24acff974821292b63347> a prov:Entity .
+
+<urn:sha256:bc7f0b184c7787ff38aa5f4a71d8ac58dba99bc4272770fa24b492c605efa6ef> a prov:Entity .
+
+<urn:sha256:bd76887f5f87f5eeec4e04e4e85043bee16ac3a2914051a9029b8ef9cd0a3515> a prov:Entity .
+
+<urn:sha256:bdaa58e3c74ae98a74396533c162ea461a294c1307fb0b53ed3e11a0045afd41> a prov:Entity .
+
+<urn:sha256:bfdd59ed606e48fb95e586419d23b10feec02cc05efc8a86d3558d4d90b23a13> a prov:Entity .
+
+<urn:sha256:c3c058eccd36b7375cd76703a2a955c1d0a207fd57a4f580695c69662d724d2f> a prov:Entity .
+
+<urn:sha256:c737c56124bfa0b765efcc20ff9dc965ac8b3e439e981071efc593f34b15f30b> a prov:Entity .
+
+<urn:sha256:c76b94feff026d426e1e8ab3ad325b97294bafe4bed7721cfb1d90a1ec0eab08> a prov:Entity .
+
+<urn:sha256:c78d75b4b4f082b35c223f041c834f120a343061b7feff6e26051a1b1eb007d9> a prov:Entity .
+
+<urn:sha256:c7c91bca379a7c029ffb72599188a6e5f09137a962ea83025a0208f7189ea6e1> a prov:Entity .
+
+<urn:sha256:c7e9284cb2d1a0a1a8cb5e529f4924e72e2c414211cfc0a22989739df960d8ed> a prov:Entity .
+
+<urn:sha256:c96bd142a09650695aad04c2f5acec921e75931a8eb4ef121a2263228afd2e66> a prov:Entity .
+
+<urn:sha256:ca43573fd40433a554eb750c01d2193d90add35ee5c1c83911c5a3f930f993ac> a prov:Entity .
+
+<urn:sha256:cb015aa441ee43177703bb5cb0dc486ef15dfdae23c29386ed1bc2dd5f122412> a prov:Entity .
+
+<urn:sha256:cd77cf9d398d568706b50f959d1145e7bc1b4b60d4b9ad96ee5b5429a812132c> a prov:Entity .
+
+<urn:sha256:ce3ebb1f4519e60354721f26c60ee99a5ab40a68ed4c433a305466f6bbd60525> a prov:Entity .
+
+<urn:sha256:cf3eeb879aff13fe3bb004e9a517e9e2a04ed37ecafcc0121e4a9995c704ea53> a prov:Entity .
+
+<urn:sha256:d038794f5504a5e939f8d2cd086d1adb9aadd233f6e663811ca4cd5d284283d9> a prov:Entity .
+
+<urn:sha256:d0a375a66d6d408f2ff4127880f872bc3337baa2fd4fbc0b2b3c3d1a6ecee03c> a prov:Entity .
+
+<urn:sha256:d1487e290c0cedc9179f1730e8894daac0b030af22644308f8500627cd86dc1c> a prov:Entity .
+
+<urn:sha256:d277b4e473885f3274b6f1cb9f1f2e61cb173711ef3d4321eba84a596db8ab6e> a prov:Entity .
+
+<urn:sha256:d5def2bbe754282fc3ad35bff39a572c1864bd682718e0d9274c900ab1440df5> a prov:Entity .
+
+<urn:sha256:d789d14dc1d0b64811c0127f8d71c102feec96a5d843ffdb33de8fcb9fe02355> a prov:Entity .
+
+<urn:sha256:d8697524d3b37d86103709310e3245867df6780a03239ff26c7e11ce7d16e86f> a prov:Entity .
+
+<urn:sha256:d8f7d47a0d0f436b211c4b39938666c96001b80798ddbf4d1dcc65f0c8c1e79e> a prov:Entity .
+
+<urn:sha256:daa9da0d1d5a585dd36c96e7c5cc2ca82d1695d7d212512afb2546fdf2c7d3f5> a prov:Entity .
+
+<urn:sha256:db6453c2ab959ccb0d51c9a535086912ca013de05a4b8d4aeabf1f41f9d02624> a prov:Entity .
+
+<urn:sha256:dbd650aa6687350386ce63ebd8ef21ab458a47dd69e234fca5a4b6150b6a9135> a prov:Entity .
+
+<urn:sha256:dd489d1f0320fb0fb730047bdbe2b7a1f217a95a3b2c5ad0d019a06ade009e43> a prov:Entity .
+
+<urn:sha256:de3e7f1a4a91fc3407b4da1f6efdd15bcdfe8faacb2b96d755b8e48673784e01> a prov:Entity .
+
+<urn:sha256:e0548f298d871f76abcc62cedf03f43b8eb2959a72e50d7842680ae7c7a62f4f> a prov:Entity .
+
+<urn:sha256:e059dfb8a90309049eaa7343ad692ede339f55004503b0a8f72067c2f97b5e0f> a prov:Entity .
+
+<urn:sha256:e105d27d5d80ce60d10b8d6c1aff604fb1ed35b44db9f8bf5919c86580d83797> a prov:Entity .
+
+<urn:sha256:e1f2ab885a847b8c59120b358a1a249f0c3073d8475b58689eb2bf0ff39b115a> a prov:Entity .
+
+<urn:sha256:e4919d23d3965cbf99d279e28975e08a46007a7eff634e57f86fa068c1f235b7> a prov:Entity .
+
+<urn:sha256:e6d404aa256b5d11a5818a9d375a713a32af7606896a2f109510267e139ede11> a prov:Entity .
+
+<urn:sha256:e77b2c64e347930df06eca99ff8d9e3a0d7ce50c2fee3e0a8af4667b69a1e741> a prov:Entity .
+
+<urn:sha256:e96f60ccdad32f6e39ff953b7cc9ccd0277ceaa30f4dc6bf98bcb7c439110c6f> a prov:Entity .
+
+<urn:sha256:eb1ec4145b5545142d217469ce7e15f6f98b57cfd4679a59cba0408a5cdefed9> a prov:Entity .
+
+<urn:sha256:eb2905b1e60ae0310659e88bd397a754463ff286d7dfc9fd9b8a341f07a5cd6b> a prov:Entity .
+
+<urn:sha256:ed5cd18321748d2676e417151165c6b8f908d574ece8f936a0bd5e9f99a76d73> a prov:Entity .
+
+<urn:sha256:f10a095a99f2f360c3ff088d0a1633fded37183ac90f752316f3c83405f9fad0> a prov:Entity .
+
+<urn:sha256:f12ce463be4830597df8507d285d328c25a54eb6864d92d2cd9623b34f25eb70> a prov:Entity .
+
+<urn:sha256:f4097b52254acac0a12ca654b09b7bfb811777d0a3d10a0aaca0ef189076d76c> a prov:Entity .
+
+<urn:sha256:f427982125edc2c575e3a6170781a6bac2d14b42dd96a8b3226f78a56d354616> a prov:Entity .
+
+<urn:sha256:f4e7904b0a5cef355b034b1b6d158a8d69ed948ab3ef4f50502ba125d9de095e> a prov:Entity .
+
+<urn:sha256:f51f1e2f55047ae485a02a57ca69748aef5546282965897325e9e5d77d0175f0> a prov:Entity .
+
+<urn:sha256:f55b07df82257c8a32fba7cf013cada9632b8624756b304b6095ad893bc877ce> a prov:Entity .
+
+<urn:sha256:f8d40ce5420a80f0dc7e8f141330ea0181e03a3c1b595ffc1395229aa69b0d95> a prov:Entity .
+
+<urn:sha256:f961c3a3b36412523e00718530aade4257f3520ef6c13ea90b10938160c7dbe2> a prov:Entity .
+
+<urn:sha256:f97e15dc67e6cd376817e7a35c6116bd3c6502893cae7d90a3e5d61259672a9d> a prov:Entity .
+
+<urn:sha256:f99cd88b19cb4b26464f34fd50e2360ba9313307bd364b3829702a8a73783a76> a prov:Entity .
+
+<urn:sha256:fa3aceb989dacebf283e974a52e66028c077f77ee45246489ca13bb9f593e036> a prov:Entity .
+
+<urn:sha256:faa41f32a506d8812301014d82f7af272e5e03c86de7be6065c3dd00d197d5c3> a prov:Entity .
+
+<urn:sha256:fb3e037e79493a55682fac97affe5c36c5f6b2268af5656a1b15c25576de2b7b> a prov:Entity .
+
+<urn:sha256:fd83d793c4ba8887012c93cc6fdf5af6ec299cf879dd5e98878e49d9841377d7> a prov:Entity .
+
+<urn:sha256:fda5776e6b9be4a068a1e1350bea5a3287f224a73017096f2e51481e9943067e> a prov:Entity .
+
+<urn:revision:activity:transcription-mapping> a prov:Activity ;
+    prov:wasAssociatedWith <urn:revision:agent:mapping-script> .
+

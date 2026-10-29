@@ -1,0 +1,50 @@
+{
+  "synthetic": true,
+  "policy": {
+    "id": "urn:revision:policy:synthetic-runtime:1",
+    "synthetic": true,
+    "expected_samples": 60,
+    "window_seconds": 60,
+    "weights": {
+      "completeness": 0.5,
+      "freshness": 0.3,
+      "schema": 0.2
+    },
+    "freshness_grace_seconds": 60,
+    "freshness_decay_seconds": 60,
+    "gate_min_completeness": 0.9,
+    "gate_max_age_seconds": 120,
+    "gate_schema_score": 1.0,
+    "minimum_aggregate": 0.9,
+    "unit": "synthetic-S01",
+    "firmware": "v1",
+    "scope": "site-A",
+    "note": "Illustrative policy, not calibrated from the CEN certificates or a municipal service."
+  },
+  "case": {
+    "name": "healthy",
+    "received": 58,
+    "age": 7,
+    "schema": 1.0,
+    "calibration": true,
+    "integrity": "verified-test-fixture",
+    "unit": "synthetic-S01",
+    "firmware": "v1",
+    "scope": "site-A",
+    "hardware_fault": false,
+    "outlier": false,
+    "synthetic": true,
+    "access_authorized": true,
+    "security_scope": "authorization is an assumed Boolean fixture; no TLS/identity/policy engine is tested",
+    "completeness": 0.9666666666666667,
+    "freshness": 1.0,
+    "score": 0.9833333333333334,
+    "accepted": true,
+    "failed_gates": [],
+    "action": "accept",
+    "incident": null
+  },
+  "window": "[2026-06-15T09:59:01Z,2026-06-15T10:00:01Z)",
+  "evaluatedAt": "2026-06-15T10:00:07Z",
+  "sourceQualification": "Assumed synthetic fixture only; no linkage to D1-D3 certificates"
+}

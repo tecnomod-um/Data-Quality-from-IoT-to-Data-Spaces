@@ -1,0 +1,147 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "logical_cpus_reported": 9,
+    "versions": {
+      "rdflib": "7.1.4",
+      "pyshacl": "0.30.1",
+      "jsonschema": "4.25.1",
+      "cryptography": "50.0.2"
+    },
+    "execution": "single process; wall-clock measurements in shared sandbox; workload interleaved"
+  },
+  "source_validation": {
+    "assertion_count": 171,
+    "json_schema_valid": 171,
+    "original_distinct_identifiers": 156,
+    "revised_distinct_identifiers": 171,
+    "colliding_identifier_values_repaired": 12,
+    "recomputed_within_supplied_thresholds": 171,
+    "source_reports_authenticated": false,
+    "source_report_hashes_available": false,
+    "missing_original_report_hashes": 171,
+    "json_schema_negative_mutations": [
+      {
+        "mutation": "missing_metric_code",
+        "rejected": true
+      },
+      {
+        "mutation": "nonnumeric_metric",
+        "rejected": true
+      },
+      {
+        "mutation": "invalid_result",
+        "rejected": true
+      },
+      {
+        "mutation": "missing_target",
+        "rejected": true
+      },
+      {
+        "mutation": "fake_hash",
+        "rejected": true
+      },
+      {
+        "mutation": "unjustified_source_verification",
+        "rejected": true
+      },
+      {
+        "mutation": "malformed_relationship",
+        "rejected": true
+      },
+      {
+        "mutation": "no_threshold",
+        "rejected": true
+      }
+    ],
+    "ngsi_jsonld_rdf_triples": 10557,
+    "ngsi_entities_metric_values_and_targets_preserved": 171,
+    "between_sensor_group_records": 21,
+    "rdf_export_triples": 2273,
+    "rdf_roundtrip_isomorphic": true,
+    "shacl_valid": true,
+    "missing_provenance_negative_rejected": true,
+    "sparql_low_headroom_matches": 2,
+    "expanded_uncertainty_ratios": {
+      "mean": 0.3280398337112623,
+      "median": 0.22799999999999998,
+      "max": 0.991111111111111
+    },
+    "scope": "Application-defined schema and SHACL checks; not third-party certification or full ontology conformance"
+  },
+  "scenarios": {
+    "cases": 12,
+    "healthy_accepted": 1,
+    "adverse_quarantined": 11,
+    "healthy_score": 0.9833333333333334,
+    "outlier_detected_index": [
+      30
+    ],
+    "scope": "Deterministic synthetic rule tests, not estimated false-positive/false-negative rates"
+  },
+  "cryptographic_test": {
+    "public_test_key_hex": "eff10642aff5014eaf0494905b41fc9d3982d6d3e160ee4980d10af5dd9b2902",
+    "message_sha256": "486c40eff86ada84513f1ce5caf22bf946d10bde9361c9b5587d579cdad985fa",
+    "signature_hex": "431b0c7a7df12b752a6786913058842dc25c14617c3058eb703dc3c5ef2553928456f208d91bd1cc734ed82afdeb565ad3d954f5186940b0cc6b90e953675e06",
+    "original_signature_verified": true,
+    "tampered_payload_rejected": true,
+    "source_identity_authenticated": false,
+    "scope": "Public test key; authenticates no laboratory, certificate, organization, or live device"
+  },
+  "benchmark": {
+    "configuration": {
+      "observations": 3600,
+      "simulated_sampling_hz": 1,
+      "simulated_duration_seconds": 3600,
+      "window_seconds": 60,
+      "repetitions": 7,
+      "warmup_observations_per_mode": 60,
+      "context_accounting": "one shared inline context counted once in each archive",
+      "scope": "In-memory serialization, SHA-256 and test-key Ed25519 only; no network, disk, database, query, subscription or connector timings",
+      "closed_window_delay": "Up to 60 seconds plus actual processing; retrospective archive scoring only"
+    },
+    "summary": [
+      {
+        "mode": "baseline",
+        "observations": 3600,
+        "repetitions": 7,
+        "median_ms": 13.042537,
+        "min_ms": 12.889069,
+        "max_ms": 13.428874,
+        "serialized_bytes": 966214,
+        "assessments": 0,
+        "sha256_digests": 0,
+        "ed25519_signatures": 0
+      },
+      {
+        "mode": "per_observation",
+        "observations": 3600,
+        "repetitions": 7,
+        "median_ms": 194.362771,
+        "min_ms": 188.53918,
+        "max_ms": 230.132759,
+        "serialized_bytes": 5834797,
+        "assessments": 3600,
+        "sha256_digests": 3600,
+        "ed25519_signatures": 3600
+      },
+      {
+        "mode": "window_60s",
+        "observations": 3600,
+        "repetitions": 7,
+        "median_ms": 26.683159,
+        "min_ms": 25.143062,
+        "max_ms": 27.517904,
+        "serialized_bytes": 1815717,
+        "assessments": 60,
+        "sha256_digests": 60,
+        "ed25519_signatures": 60
+      }
+    ]
+  },
+  "real_ngsi_ld_broker_executed": false,
+  "data_space_connector_executed": false,
+  "municipal_deployment_evaluated": false
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "recorded_date": "2026-10-28",
+  "purpose": "Non-destructive provenance update to the frozen 171-assertion input",
+  "input_file": "cen17660_evidence_input.json",
+  "input_sha256": "5baff252311d1fed0b8348614f651f1a58e8ae5dc1907dfd251e8cefdaedb313",
+  "input_numeric_values_and_dates_changed": false,
+  "captured_results_changed": false,
+  "source_relationship": {
+    "status": "author_confirmed_related_reports",
+    "verbatim_author_answer": "I confirm they are related use them",
+    "exact_report_page_to_assertion_mapping": "unresolved"
+  },
+  "unit_consistency": {
+    "status": "author_confirmed",
+    "verbatim_author_answer": "Confirmed the units are the same",
+    "interpretation": "Measurement units for the seven pollutants shared with the principal corpus; no serial/configuration mapping or source-date correction inferred.",
+    "units": {
+      "NO2": "ug/m3",
+      "NO": "ug/m3",
+      "O3": "ug/m3",
+      "SO2": "ug/m3",
+      "CO": "mg/m3",
+      "PM10": "ug/m3",
+      "PM2.5": "ug/m3"
+    }
+  },
+  "historical_annotation_reference": "../historical/docs/author_annotations.json",
+  "literal_evidenceSource_interpretation": "The frozen reconstruction-stage unavailable-report wording is scoped to authenticated source documents linked to each specific assertion; it is not a current assertion that no related original document has been recovered.",
+  "source_integrity_status": "source-unverified",
+  "remaining_limits": [
+    "exact historical-to-principal record mapping",
+    "D1-D3 serial/configuration identity",
+    "conflicting historical dates and selected source summaries",
+    "applicable expanded-uncertainty coverage factors",
+    "NO and SO2 threshold source clauses",
+    "PM1 physical unit"
+  ]
+}

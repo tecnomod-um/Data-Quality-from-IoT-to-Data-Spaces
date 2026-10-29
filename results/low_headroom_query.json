@@ -1,0 +1,12 @@
+[
+  {
+    "measurement": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:expanded_uncertainty_at_limit",
+    "value": 48.46,
+    "limit": 50.0
+  },
+  {
+    "measurement": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:expanded_uncertainty_at_limit",
+    "value": 35.68,
+    "limit": 36.0
+  }
+]

@@ -1,0 +1,1034 @@
+{
+  "catalogue_schema_version": "1.0.0",
+  "supplement_id": "S1",
+  "version": "0.3.0-preparation",
+  "title": "Reproducibility supplement for the revised data quality application profile",
+  "prepared_on": "2026-10-28",
+  "status": "prepared_package_not_publicly_deposited",
+  "description": "Evidence catalogue for the supplied assessments, executed local checks, historical report-table secondary analysis, source comparisons and prepared integration materials. Evidence status is stated per component so that a prepared runner, public platform source and completed study measurement are not conflated.",
+  "path_base": "All artifact paths are relative to the directory containing this catalogue.",
+  "publication": {
+    "author_confirmed_release_permission": true,
+    "author_confirmed_future_release_commitment": true,
+    "destination_project_url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform",
+    "destination_group_url": "https://code.europa.eu/ldt-toolbox/",
+    "proposed_project_directory": "tests/reproducibility/data_quality/",
+    "study_release_url": null,
+    "doi": null,
+    "study_commit": null,
+    "archived_version_identifier": null,
+    "study_deposit_completed": false,
+    "remote_repository_modified_for_this_release": false,
+    "note": "The project already exists and is the intended destination. This local preparation is not evidence of a published study deposit. The platform reference tag/commit recorded below identifies external source configuration, not this supplement."
+  },
+  "evidence_status_guide": {
+    "supplied_transcription_with_executed_local_checks": "The distributed assertions have been reconstructed and checked; the underlying matching laboratory reports are not authenticated.",
+    "executed_local_checks": "Captured local execution results for the application-specific constraints or representations.",
+    "executed_synthetic_local_checks": "Executed deterministic fixtures; no empirical sensor error-rate or operational deployment claim.",
+    "executed_synthetic_worked_example": "Executed numerical illustration with declared synthetic assumptions.",
+    "executed_synthetic_local_benchmark": "Captured repeated local processing measurements with the stated workload and exclusions.",
+    "executed_report_table_recovery_and_secondary_descriptive_analysis": "Recovered report rows, independently checked transcription, and descriptive statistics with author annotations and retained provenance limits.",
+    "document_comparison_with_version_boundary": "Comparison of the identified complete author manuscript; publisher-version identity is not established.",
+    "inspected_public_source_configuration": "Public platform source inspected at the pinned reference; not a running-deployment attestation.",
+    "prepared_integration_with_executed_offline_tests_and_failed_reachability_observations": "Prepared runner and completed offline tests, plus recorded access failures; no successful study broker experiment.",
+    "prepared_not_executed": "Executable recipe supplied without a successful captured execution.",
+    "adopted_policy_with_primary_legal_source_locators": "A declared revision policy supported by identified primary law; not newly recovered historical report methodology.",
+    "package_documentation": "Instructions, dependency specifications and manifests."
+  },
+  "components": [
+    {
+      "id": "principal_records",
+      "title": "Principal assessment corpus and corrected identifiers",
+      "evidence_status": "supplied_transcription_with_executed_local_checks",
+      "description": "The supplied 171 report-summary assertions, anonymized derivative, normalized NGSI-LD representation and deterministic identifier mapping. These are assessment records, not 171 sensor observations.",
+      "counts": {
+        "assertions": 171,
+        "phase_counts": {
+          "field": 84,
+          "laboratory": 87
+        },
+        "pollutant_counts": {
+          "NO2": 30,
+          "O3": 30,
+          "NO": 24,
+          "CO": 30,
+          "SO2": 33,
+          "PM2.5": 12,
+          "PM10": 12
+        },
+        "source_device_labels": [
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "distinct_source_identifiers": 156,
+        "distinct_revised_identifiers": 171,
+        "colliding_identifier_values": 12,
+        "records_with_revised_identifiers": 27,
+        "between_sensor_group_encodings": 21
+      },
+      "field_windows_as_supplied": {
+        "NO2": "2024-11-02/2024-12-11",
+        "O3": "2025-07-29/2025-09-06",
+        "NO": "2025-05-02/2025-06-10",
+        "CO": "2024-12-13/2025-01-21",
+        "SO2": "2024-11-22/2024-12-31",
+        "PM2.5": "2026-03-10/2026-04-18",
+        "PM10": "2026-03-07/2026-04-15"
+      },
+      "integrity_status": "source-unverified",
+      "interpretation": "All supplied numerical values and dates are preserved. The 21 between-sensor encodings represent seven group values repeated under D1-D3; they are not independent device-specific uncertainty estimates. Related reports have been recovered and author-confirmed, but exact report/page-to-assertion, later-window and physical-device linkage remains unverified.",
+      "files": [
+        {
+          "path": "data/anonymized_source_records.json",
+          "format": "application/json",
+          "role": "Source records preserved in the executed reconstruction.",
+          "byte_length": 123767,
+          "sha256": "a9c4c9466a7cf72188e53f492cf93b2b1727fa1d99620811ef11ba5ed8810dcc"
+        },
+        {
+          "path": "data/identifier_mapping.json",
+          "format": "application/json",
+          "role": "Source/context-to-revised identifier mapping for all 171 records.",
+          "byte_length": 43131,
+          "sha256": "f01eb9f1eab7a51c05ea66bd9ca0f08fb34d671fc2d700ec592e1e12099c8a92"
+        },
+        {
+          "path": "data/normalized_evidence.jsonld",
+          "format": "application/ld+json",
+          "role": "171 normalized application-profile entities with unique identifiers, targets and derivative hashes.",
+          "byte_length": 1002858,
+          "sha256": "54f7b32c5d114ad9aa1d0b98ca088a307d21f4b95182c28fcbf61e9973c22b43"
+        },
+        {
+          "path": "source/cen17660_evidence_input.json",
+          "format": "application/json",
+          "role": "Frozen anonymized transcription of the principal 171 assertions.",
+          "byte_length": 130283,
+          "sha256": "5baff252311d1fed0b8348614f651f1a58e8ae5dc1907dfd251e8cefdaedb313"
+        },
+        {
+          "path": "source/provenance_update_2026-10-28.json",
+          "format": "application/json",
+          "role": "Separate update recording recovered related reports and author unit confirmation without rewriting the frozen input."
+        }
+      ]
+    },
+    {
+      "id": "semantic_validation",
+      "title": "Application profile, RDF exports and executed semantic checks",
+      "evidence_status": "executed_local_checks",
+      "counts": {
+        "schema_valid_entities": 171,
+        "threshold_consistent_assertions": 171,
+        "rejected_schema_negative_cases": 8,
+        "normalized_jsonld_rdf_triples": 10557,
+        "identifiers_values_and_target_links_preserved": 171,
+        "dqv_prov_dcat_export_triples": 2273,
+        "low_headroom_query_matches": 2
+      },
+      "rdf_roundtrip_isomorphic": true,
+      "application_shacl_passed": true,
+      "missing_provenance_negative_rejected": true,
+      "interpretation": "Concrete JSON Schema, JSON-LD/RDF, SHACL and SPARQL results for the supplied application profile. These checks do not authenticate laboratory reports, certify a whole ontology, establish broker interoperability or estimate sensor accuracy. The experimental vocabulary is not an official Smart Data Models adoption.",
+      "files": [
+        {
+          "path": "contexts/data-quality-context.jsonld",
+          "format": "application/ld+json",
+          "role": "Complete local JSON-LD vocabulary context for the experimental profile."
+        },
+        {
+          "path": "data/dqv_prov_dcat.jsonld",
+          "format": "application/ld+json",
+          "role": "DQV/PROV/DCAT export in JSON-LD.",
+          "byte_length": 316563,
+          "sha256": "854c918801e56d4e6dd1e0aa3be6e77099ccd7b98ffc3e9f4e8b34e2de9f1639"
+        },
+        {
+          "path": "data/dqv_prov_dcat.ttl",
+          "format": "text/turtle",
+          "role": "Equivalent RDF export in Turtle.",
+          "byte_length": 136473,
+          "sha256": "cff2f3042cbd30616f347ce9bee787bc4ba59ac523968d5041829894f2529a03"
+        },
+        {
+          "path": "queries/low_headroom.rq",
+          "format": "application/sparql-query",
+          "role": "SPARQL query for expanded-uncertainty threshold utilisation above 0.90."
+        },
+        {
+          "path": "results/low_headroom_query.json",
+          "format": "application/json",
+          "role": "Two captured matches, NO/D1 and O3/D1.",
+          "byte_length": 311,
+          "sha256": "360b0b85129e494fe8b76a1a529520ace020d13e431753af5126417e3a04eac7"
+        },
+        {
+          "path": "results/shacl_negative_report.txt",
+          "format": "text/plain",
+          "role": "Captured rejection after removing a required provenance link.",
+          "byte_length": 540,
+          "sha256": "05f790531e5c06dd39447ae0615d40c6de2a8b3189cefe91a81e303630728e1e"
+        },
+        {
+          "path": "results/shacl_report.txt",
+          "format": "text/plain",
+          "role": "Captured conforming RDF validation report.",
+          "byte_length": 33,
+          "sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9"
+        },
+        {
+          "path": "results/validation_summary.json",
+          "format": "application/json",
+          "role": "Combined executed local results, scope flags and environment/dependency versions.",
+          "byte_length": 4691,
+          "sha256": "4e10fc31ef63f4d0fd051e9d56b2c36b360bdfb3ad10e97643732e0d23b0b84e"
+        },
+        {
+          "path": "run_validation.py",
+          "format": "text/x-python",
+          "role": "Local reconstruction, schema/RDF validation, synthetic decisions, signature and benchmark runner."
+        },
+        {
+          "path": "schemas/assessment.schema.json",
+          "format": "application/json",
+          "role": "Application JSON Schema for normalized source-derived assessment entities."
+        },
+        {
+          "path": "schemas/quality-profile.shacl.ttl",
+          "format": "text/turtle",
+          "role": "Application SHACL constraints for the RDF export."
+        }
+      ]
+    },
+    {
+      "id": "runtime_fixtures",
+      "title": "Synthetic runtime policy, incident cases and manuscript listing",
+      "evidence_status": "executed_synthetic_local_checks",
+      "counts": {
+        "deterministic_cases": 12,
+        "accepted_cases": 1,
+        "quarantined_cases": 11,
+        "listing_entities": 3
+      },
+      "healthy_score": 0.9833333333333334,
+      "interpretation": "A declared illustrative policy and exact fixture inputs drive the 12 decisions and the observation/assessment/device listing. Authorization is an assumed Boolean input; no live identity or policy engine is exercised. These are deterministic code-path checks, not false-positive or false-negative rate estimates.",
+      "files": [
+        {
+          "path": "data/listing1_assessment.jsonld",
+          "format": "application/ld+json",
+          "role": "Linked synthetic detailed assessment.",
+          "byte_length": 6268,
+          "sha256": "d2fca5b63ba203b6c80e4191f708a9984d6eeaff601f8c2abd7ea4a5cc01f7a8"
+        },
+        {
+          "path": "data/listing1_device.jsonld",
+          "format": "application/ld+json",
+          "role": "Linked synthetic device/source-profile fixture.",
+          "byte_length": 4594,
+          "sha256": "6d81ddfb86f3cbac5737b67db7f33137cf0956d1b8d6e4a897841c936a94fafb"
+        },
+        {
+          "path": "data/listing1_inputs.json",
+          "format": "application/json",
+          "role": "Exact synthetic listing inputs and policy.",
+          "byte_length": 1467,
+          "sha256": "08ebaa5a455c5a8a459f059df81c9830832964442a799f29d03197fe03d4f967"
+        },
+        {
+          "path": "data/listing1_observation.jsonld",
+          "format": "application/ld+json",
+          "role": "Synthetic observation with compact quality fields.",
+          "byte_length": 4668,
+          "sha256": "d6a70985f832074e1aa8024d9a602198b0f4a4d32e2a8aa41424b140c3dc88f3"
+        },
+        {
+          "path": "data/synthetic_policy.json",
+          "format": "application/json",
+          "role": "Declared illustrative runtime weights, thresholds and eligibility policy.",
+          "byte_length": 562,
+          "sha256": "3f52e71b30b8d0dadfbcd30210b35e3b9854bc10fd309f0332e88c66923ed4f5"
+        },
+        {
+          "path": "make_listing_example.py",
+          "format": "text/x-python",
+          "role": "Generator for the listing entities and their exact fixture inputs."
+        },
+        {
+          "path": "results/scenario_results.json",
+          "format": "application/json",
+          "role": "Twelve captured synthetic decisions with failed gates and incidents.",
+          "byte_length": 8522,
+          "sha256": "679a2ea6f9f0b97c926c9e0d4212befad8d32b61c89544c922ff82e1dbb27f67"
+        }
+      ]
+    },
+    {
+      "id": "signature_fixture",
+      "title": "Exact-message test signature and tamper demonstration",
+      "evidence_status": "executed_synthetic_local_checks",
+      "algorithm": "Ed25519",
+      "original_signature_verified": true,
+      "tampered_payload_rejected": true,
+      "source_identity_authenticated": false,
+      "interpretation": "A deliberately public, deterministic test key signs the defined fixture message bytes. It authenticates no real laboratory, certificate, organization or instrument. File hashes in this catalogue identify distributed file bytes and are distinct from the message digest defined by the test byte contract.",
+      "files": [
+        {
+          "path": "data/synthetic_signed_message.json",
+          "format": "application/json",
+          "role": "Message fixture used by the exact-byte test-signature demonstration.",
+          "byte_length": 86,
+          "sha256": "486c40eff86ada84513f1ce5caf22bf946d10bde9361c9b5587d579cdad985fa"
+        },
+        {
+          "path": "results/signature_demonstration.json",
+          "format": "application/json",
+          "role": "Public test key, message digest, signature and verification/tamper outcomes.",
+          "byte_length": 555,
+          "sha256": "de5d6f317abc69a69201cebacdfff6e15a4455e90caf09ac2f17528b3a505ae3"
+        }
+      ]
+    },
+    {
+      "id": "fusion_example",
+      "title": "Conditional inverse-variance fusion worked example",
+      "evidence_status": "executed_synthetic_worked_example",
+      "counts": {
+        "cases": 4
+      },
+      "cases": [
+        {
+          "scenario": "initial",
+          "status": "computed",
+          "estimate": 20.4,
+          "standard_uncertainty": 1.788854381999832
+        },
+        {
+          "scenario": "increased_uncertainty_source_1",
+          "status": "computed",
+          "estimate": 21.0,
+          "standard_uncertainty": 2.8284271247461903
+        },
+        {
+          "scenario": "expired_calibration_source_1",
+          "status": "computed",
+          "estimate": 22.0,
+          "standard_uncertainty": 4.0
+        },
+        {
+          "scenario": "both_ineligible",
+          "status": "no_eligible_source",
+          "estimate": null,
+          "standard_uncertainty": null
+        }
+      ],
+      "interpretation": "Illustrates binary eligibility and positive compatible variances with independent-error assumptions, including the empty eligible set. The inputs are synthetic standard uncertainties and are not inferred from the supplied certificate summaries or historical rows.",
+      "files": [
+        {
+          "path": "fusion_demo.py",
+          "format": "text/x-python",
+          "role": "Executable conditional inverse-variance worked example."
+        },
+        {
+          "path": "results/fusion_results.json",
+          "format": "application/json",
+          "role": "Four captured synthetic fusion cases.",
+          "byte_length": 1877,
+          "sha256": "603cf3392201186c96c20128ea5561371dad4ae689c5b86f11e4399a7aa133e9"
+        }
+      ]
+    },
+    {
+      "id": "local_benchmark",
+      "title": "Captured local representation-cost experiment",
+      "evidence_status": "executed_synthetic_local_benchmark",
+      "counts": {
+        "raw_timing_rows": 21,
+        "modes": 3,
+        "observations_per_mode_run": 3600,
+        "runs_per_mode": 7,
+        "warmup_observations_per_mode": 60
+      },
+      "configuration": {
+        "observations": 3600,
+        "simulated_sampling_hz": 1,
+        "simulated_duration_seconds": 3600,
+        "window_seconds": 60,
+        "repetitions": 7,
+        "warmup_observations_per_mode": 60,
+        "context_accounting": "one shared inline context counted once in each archive",
+        "scope": "In-memory serialization, SHA-256 and test-key Ed25519 only; no network, disk, database, query, subscription or connector timings",
+        "closed_window_delay": "Up to 60 seconds plus actual processing; retrospective archive scoring only"
+      },
+      "results": [
+        {
+          "mode": "baseline",
+          "observations": 3600,
+          "repetitions": 7,
+          "median_ms": 13.042537,
+          "min_ms": 12.889069,
+          "max_ms": 13.428874,
+          "serialized_bytes": 966214,
+          "assessments": 0,
+          "sha256_digests": 0,
+          "ed25519_signatures": 0
+        },
+        {
+          "mode": "per_observation",
+          "observations": 3600,
+          "repetitions": 7,
+          "median_ms": 194.362771,
+          "min_ms": 188.53918,
+          "max_ms": 230.132759,
+          "serialized_bytes": 5834797,
+          "assessments": 3600,
+          "sha256_digests": 3600,
+          "ed25519_signatures": 3600
+        },
+        {
+          "mode": "window_60s",
+          "observations": 3600,
+          "repetitions": 7,
+          "median_ms": 26.683159,
+          "min_ms": 25.143062,
+          "max_ms": 27.517904,
+          "serialized_bytes": 1815717,
+          "assessments": 60,
+          "sha256_digests": 60,
+          "ed25519_signatures": 60
+        }
+      ],
+      "interpretation": "Raw results are timing-run records for an in-memory synthetic archive. Times cover serialization, SHA-256 and test-key Ed25519 signing, not policy evaluation, signature verification, parsing, network, broker, database, subscriptions or connectors. Bytes are an analytical sum of serialized components with one shared context per archive, not a complete HTTP body or measured stored size. Window evidence is retrospective after closure.",
+      "files": [
+        {
+          "path": "results/benchmark_raw.csv",
+          "format": "text/csv",
+          "role": "All 21 captured per-run timing records.",
+          "byte_length": 1102,
+          "sha256": "4ea3edfacf6b3be4aa8af779677a0f14a18301406bfa0ff664105cf5f7e735a4"
+        },
+        {
+          "path": "results/benchmark_summary.json",
+          "format": "application/json",
+          "role": "Three-mode byte/count and timing summaries.",
+          "byte_length": 826,
+          "sha256": "60bb4924d2af7c00808c8759ee3ed69c1ed8c6ebed09d480f62f098f61c583a7"
+        }
+      ]
+    },
+    {
+      "id": "historical_series",
+      "title": "H2022 historical report-table recovery and descriptive agreement analysis",
+      "evidence_status": "executed_report_table_recovery_and_secondary_descriptive_analysis",
+      "dataset_id": "H2022",
+      "dataset_version": "1.1.0",
+      "counts": {
+        "rows": 12610,
+        "complete_pairs": 12168,
+        "complete_pairs_with_author_confirmed_units": 7370,
+        "PM1_complete_pairs_without_confirmed_physical_unit": 4798,
+        "incomplete_rows": 442,
+        "pair_status_counts": {
+          "complete": 12168,
+          "reference_missing": 367,
+          "sensor_missing": 69,
+          "both_missing": 6
+        },
+        "series": 8
+      },
+      "series": [
+        {
+          "series_id": "HS1",
+          "pollutant": "NO2",
+          "rows": 800,
+          "complete_pairs": 800,
+          "effective_unit": "ug/m3",
+          "unit_basis": "author_confirmation"
+        },
+        {
+          "series_id": "HS2",
+          "pollutant": "NO",
+          "rows": 788,
+          "complete_pairs": 788,
+          "effective_unit": "ug/m3",
+          "unit_basis": "author_confirmation"
+        },
+        {
+          "series_id": "HS3",
+          "pollutant": "O3",
+          "rows": 774,
+          "complete_pairs": 774,
+          "effective_unit": "ug/m3",
+          "unit_basis": "author_confirmation"
+        },
+        {
+          "series_id": "HS4",
+          "pollutant": "SO2",
+          "rows": 535,
+          "complete_pairs": 535,
+          "effective_unit": "ug/m3",
+          "unit_basis": "author_confirmation"
+        },
+        {
+          "series_id": "HS5",
+          "pollutant": "CO",
+          "rows": 29,
+          "complete_pairs": 29,
+          "effective_unit": "mg/m3",
+          "unit_basis": "author_confirmation"
+        },
+        {
+          "series_id": "HS6",
+          "pollutant": "PM10",
+          "rows": 2222,
+          "complete_pairs": 2222,
+          "effective_unit": "ug/m3",
+          "unit_basis": "author_confirmation"
+        },
+        {
+          "series_id": "HS7",
+          "pollutant": "PM2.5",
+          "rows": 2222,
+          "complete_pairs": 2222,
+          "effective_unit": "ug/m3",
+          "unit_basis": "author_confirmation"
+        },
+        {
+          "series_id": "HS8",
+          "pollutant": "PM1",
+          "rows": 5240,
+          "complete_pairs": 4798,
+          "effective_unit": null,
+          "unit_basis": "not_confirmed_PM1_outside_original_pollutant_corpus"
+        }
+      ],
+      "source_pdf_sha256": "f0da594d8506e937ed9134840687c746ebb099a354440b7c5062b981b28b4234",
+      "source_pdf_included": false,
+      "source_columns_sha256": "b7dca4c3eca7bc555db30f73c8e8c88040a7f72ef89f19e160ed0687d7650b06",
+      "source_relationship": {
+        "status": "author_confirmed_related_reports",
+        "authorized_use": true,
+        "exact_cohort_mapping_to_171_records": "unverified",
+        "physical_serial_mapping_to_D1_D3": "not_provided",
+        "correction_of_conflicting_dates": "not_provided",
+        "correction_of_conflicting_uncertainty_or_summary_values": "not_provided"
+      },
+      "author_annotation_id": "H2022-A1",
+      "verification": {
+        "rows_checked_against_source_pdf": 12610,
+        "rows_matching": 12610,
+        "source_columns_unchanged_after_annotation": true,
+        "independent_numerical_checks": 48,
+        "maximum_absolute_numerical_difference": 3.123106645557433e-15
+      },
+      "analysis_method": {
+        "pairing": "Pairs exactly as printed in a source row; no temporal rejoin or alignment correction.",
+        "weighting": "Equal weight for each complete row; gaps do not create synthetic observations.",
+        "bias": "mean(sensor-reference)",
+        "mae": "mean(abs(sensor-reference))",
+        "rmse": "sqrt(mean((sensor-reference)^2))",
+        "pearson_r": "centred cross-product divided by square root of centred sums of squares",
+        "ols": "sensor = intercept + slope*reference; ordinary least squares with an intercept",
+        "ols_justification": "Each series has at least two complete pairs and nonzero reference variance; descriptive projection only, no error-free-reference or causal assertion.",
+        "missingness": "Exclude incomplete rows from pair statistics only; preserve them in recovered CSVs.",
+        "numeric_conversion": false,
+        "outlier_removal": false,
+        "calibration_applied": false,
+        "confidence_intervals_or_significance_tests": false
+      },
+      "interpretation": "H2022 denotes the report cover date, not a common observation year. HS1-HS8 label annex series, not eight established physical units. Literal source dates, numeric strings and unknown annex-unit fields are preserved. Author-confirmed effective units are a separate annotation for seven pollutants; PM1 retains an unconfirmed physical unit. Date/station/device mapping and selected printed summary discrepancies remain. The rows support transparent descriptive agreement, not new certification, temporal realignment, current-cohort attribution or expanded-uncertainty estimates.",
+      "reproduction_boundary": "Descriptive results can be recomputed from the bundled CSVs. Re-extraction and the source-PDF verification additionally require the separately held original PDF with the recorded digest.",
+      "files": [
+        {
+          "path": "historical/README.md",
+          "format": "text/markdown",
+          "role": "Historical dataset, analysis and reproduction guide."
+        },
+        {
+          "path": "historical/SHA256SUMS.txt",
+          "format": "text/plain",
+          "role": "Historical subpackage integrity manifest."
+        },
+        {
+          "path": "historical/data/H2022_CO.csv",
+          "format": "text/csv",
+          "role": "Literal per-series historical data with provenance and separate effective-unit annotations.",
+          "byte_length": 8815,
+          "sha256": "047f3a3c04f387af993456b4af9d0336047b3c9c2ad60bcc472eb0e52c14b106"
+        },
+        {
+          "path": "historical/data/H2022_NO.csv",
+          "format": "text/csv",
+          "role": "Literal per-series historical data with provenance and separate effective-unit annotations.",
+          "byte_length": 265831,
+          "sha256": "b8453ebc3a7559c2aff1c86267cb7692a5b86265f62155c9549b761d2d188b18"
+        },
+        {
+          "path": "historical/data/H2022_NO2.csv",
+          "format": "text/csv",
+          "role": "Literal per-series historical data with provenance and separate effective-unit annotations.",
+          "byte_length": 297678,
+          "sha256": "ab75a38752b97af69225c453b79cb67462353edda1c17609301e4e6ed565f374"
+        },
+        {
+          "path": "historical/data/H2022_O3.csv",
+          "format": "text/csv",
+          "role": "Literal per-series historical data with provenance and separate effective-unit annotations.",
+          "byte_length": 245854,
+          "sha256": "d221e480637d7d6ef54a3873bd871f32d14483f83c1f51960903a494250c6368"
+        },
+        {
+          "path": "historical/data/H2022_PM1.csv",
+          "format": "text/csv",
+          "role": "Literal per-series historical data with provenance and separate effective-unit annotations.",
+          "byte_length": 1894883,
+          "sha256": "67ca92272d8484beb7971580595131b907bbd71f20607bcc2bebb121e1f367e2"
+        },
+        {
+          "path": "historical/data/H2022_PM10.csv",
+          "format": "text/csv",
+          "role": "Literal per-series historical data with provenance and separate effective-unit annotations.",
+          "byte_length": 713051,
+          "sha256": "e60a969c45fadb337bf46201ae0e702c66df76b7ec39946e8b4b4b1b32f29a5e"
+        },
+        {
+          "path": "historical/data/H2022_PM2_5.csv",
+          "format": "text/csv",
+          "role": "Literal per-series historical data with provenance and separate effective-unit annotations.",
+          "byte_length": 660389,
+          "sha256": "2ab2e08868b92f75d9f63d3cecbeeffbeefa6c68beb0a872ea84c04e73a9ea1b"
+        },
+        {
+          "path": "historical/data/H2022_SO2.csv",
+          "format": "text/csv",
+          "role": "Literal per-series historical data with provenance and separate effective-unit annotations.",
+          "byte_length": 179591,
+          "sha256": "03af22c1692022b42bb986611fca00d2168975728b04d782ef2eef69ce5def8c"
+        },
+        {
+          "path": "historical/data/H2022_paired_observations.csv",
+          "format": "text/csv",
+          "role": "Combined literal historical rows with separate author unit/analysis annotations.",
+          "byte_length": 4263789,
+          "sha256": "f097e40f2eac9d1360cede9aec4f627735280c07a70d700ed44ae694abba66c1"
+        },
+        {
+          "path": "historical/data/analysis_verification.json",
+          "format": "application/json",
+          "role": "Independent high-precision comparison of 48 descriptive outputs.",
+          "byte_length": 8424,
+          "sha256": "840d323302ee8438c1f6ca66a6e8fc949ee1267f5226f77b234e9d82ecdb3514"
+        },
+        {
+          "path": "historical/data/annotation_verification.json",
+          "format": "application/json",
+          "role": "Verification that 18 protected source columns remain unchanged after annotation.",
+          "byte_length": 1019,
+          "sha256": "22e8c63a4aabf59c88aa050b5bdfe20f8222a2116af179f69c4ca136b20d189d"
+        },
+        {
+          "path": "historical/data/extraction_rejects.json",
+          "format": "application/json",
+          "role": "Captured extraction rejection list.",
+          "byte_length": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "historical/data/extraction_summary.json",
+          "format": "application/json",
+          "role": "Extraction counts, series provenance and source digest.",
+          "byte_length": 14134,
+          "sha256": "1621a0bb4512c5bc41c27a43d89801fc610fdf4b4aeb174b8f4e9523bc144720"
+        },
+        {
+          "path": "historical/data/largest_absolute_errors.csv",
+          "format": "text/csv",
+          "role": "Unfiltered largest absolute pair differences with source-row provenance.",
+          "byte_length": 3837,
+          "sha256": "cb5e3d784a793e26fe1347104e7fa6799e7f505451488151d56f5cb1f1bd7069"
+        },
+        {
+          "path": "historical/data/paired_agreement_metrics.csv",
+          "format": "text/csv",
+          "role": "Per-series count, bias, MAE, RMSE, correlation and descriptive OLS outputs.",
+          "byte_length": 3263,
+          "sha256": "75d824830d147e31fffee2200542f5a83e1a34e3a2e0f93106c51e13f79a56c6"
+        },
+        {
+          "path": "historical/data/paired_agreement_metrics.json",
+          "format": "application/json",
+          "role": "Metrics with exact method, provenance, source and annotated-CSV hashes.",
+          "byte_length": 27369,
+          "sha256": "b9ebd285f0f8eac63b836a5717686ffbb685721a24465c5be4bbf56ec930b1fb"
+        },
+        {
+          "path": "historical/data/regression_direction_diagnostics.csv",
+          "format": "text/csv",
+          "role": "Forward/reverse descriptive regression checks against printed summaries.",
+          "byte_length": 2415,
+          "sha256": "7cd4bb7f7c54c0e590ec809026e198310a00aaba4ed5ae428d9a6625906dc190"
+        },
+        {
+          "path": "historical/data/verification.json",
+          "format": "application/json",
+          "role": "Independent all-row source-PDF transcription check.",
+          "byte_length": 575,
+          "sha256": "18152a4b99b099499437b82011f423bf2f915b5029286c0f5295a77c773600b3"
+        },
+        {
+          "path": "historical/docs/author_annotations.json",
+          "format": "application/json",
+          "role": "Exact author statements, interpreted unit annotations and limits."
+        },
+        {
+          "path": "historical/docs/data_dictionary.md",
+          "format": "text/markdown",
+          "role": "Column meanings, literal versus effective units and provenance."
+        },
+        {
+          "path": "historical/docs/evidence_memo.md",
+          "format": "text/markdown",
+          "role": "Interpretation, descriptive findings and unresolved source discrepancies."
+        },
+        {
+          "path": "historical/docs/source_manifest.json",
+          "format": "application/json",
+          "role": "Source report digest/version, evidence boundary and author-confirmed relationship."
+        },
+        {
+          "path": "historical/docs/visual_check.json",
+          "format": "application/json",
+          "role": "Captured representative source-table visual checks."
+        },
+        {
+          "path": "historical/requirements.txt",
+          "format": "text/plain",
+          "role": "Historical source-extraction dependency pin."
+        },
+        {
+          "path": "historical/scripts/analyze_historical_agreement.py",
+          "format": "text/x-python",
+          "role": "Computes unweighted descriptive agreement from complete source rows."
+        },
+        {
+          "path": "historical/scripts/annotate_historical_units.py",
+          "format": "text/x-python",
+          "role": "Adds separate author-confirmed effective-unit annotations."
+        },
+        {
+          "path": "historical/scripts/extract_historical_tables.py",
+          "format": "text/x-python",
+          "role": "Reproducible literal annex extraction; requires the original PDF."
+        },
+        {
+          "path": "historical/scripts/verify_historical_analysis.py",
+          "format": "text/x-python",
+          "role": "Independent high-precision numerical and protected-column verification."
+        },
+        {
+          "path": "historical/scripts/verify_historical_tables.py",
+          "format": "text/x-python",
+          "role": "Checks every recovered row against a second PDF text engine."
+        }
+      ]
+    },
+    {
+      "id": "conference_comparison",
+      "title": "Complete conference author-manuscript comparison",
+      "evidence_status": "document_comparison_with_version_boundary",
+      "conference_doi": "10.1007/978-3-032-29430-2_25",
+      "publisher_url": "https://link.springer.com/chapter/10.1007/978-3-032-29430-2_25",
+      "source_version": "Complete author manuscript; identity with the final publisher version has not been established.",
+      "source_pages": 14,
+      "source_pdf_bytes": 483208,
+      "source_pdf_sha256": "b8a232b2b813838a04611efc028ace0ba22715d1b7cfa06283440e82d6696da9",
+      "source_pdf_included": false,
+      "comparison_topics": 15,
+      "interpretation": "Section/table/equation locators distinguish inherited ideas from specification, corrections and executed checks added by the revision. The identifying author PDF is held separately.",
+      "files": [
+        {
+          "path": "conference_comparison.txt",
+          "format": "text/plain",
+          "role": "Fifteen-topic comparison against the complete conference author manuscript."
+        }
+      ]
+    },
+    {
+      "id": "platform_sources",
+      "title": "Pinned EU LDT Data Platform sources and capability/evidence mapping",
+      "evidence_status": "inspected_public_source_configuration",
+      "project_url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform",
+      "platform_reference_tag": "DP-1.0.0",
+      "platform_reference_commit": "efc368c81a4e78d61615ba32b17c1c8dac35a174",
+      "platform_reference_commit_date": "2026-07-22",
+      "source_broker_image": "public.ecr.aws/scorpiobroker/all-in-one-runner:java-6.0.0",
+      "source_evidence_map_status": "published_source_verified_profile_runtime_measurements_not_executed",
+      "platform_source_pins": {
+        "dp": {
+          "project": "ldt-toolbox/eu_ldt_data_platform",
+          "project_id": 1917,
+          "tag": "DP-1.0.0",
+          "commit": "efc368c81a4e78d61615ba32b17c1c8dac35a174"
+        },
+        "dsr": {
+          "project": "ldt-toolbox/eu_ldt_data_space_ready",
+          "project_id": 1926,
+          "tag": "DSR-1.0.0",
+          "commit": "e5bdd28ddaf38a4473b5187a88567d737a22fb8e"
+        },
+        "im": {
+          "project": "ldt-toolbox/eu_ldt_identity_management",
+          "project_id": 1236,
+          "tag": "IM-1.0.0",
+          "commit": "7ee287e653cc70e76db18bf96b2974cd7560e585"
+        }
+      },
+      "capability_evidence_counts": {
+        "pinned_projects": 3,
+        "documented_sources": 32,
+        "capability_areas": 6,
+        "specified_future_measurement_stages": 5
+      },
+      "capability_areas": [
+        "Current context entities and native quality query",
+        "Persistent context store, temporal history and batch operations",
+        "Subscriptions and evidence updates",
+        "Queries across stores and CDC replication",
+        "Identity and tenant-scoped authorization",
+        "Catalogue discovery and governed connector exchange"
+      ],
+      "future_measurement_stages": [
+        {
+          "stage": "Controlled workload and provenance",
+          "status": "specified_future_measurement_not_executed"
+        },
+        {
+          "stage": "Current and temporal storage",
+          "status": "specified_future_measurement_not_executed"
+        },
+        {
+          "stage": "Matched native queries",
+          "status": "specified_future_measurement_not_executed"
+        },
+        {
+          "stage": "Subscriptions, loss and recovery",
+          "status": "specified_future_measurement_not_executed"
+        },
+        {
+          "stage": "Independent producer/consumer and governed exchange",
+          "status": "specified_future_measurement_not_executed"
+        }
+      ],
+      "source_gateway_prefix": "/cb",
+      "source_ngsi_ld_api_prefix": "/ngsi-ld/v1",
+      "runtime_version_verified": false,
+      "interpretation": "The repository, pinned source configuration and capability mapping identify an existing external platform. They do not establish that the study profile is already deposited, identify the running testbed version, or provide successful profile-specific deployment measurements. Platform commit metadata is separate from the null study-release commit.",
+      "files": [
+        {
+          "path": "integration/toolbox/capability_evidence.json",
+          "format": "application/json",
+          "role": "Machine-readable platform capability/evidence map with source boundaries."
+        },
+        {
+          "path": "integration/toolbox/capability_evidence.md",
+          "format": "text/markdown",
+          "role": "Human-readable platform capability/evidence map and source notes."
+        },
+        {
+          "path": "integration/toolbox/source_reference.json",
+          "format": "application/json",
+          "role": "Exact pinned platform source URLs/digests and candidate API derivation."
+        },
+        {
+          "path": "integration/toolbox_reference.json",
+          "format": "application/json",
+          "role": "Platform/source, release-commitment and experiment-status metadata."
+        }
+      ]
+    },
+    {
+      "id": "toolbox_runner",
+      "title": "Prepared Toolbox runner, offline tests and observed access",
+      "evidence_status": "prepared_integration_with_executed_offline_tests_and_failed_reachability_observations",
+      "author_confirmed_open_registration": true,
+      "application_url": "https://dpl-int.ldttoolbox.app/data/sources/list",
+      "source_derived_candidate_api_base": "https://dpl-int.ldttoolbox.app/cb/ngsi-ld/v1",
+      "candidate_runtime_route_verified": false,
+      "offline_tests_passed": 9,
+      "network_requests_during_offline_validation": 0,
+      "live_broker_mutations_during_offline_validation": 0,
+      "access_observations": [
+        {
+          "file": "integration/toolbox/access_observation.json",
+          "checked_at_utc": "2026-10-28T05:59:30.134744+00:00",
+          "http_status": 503,
+          "credentials_supplied": false,
+          "mutations_performed": false
+        },
+        {
+          "file": "integration/toolbox/followup_access_observation.json",
+          "checked_at_utc": "2026-10-28T06:24:59.870123+00:00",
+          "http_status": 503,
+          "credentials_supplied": false,
+          "mutations_performed": false
+        }
+      ],
+      "authentication_succeeded": false,
+      "live_quality_query_executed": false,
+      "live_subscription_executed": false,
+      "data_space_connector_executed": false,
+      "study_broker_benchmark_executed": false,
+      "interpretation": "The standard-library runner prepares a bounded six-entity synthetic exercise and defaults to an offline plan. Nine offline transport-substitute tests passed. Recorded unauthenticated requests returned HTTP 503 before sign-in; they are access observations, not broker latency measurements or evidence against the author-confirmed registration policy. No successful study-specific broker experiment is included.",
+      "files": [
+        {
+          "path": "integration/toolbox/README.md",
+          "format": "text/markdown",
+          "role": "Integration instructions and distinctions among source reference, observed access and future execution."
+        },
+        {
+          "path": "integration/toolbox/access_observation.json",
+          "format": "application/json",
+          "role": "Original sanitized read-only API reachability observation."
+        },
+        {
+          "path": "integration/toolbox/config.example.json",
+          "format": "application/json",
+          "role": "Non-secret configuration template."
+        },
+        {
+          "path": "integration/toolbox/context.jsonld",
+          "format": "application/ld+json",
+          "role": "Complete context for the planned integration fixtures."
+        },
+        {
+          "path": "integration/toolbox/env.example",
+          "format": "text/plain",
+          "role": "Environment-variable names and example configuration without credentials."
+        },
+        {
+          "path": "integration/toolbox/followup_access_observation.json",
+          "format": "application/json",
+          "role": "Follow-up sanitized read-only API reachability observation."
+        },
+        {
+          "path": "integration/toolbox/offline_validation.json",
+          "format": "application/json",
+          "role": "Captured offline runner test and package-preparation record."
+        },
+        {
+          "path": "integration/toolbox/probe.py",
+          "format": "text/x-python",
+          "role": "Prepared offline plan, bounded probe and optional six-entity exercise runner."
+        },
+        {
+          "path": "integration/toolbox/tests/test_probe.py",
+          "format": "text/x-python",
+          "role": "Nine offline safety/failure-path tests using a transport substitute."
+        }
+      ]
+    },
+    {
+      "id": "alternative_broker_recipe",
+      "title": "Alternative Orion-LD two-broker recipe",
+      "evidence_status": "prepared_not_executed",
+      "broker": "Orion-LD",
+      "version": "1.12.0",
+      "is_toolbox_actual_configuration": false,
+      "interpretation": "An alternative Compose and smoke-test starting point, separate from the Toolbox Scorpio reference. No successful run or production/data-space interoperability result is asserted.",
+      "files": [
+        {
+          "path": "integration/broker_smoke_test.py",
+          "format": "text/x-python",
+          "role": "Unexecuted alternative broker query/signature/bundle-transfer smoke test."
+        },
+        {
+          "path": "integration/compose.yaml",
+          "format": "application/yaml",
+          "role": "Unexecuted alternative Orion-LD two-broker Compose recipe."
+        }
+      ]
+    },
+    {
+      "id": "spanish_regulatory_policy",
+      "title": "Declared Spanish indicative/hourly SO2 benchmark",
+      "evidence_status": "adopted_policy_with_primary_legal_source_locators",
+      "profile_id": "ES-RD102-2011-indicative-SO2-hourly-20261028",
+      "legal_source_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-1645&p=20230125&tn=1",
+      "consolidated_update_date": "2023-01-25",
+      "reviewed_as_of": "2026-10-28",
+      "SO2_ambient_reference_ug_m3": 350,
+      "SO2_averaging_period": "PT1H",
+      "measurement_regime": "indicative",
+      "relative_uncertainty_objective": 0.25,
+      "SO2_derived_absolute_uncertainty_bound_ug_m3": 87.5,
+      "NO_supplied_study_criterion_ug_m3": 50,
+      "NO_Spanish_statutory_attribution": false,
+      "NO2_proxy_adopted": false,
+      "interpretation": "The revision adopts 87.5 = 350 x 25% using RD 102/2011 Annex I.A.I and Annex V.I. This is an explicit policy basis, not reconstructed historical report-clause provenance or a new measurement. The regulatory 95% objective does not verify the confidence level or coverage factor of encoded report values. NO 50 remains a supplied study/report criterion.",
+      "files": [
+        {
+          "path": "source/spanish_regulatory_context.json",
+          "format": "application/json",
+          "role": "Structured Spanish legal source/version/locator record and explicit adopted criterion status.",
+          "byte_length": 6521,
+          "sha256": "8a8bcd555c8b2313766019ea28126b3f36b7a3f162bcfe5cc7c82321e7614f4a"
+        }
+      ]
+    },
+    {
+      "id": "package_guidance",
+      "title": "Package instructions, dependencies and integrity manifests",
+      "evidence_status": "package_documentation",
+      "interpretation": "The root README explains reproduction and evidence limits. Global manifests are assembled after package completion; this catalogue does not hash changing documentation or itself.",
+      "files": [
+        {
+          "path": "README.md",
+          "format": "text/markdown",
+          "role": "Main reproduction instructions and evidence-scope guide."
+        },
+        {
+          "path": "SHA256SUMS.txt",
+          "format": "text/plain",
+          "role": "Package-wide integrity manifest regenerated during final assembly."
+        },
+        {
+          "path": "requirements.txt",
+          "format": "text/plain",
+          "role": "Pinned dependencies for the completed main local checks."
+        }
+      ]
+    }
+  ],
+  "reproduction": {
+    "main_readme": "README.md",
+    "main_local_validation_command": "python run_validation.py --input source/cen17660_evidence_input.json --output rerun",
+    "captured_results_directory": "results/",
+    "captured_results_preservation": "Use a separate output directory or working copy for reruns; do not replace the distributed captured results.",
+    "historical_guide": "historical/README.md",
+    "historical_analysis_entrypoint": "historical/scripts/analyze_historical_agreement.py",
+    "historical_source_extraction_requires_separately_held_pdf": true,
+    "toolbox_guide": "integration/toolbox/README.md",
+    "toolbox_default_mode": "offline plan; actual broker exercise remains unexecuted",
+    "no_external_deployment_required_for_completed_main_local_checks": true
+  },
+  "integrity": {
+    "global_manifest": "SHA256SUMS.txt",
+    "historical_manifest": "historical/SHA256SUMS.txt",
+    "per_artifact_hash_algorithm": "SHA-256",
+    "per_artifact_hash_scope": "Exact distributed file bytes for frozen data, captured results and the declared Spanish policy. These are not authenticity claims about laboratories or publishers.",
+    "mutable_documentation_hashes_in_catalogue": false,
+    "manifest_assembly_note": "The final package manifests are regenerated after all documentation and this catalogue are assembled; this catalogue contains no hash of itself or changing documentation."
+  },
+  "catalogue_validation": {
+    "inventory_artifacts": 80,
+    "all_listed_paths_present": true,
+    "principal_counts_checked_against_current_files": true,
+    "historical_counts_checked_against_current_csv_and_summaries": true,
+    "historical_annotated_csv_hash_matches_captured_analysis": true,
+    "principal_input_hash_matches_provenance_update": true,
+    "raw_timing_and_fixture_counts_checked": true,
+    "capability_evidence_json_parsed": true,
+    "spanish_policy_json_parsed_without_conversation_references": true,
+    "data_results_or_existing_manifests_modified_by_catalogue_assembly": false
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "kind": "public_source_alignment_not_deployment_attestation",
+  "project_url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform",
+  "project_id": 1917,
+  "group_url": "https://code.europa.eu/ldt-toolbox/",
+  "tag": "DP-1.0.0",
+  "commit": "efc368c81a4e78d61615ba32b17c1c8dac35a174",
+  "commit_date": "2026-07-22",
+  "gitlab_release_object_at_tag": null,
+  "source_broker_image": "public.ecr.aws/scorpiobroker/all-in-one-runner:java-6.0.0",
+  "source_gateway_prefix": "/cb",
+  "source_ngsi_ld_api_prefix": "/ngsi-ld/v1",
+  "user_supplied_frontend": "https://dpl-int.ldttoolbox.app/data/sources/list",
+  "user_supplied_identity_realm": "https://im-int.ldttoolbox.app/realms/LDT/",
+  "source_derived_candidate_api_base": "https://dpl-int.ldttoolbox.app/cb/ngsi-ld/v1",
+  "candidate_api_host_basis": "User-supplied canonical frontend origin. Pinned source retains DATA_PLATFORM_HOST as a deployment placeholder.",
+  "runtime_version_verified": false,
+  "application_experiment_executed": false,
+  "authentication_succeeded": false,
+  "remote_repository_created_or_modified": false,
+  "study_deposit_completed": false,
+  "sources": [
+    {
+      "path": "README.md",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/README.md",
+      "sha256": "94445e6839f987caaaf3b81af63aca381bfc1671b76b915a5d5bbdde6ea6632b"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/CONTRIBUTING.md",
+      "sha256": "3a1a890e26135af59adca7d619f192e65787f7f295d211d6d1e5e44ce9a3411b"
+    },
+    {
+      "path": "documentation/guides/CONTEXT_DATA_SAMPLE.md",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/CONTEXT_DATA_SAMPLE.md",
+      "sha256": "2a4f36552bf3bac7bc6335e7309ce11f41aa98dacea8a1f7832aae8d37090014"
+    },
+    {
+      "path": "documentation/guides/CONTEXT_DATA_AUTHORIZATION.md",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/CONTEXT_DATA_AUTHORIZATION.md",
+      "sha256": "7bb3397bb5786435fcedf61e5521e2aa1a5e788bf92e764a51e20d8f0cc9f38f"
+    },
+    {
+      "path": "documentation/guides/OIDC_ACCESS_SAMPLE.md",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/OIDC_ACCESS_SAMPLE.md",
+      "sha256": "b9ea9777fccf20ab72cdae1f199ce875de904cc3ad53494ed54a4820be370b3e"
+    },
+    {
+      "path": "documentation/guides/DATA_PLATFORM_DOMAINS.md",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/DATA_PLATFORM_DOMAINS.md",
+      "sha256": "d0d69af02426e873963c71ec29093affc7463f27a1254f1e8e86672bde41e954"
+    },
+    {
+      "path": "documentation/guides/CODING_GUIDELINES.md",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/CODING_GUIDELINES.md",
+      "sha256": "654bb55476fa9cef1c8b3e4a9a2b0c0746d0fb2eacf5a9ff8c6751976c6359b2"
+    },
+    {
+      "path": "infrastructure/int/configMap.yml",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/infrastructure/int/configMap.yml",
+      "sha256": "77389667e54169898b3661d31b0eddf3c4e65619eec33e27caeafd411f671cbf"
+    },
+    {
+      "path": "infrastructure/int/1-DataContext/Scorpio/deployment.yml",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/infrastructure/int/1-DataContext/Scorpio/deployment.yml",
+      "sha256": "c03d77b1ff884116e0511d95967786158db72866dad1878b91c1cf0229ce205a"
+    },
+    {
+      "path": "infrastructure/int/5-Proxy/APISIX/configMap.yml",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/infrastructure/int/5-Proxy/APISIX/configMap.yml",
+      "sha256": "aa2810b398f36a904a80927d0c8913637ed95f2831b683656dc28c43902d4d7d"
+    },
+    {
+      "path": "infrastructure/int/5-Proxy/OPA/configMap.yml",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/infrastructure/int/5-Proxy/OPA/configMap.yml",
+      "sha256": "39befdeb5068868af99945122b0f1bdba1d3329187f1d233a403b4abcfbd0abc"
+    },
+    {
+      "path": "backend-py/src/services/context_brokering_clients/scorpio_broker_client.py",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/backend-py/src/services/context_brokering_clients/scorpio_broker_client.py",
+      "sha256": "191051a9495a5154116ffade640d32231b671dc8df5a0546309f1ca16b6bc29d"
+    }
+  ],
+  "author_confirmed_open_registration": true,
+  "registration_statement_basis": "Author clarification on 2026-10-28: the integration environment is open and anyone can register.",
+  "registration_succeeded_in_revision_environment": false,
+  "access_observations": [
+    {
+      "path": "access_observation.json",
+      "checked_at_utc": "2026-10-28T05:59:30.134744+00:00",
+      "http_status": 503
+    },
+    {
+      "path": "followup_access_observation.json",
+      "checked_at_utc": "2026-10-28T06:24:59.870123+00:00",
+      "http_status": 503
+    }
+  ],
+  "access_observation_scope": "Both recorded API checks returned HTTP 503 in the revision environment before authentication; this does not contradict the author-confirmed availability of public registration."
+}

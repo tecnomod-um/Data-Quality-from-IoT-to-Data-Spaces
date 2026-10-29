@@ -1,0 +1,641 @@
+{
+  "schema_version": "1.0.0",
+  "review_date_utc": "2026-10-28",
+  "title": "EU LDT Toolbox capability evidence and profile measurement mapping",
+  "evidence_status": "published_source_verified_profile_runtime_measurements_not_executed",
+  "purpose": "Substantiate R2.2/R2.3/R2.4 using concrete published Toolbox implementations while preserving the boundary between source capability, local executed experiments, prepared integration and future runtime measurements.",
+  "source_pins": {
+    "dp": {
+      "project": "ldt-toolbox/eu_ldt_data_platform",
+      "project_id": 1917,
+      "tag": "DP-1.0.0",
+      "commit": "efc368c81a4e78d61615ba32b17c1c8dac35a174"
+    },
+    "dsr": {
+      "project": "ldt-toolbox/eu_ldt_data_space_ready",
+      "project_id": 1926,
+      "tag": "DSR-1.0.0",
+      "commit": "e5bdd28ddaf38a4473b5187a88567d737a22fb8e"
+    },
+    "im": {
+      "project": "ldt-toolbox/eu_ldt_identity_management",
+      "project_id": 1236,
+      "tag": "IM-1.0.0",
+      "commit": "7ee287e653cc70e76db18bf96b2974cd7560e585"
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "component": "dp",
+      "path": "README.md",
+      "locator": "Concepts: acquisition, historical data, storage, query and replication",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/README.md",
+      "sha256": "94445e6839f987caaaf3b81af63aca381bfc1671b76b915a5d5bbdde6ea6632b",
+      "bytes": 25043,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S02",
+      "component": "dp",
+      "path": "infrastructure/local/base/1-ContextData/Scorpio/deployment.yml",
+      "locator": "Scorpio container image and DBHOST",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/infrastructure/local/base/1-ContextData/Scorpio/deployment.yml",
+      "sha256": "d8047ce81b2b96ec7d57a2afdc9eb2f1f174bcb88b1d25433844701fb79e7774",
+      "bytes": 1785,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S03",
+      "component": "dp",
+      "path": "infrastructure/int/1-DataContext/TimeScaleDB/deployment.yml",
+      "locator": "TimescaleDB image, database ngb and persistent volume claim",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/infrastructure/int/1-DataContext/TimeScaleDB/deployment.yml",
+      "sha256": "3e9294c913e92a95064d21c50088c23723b95b88cd63fed3493cd8703087c6c1",
+      "bytes": 1982,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S04",
+      "component": "dp",
+      "path": "backend-py/src/services/context_brokering_clients/scorpio_broker_client.py",
+      "locator": "Native entity, temporal and subscription URLs; current and temporal methods",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/backend-py/src/services/context_brokering_clients/scorpio_broker_client.py",
+      "sha256": "191051a9495a5154116ffade640d32231b671dc8df5a0546309f1ca16b6bc29d",
+      "bytes": 42433,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S05",
+      "component": "dp",
+      "path": "backend-py/src/controllers/context/temporals.py",
+      "locator": "TemporalParams and explicit create/query/delete temporal routes",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/backend-py/src/controllers/context/temporals.py",
+      "sha256": "79f159c56896556dadc03b507c384d8a4ce59d6616e2a963de83ee085d236a0e",
+      "bytes": 9255,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S06",
+      "component": "dp",
+      "path": "backend-py/src/controllers/context/entity_operations.py",
+      "locator": "Batch update and delete controller routes",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/backend-py/src/controllers/context/entity_operations.py",
+      "sha256": "d19ee5fec6542e9c1eef88243d3b47f91b0afe031bfb5bf54ee67f3bad3559a6",
+      "bytes": 5187,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S07",
+      "component": "dp",
+      "path": "documentation/guides/CONTEXT_DATA_SUBSCRIPTION_SAMPLE.md",
+      "locator": "HTTP and MQTT notification examples with watched attributes",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/CONTEXT_DATA_SUBSCRIPTION_SAMPLE.md",
+      "sha256": "2b12a95dbaad95a834e3ccfa32fdc157a7029f9f4d8729eb5c8097592ab2491e",
+      "bytes": 4933,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S08",
+      "component": "dp",
+      "path": "backend-py/src/controllers/context/subscriptions.py",
+      "locator": "Subscription create/list/get/patch/delete controller",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/backend-py/src/controllers/context/subscriptions.py",
+      "sha256": "4d06788b29fece976e6317dfed0ee3874f5c56b211710d775541da9a178dd244",
+      "bytes": 7871,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S09",
+      "component": "dp",
+      "path": "documentation/guides/DATA_QUERY_CONFIG.md",
+      "locator": "Trino catalogue configuration for heterogeneous sources",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/DATA_QUERY_CONFIG.md",
+      "sha256": "f40374dc9e546f2c2ca077db2653a4eedea041c249a4f50e65160f946539c34c",
+      "bytes": 14633,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S10",
+      "component": "dp",
+      "path": "documentation/guides/DATA_QUERY_SAMPLE.md",
+      "locator": "Illustrative cross-catalogue JOIN and Trino /v1/statement",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/DATA_QUERY_SAMPLE.md",
+      "sha256": "646762fab30801a729fdbacb68289b1ee61f5c9fe88d7a12d5476381091b3f8f",
+      "bytes": 5973,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S11",
+      "component": "dp",
+      "path": "documentation/guides/DATA_REPLICATION.md",
+      "locator": "Debezium/Kafka CDC and replication API workflow",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/DATA_REPLICATION.md",
+      "sha256": "f23ca24a479b30d576a50746d73fc0c3aba2111f1119a131ec02af7d596f3f2d",
+      "bytes": 45639,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S12",
+      "component": "dp",
+      "path": "infrastructure/int/5-Proxy/APISIX/configMap.yml",
+      "locator": "/cb/* reverse proxy, OIDC and OPA",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/infrastructure/int/5-Proxy/APISIX/configMap.yml",
+      "sha256": "aa2810b398f36a904a80927d0c8913637ed95f2831b683656dc28c43902d4d7d",
+      "bytes": 11090,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S13",
+      "component": "dp",
+      "path": "infrastructure/int/5-Proxy/OPA/configMap.yml",
+      "locator": "Tenant-scoped roles for current, temporal, batch and subscription endpoints",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/infrastructure/int/5-Proxy/OPA/configMap.yml",
+      "sha256": "39befdeb5068868af99945122b0f1bdba1d3329187f1d233a403b4abcfbd0abc",
+      "bytes": 17594,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S14",
+      "component": "dp",
+      "path": "documentation/guides/CONTEXT_DATA_AUTHORIZATION.md",
+      "locator": "Context-data groups and minimum role distinctions",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/documentation/guides/CONTEXT_DATA_AUTHORIZATION.md",
+      "sha256": "7bb3397bb5786435fcedf61e5521e2aa1a5e788bf92e764a51e20d8f0cc9f38f",
+      "bytes": 5078,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S15",
+      "component": "dsr",
+      "path": "README.md",
+      "locator": "Data Space Ready identity, management and governance components",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/README.md",
+      "sha256": "fe9b971a25f92ab3250c10c72ccad3bb84b7bb6a3b45e98573a2e347c833949b",
+      "bytes": 10845,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S16",
+      "component": "dsr",
+      "path": "backend-py/src/services/adapters/catalogue_adapter_factory.py",
+      "locator": "TMF620 catalogue management for ngsi-ld/custom; EDC/SIMPL rejected for this operation",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/backend-py/src/services/adapters/catalogue_adapter_factory.py",
+      "sha256": "b0921abdca364547a464eba48008ad71d5d43abb52af699fbaeeb4f1423ea452",
+      "bytes": 3359,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S17",
+      "component": "dsr",
+      "path": "backend-py/src/services/adapters/search_adapter_factory.py",
+      "locator": "EDC and FDSC search dispatch",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/backend-py/src/services/adapters/search_adapter_factory.py",
+      "sha256": "b39d047d26fa0512cef484b1f15878ae8d339e6564fd56f39e82265eec5155c4",
+      "bytes": 2046,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S18",
+      "component": "dsr",
+      "path": "backend-py/src/services/adapters/policy_adapter_factory.py",
+      "locator": "EDC and FIWARE policy dispatch",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/backend-py/src/services/adapters/policy_adapter_factory.py",
+      "sha256": "a52e7c9ec7d4c456c570a7a80725d9563e0e0bfd7fd8ebcf1f5a70fd37934fb1",
+      "bytes": 2443,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S19",
+      "component": "dsr",
+      "path": "backend-py/src/services/adapters/edc_catalog_adapter.py",
+      "locator": "EDC catalog/request discovery and contract-offer retrieval",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/backend-py/src/services/adapters/edc_catalog_adapter.py",
+      "sha256": "5b776c533605bc5dd1fb4940b0ed150fe1039a2af2a20f35bfe5fef401ea6b9e",
+      "bytes": 22773,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S20",
+      "component": "dsr",
+      "path": "backend-py/src/services/adapters/edc_contract_negotiation_adapter.py",
+      "locator": "EDC negotiation initiation, lookup, acceptance and status",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/backend-py/src/services/adapters/edc_contract_negotiation_adapter.py",
+      "sha256": "362d67632cdc1c243062a1820d17cd332a006588c562be3c529d584ab12fb7e2",
+      "bytes": 29326,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S21",
+      "component": "dsr",
+      "path": "backend-py/src/services/adapters/edc_transfer_adapter.py",
+      "locator": "EDC transfer-process and EDR endpoints; HTTP PUSH/PULL and S3 destination construction",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/backend-py/src/services/adapters/edc_transfer_adapter.py",
+      "sha256": "ad406018269112281145fbb50195a2e8752d3b5f0d45d5491fa5b297044b3d77",
+      "bytes": 28021,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S22",
+      "component": "dsr",
+      "path": "backend-py/src/services/contract_management/transfer_service.py",
+      "locator": "Connector/contract validation followed by EDC transfer adapter",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/backend-py/src/services/contract_management/transfer_service.py",
+      "sha256": "134e78cf90493cee9a95023dec9cbdf45bde32ba27e7042cde44a2b834e79b7e",
+      "bytes": 20622,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S23",
+      "component": "dsr",
+      "path": "documentation/guides/FIWARE_CONNECTOR_INTEGRATION_GUIDE.md",
+      "locator": "FIWARE identity federation, token exchange, connector registration and credential issuance",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/documentation/guides/FIWARE_CONNECTOR_INTEGRATION_GUIDE.md",
+      "sha256": "d5b4b946b3ede20151d1e86c3ea66618c5d86127ac572dd4911350f8ecf4c910",
+      "bytes": 51564,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S24",
+      "component": "dsr",
+      "path": "documentation/guides/SIMPL_CONNECTOR_SUPPORT.md",
+      "locator": "SIMPL type/verification readiness; full adapters and factory registration remain implementation steps",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/documentation/guides/SIMPL_CONNECTOR_SUPPORT.md",
+      "sha256": "cb882364bfac1c93b81f19069d725c9004445eab1d973954641f8f018f113d38",
+      "bytes": 3926,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S25",
+      "component": "dp",
+      "path": "tests/performance/load_tests.py",
+      "locator": "Locust current, batch, geographic and temporal operation workload",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/tests/performance/load_tests.py",
+      "sha256": "7e6cb2bfaaf594ac9690ab351a340fc80b81a8279ce549b5a2c3a564be56068f",
+      "bytes": 11849,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S26",
+      "component": "dp",
+      "path": "tests/performance/stress_tests.py",
+      "locator": "Locust query, attribute, type, subscription-list and temporal workload",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/tests/performance/stress_tests.py",
+      "sha256": "3a01289e974fbe030457a24cfde31b770d4cd8bd7481ad6cc56aa73bc3ddbb8b",
+      "bytes": 2774,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S27",
+      "component": "dp",
+      "path": "tests/performance/trino_load_test.py",
+      "locator": "Trino SHOW CATALOGS workload",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/tests/performance/trino_load_test.py",
+      "sha256": "00505e15b935c225d02343b7cd926d9cbe13a7164457bab3c50d6352cd52251f",
+      "bytes": 1636,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S28",
+      "component": "dp",
+      "path": "tests/performance/calculate_averages.py",
+      "locator": "Average CPU/memory calculation from generated docker-stat CSVs",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/tests/performance/calculate_averages.py",
+      "sha256": "7be64fd278294545ef9508ece29b8bab875e63a6d5732496552b09b380e5c09f",
+      "bytes": 1665,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S29",
+      "component": "dp",
+      "path": "Makefile",
+      "locator": "performance-tests-scorpio and performance-tests-trino generate CSV reports",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/efc368c81a4e78d61615ba32b17c1c8dac35a174/Makefile",
+      "sha256": "fe4add0f286723a6dcfa38a33f30a339a5651187c63bc72291b0bfd4f90cf62e",
+      "bytes": 62440,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S30",
+      "component": "dsr",
+      "path": "documentation/guides/STRESS_TESTING.md",
+      "locator": "Performance methodology, expected reports and acceptance targets; not captured measurements",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/documentation/guides/STRESS_TESTING.md",
+      "sha256": "b3d213e29539b6202633c8d3072b6fb65d4a38ae02982a98fbda86b2c670fb55",
+      "bytes": 14967,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S31",
+      "component": "dsr",
+      "path": "tests/performance/Makefile",
+      "locator": "Locust load/stress harness entry points and report generation",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_space_ready/-/blob/e5bdd28ddaf38a4473b5187a88567d737a22fb8e/tests/performance/Makefile",
+      "sha256": "0eadc34449f44035b3359a9696c0a29f2a0ad5842f9255e8389233b6ec68ca2e",
+      "bytes": 9778,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    },
+    {
+      "id": "S32",
+      "component": "im",
+      "path": "README.md",
+      "locator": "Keycloak-based identity and access-management component",
+      "url": "https://code.europa.eu/ldt-toolbox/eu_ldt_identity_management/-/blob/7ee287e653cc70e76db18bf96b2974cd7560e585/README.md",
+      "sha256": "8e5b45a8276dfa068d4ad6bbb23781b14280169fd7d62508aaae0ce183950e22",
+      "bytes": 7225,
+      "evidence_class": "published_source_or_maintainer_documentation_not_runtime_observation"
+    }
+  ],
+  "capability_matrix": [
+    {
+      "id": "C1",
+      "reviewer_items": [
+        "R2.2",
+        "R2.3"
+      ],
+      "capability": "Current context entities and native quality query",
+      "published_implementation": "The pinned Data Platform configures Scorpio java-6.0.0. APISIX forwards /cb/* to the broker after removing /cb. Native entities and entityOperations endpoints coexist with Python wrapper APIs.",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S06",
+        "S12",
+        "S13"
+      ],
+      "profile_mapping": "Publish observations and linked assessments with the supplied JSON-LD context; evaluate the proposed nested quality predicate through the native broker route; retrieve evidence before the consumer accepts a value.",
+      "prepared_artifact": "probe.py contains UUID-scoped synthetic entity publication, broker-side quality query, consumer evidence checks and owned-record cleanup; offline transport-double tests have passed.",
+      "additional_observation_required": "Successful broker responses, actual image/configuration, native query results and independent consumer decisions. The current native-route candidate has only returned an upstream HTTP 503 from this revision environment."
+    },
+    {
+      "id": "C2",
+      "reviewer_items": [
+        "R2.2",
+        "R2.4"
+      ],
+      "capability": "Persistent context store, temporal history and batch operations",
+      "published_implementation": "The INT manifest uses timescale/timescaledb-ha:pg17-ts2.18-oss with database ngb, logical WAL and timescaledb-pvc mounted at /var/lib/postgresql/data. Source exposes separate current-entity and temporal-entity APIs, with temporal predicates and explicit temporal writes; batch update/delete are also implemented.",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "profile_mapping": "Store current quality state and assess time-bounded histories separately. Compare the same observation corpus with baseline, per-observation evidence and window-level evidence encodings.",
+      "prepared_artifact": "The existing local experiment measures serialized component bytes and assembly/hash/signing time. The bounded broker runner does not measure database relations, indexes, WAL or retained history.",
+      "additional_observation_required": "Record effective history/retention configuration and actual stored sample counts; measure database/table/index growth separately from request-body bytes and WAL. A mounted persistent volume is not a durability or performance measurement."
+    },
+    {
+      "id": "C3",
+      "reviewer_items": [
+        "R2.2",
+        "R2.3",
+        "R2.4"
+      ],
+      "capability": "Subscriptions and evidence updates",
+      "published_implementation": "Subscription create/read/update/delete methods and maintainer HTTP/MQTT callback examples are present, including entity selectors, watched attributes and throttling.",
+      "source_ids": [
+        "S04",
+        "S07",
+        "S08",
+        "S13"
+      ],
+      "profile_mapping": "Notify a consumer when value or quality state changes, with an evidence link and correlation identifier; verify that the consumer rejects stale or inconsistent evidence.",
+      "prepared_artifact": "The manuscript specifies the proposed callback path. The existing probe does not create or measure subscriptions.",
+      "additional_observation_required": "Capture subscription acceptance, callback payloads/timestamps, unique updates, duplicates, missing updates, retries and controlled restart recovery with a reachable owned receiver."
+    },
+    {
+      "id": "C4",
+      "reviewer_items": [
+        "R2.2",
+        "R2.3"
+      ],
+      "capability": "Queries across stores and CDC replication",
+      "published_implementation": "Trino catalogues cover PostgreSQL, TimescaleDB, MongoDB, Hive/MinIO, Kafka and an OpenAPI backend; the sample shows a cross-catalogue SQL JOIN and /v1/statement. Debezium/Kafka CDC has a documented configuration/start/consume workflow.",
+      "source_ids": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "profile_mapping": "Join retained observations with device/evidence metadata, or replicate change events while retaining evidence identifiers and hashes.",
+      "prepared_artifact": "This is a source-grounded integration mapping; the local RDF/SPARQL query is a separate executed component test.",
+      "additional_observation_required": "Observe connector mappings and exact evidence-preserving query/replication output. SQL across stores and CDC do not establish governed cross-party exchange or deployed cross-broker federation."
+    },
+    {
+      "id": "C5",
+      "reviewer_items": [
+        "R2.2",
+        "R2.3"
+      ],
+      "capability": "Identity and tenant-scoped authorization",
+      "published_implementation": "The identity component is Keycloak-based. DP APISIX applies OIDC and OPA. Native requests use NGSILD-Tenant; non-admin authorization uses /context-data/<tenant>/<role> groups for consumer, producer and subscriptor operations.",
+      "source_ids": [
+        "S12",
+        "S13",
+        "S14",
+        "S32"
+      ],
+      "profile_mapping": "Use distinct producer and consumer credentials in an assigned experimental tenant, plus a subscriptor role for subscription management. Test expected allow and deny cases with authorized test accounts.",
+      "prepared_artifact": "The prepared runner accepts short-lived environment tokens, optional separate consumer token and a scoped tenant. Author-confirmed open registration is recorded separately from source and runtime evidence.",
+      "additional_observation_required": "Record sanitized subject/role/tenant metadata and actual access decisions; open registration does not by itself establish a usable tenant assignment or deployed quality-profile transaction."
+    },
+    {
+      "id": "C6",
+      "reviewer_items": [
+        "R2.2",
+        "R2.3"
+      ],
+      "capability": "Catalogue discovery and governed connector exchange",
+      "published_implementation": "DSR has connector-specific implementations: TMF620 catalogue management for ngsi-ld/custom; EDC and FDSC search; EDC/FIWARE policy dispatch; EDC catalogue discovery, negotiation and transfer-process/EDR services; FIWARE identity federation and credential-issuance guidance.",
+      "source_ids": [
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24"
+      ],
+      "profile_mapping": "Publish a dataset/evidence distribution through a supported connector, let an independent consumer discover it, negotiate or satisfy the applicable policy, transfer it and verify the evidence hash before accepting data.",
+      "prepared_artifact": "The package supplies the evidence model, transformations and single-broker probe; it does not yet contain a captured DSR catalogue/contract/transfer run.",
+      "additional_observation_required": "Capture actual connector versions/IDs, asset/offer identifiers, policy decision, agreement/transfer IDs and source/consumer content hashes. EDC catalogue CRUD is not supported by the TMF620 factory; SIMPL full adapters are described as an implementation path. Published adapter code is not a completed two-party profile experiment."
+    }
+  ],
+  "native_gateway_contract": {
+    "prefix": "/cb/ngsi-ld/v1",
+    "runtime_status": "candidate_route_derived_from_pinned_source_not_successfully_exercised",
+    "tenant_header": "NGSILD-Tenant",
+    "context_transport": "Inline JSON-LD context for direct publication; broker-reachable HTTPS context in Link for query terms.",
+    "role_groups": "/context-data/<tenant>/<consumer|producer|subscriptor|admin>",
+    "routes": [
+      {
+        "path": "/entities",
+        "read": [
+          "consumer",
+          "producer",
+          "admin"
+        ],
+        "write": [
+          "producer",
+          "admin"
+        ]
+      },
+      {
+        "path": "/temporal/entities",
+        "read": [
+          "consumer",
+          "producer",
+          "admin"
+        ],
+        "write": [
+          "producer",
+          "admin"
+        ]
+      },
+      {
+        "path": "/entityOperations",
+        "read": [],
+        "write": [
+          "producer",
+          "admin"
+        ]
+      },
+      {
+        "path": "/subscriptions",
+        "read": [
+          "subscriptor",
+          "admin"
+        ],
+        "write": [
+          "subscriptor",
+          "admin"
+        ]
+      }
+    ],
+    "source_ids": [
+      "S04",
+      "S12",
+      "S13"
+    ],
+    "wrapper_caveat": "The inspected Python create_entity wrapper removes inline @context before forwarding application/json. The prepared probe uses the native /cb route to preserve its proposed quality context; deployment behavior still requires observation."
+  },
+  "reviewer_mapping": [
+    {
+      "reviewer_item": "R2.2",
+      "source_supported_response": "Concrete published broker, persistence, catalogue/connector and identity components now replace a diagram-only platform description. Local evidence-dependent consumer checks exist and the broker runner is prepared.",
+      "capability_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "remaining_empirical_boundary": "No successful broker/catalogue/connector run of this study profile was captured."
+    },
+    {
+      "reviewer_item": "R2.3",
+      "source_supported_response": "A broker-native quality-query route and role contract are specified; actual DSR discovery/policy/contract/transfer implementations identify a concrete two-party integration path.",
+      "capability_ids": [
+        "C1",
+        "C5",
+        "C6"
+      ],
+      "remaining_empirical_boundary": "Prepared query logic and upstream adapters do not supply actual independent-party transaction traces."
+    },
+    {
+      "reviewer_item": "R2.4",
+      "source_supported_response": "Retain measured local component-byte and assembly/hash/signing results; add store-specific and query/subscription protocols grounded in the upstream persistence and performance harness.",
+      "capability_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "remaining_empirical_boundary": "No study-specific persistent-storage, native-query or subscription overhead measurement is available."
+    }
+  ],
+  "public_performance_audit": {
+    "source_ids": [
+      "S25",
+      "S26",
+      "S27",
+      "S28",
+      "S29",
+      "S30",
+      "S31"
+    ],
+    "checked_scope": "Pinned DP tests/performance files and Makefile; DSR tests/performance tree, Makefile and STRESS_TESTING guide; official Toolbox portal indexed pages and targeted official-domain search.",
+    "finding": "Runnable load-test scripts and report-generation instructions were located. No captured numerical benchmark for this quality profile, or reusable measured output accompanying these inspected harness files, was located.",
+    "limits": "This is a scoped search finding, not proof that no Toolbox benchmark exists elsewhere. Maintainer example payloads, load settings, acceptance thresholds and release feature lists are not measured outcomes.",
+    "dp_details": "Locust scripts exercise entity/batch/geo/temporal operations; another script queries subscriptions and entity/temporal state. The inspected Trino script runs SHOW CATALOGS. The Makefile writes reports/performance CSVs, and calculate_averages.py expects docker-stat CSV inputs; these captured inputs were not present in the inspected pinned source tree.",
+    "dsr_details": "The guide describes generated HTML/CSV statistics and suggested latency/error acceptance criteria. Its example success thresholds are targets; no achieved result was inferred. Some prose labels stress features planned while source contains stress scenarios, so no claim is made that the whole stress suite has been empirically validated.",
+    "transferability": "Even a measured upstream workload would require its hardware, versions, operation mix, payload size, tenant/role path and uncertainty to match before its numbers could inform this profile. It cannot substitute for the proposed matched-profile experiment."
+  },
+  "measurement_protocol": [
+    {
+      "id": "P1",
+      "stage": "Controlled workload and provenance",
+      "proposed_design": "Use exactly the same 3,600 measured synthetic observations, values, timestamps and quality cases in three encodings: baseline, per-observation assessment, and 60-second window assessment. The proposed primary workload is one hour at 1 Hz, with seven measured repetitions per mode in interleaved order. Each run has 60 warm-up observations, excluded from measured records and timings and cleared before the storage baseline. Declare sensor count and actual achieved rates; accelerated replay, if used, is a separately reported experiment.",
+      "controls": "Pin deployed broker/database/gateway/connector images, host resources, tenant, context URL/hash, retention, batching, concurrency, compression, signing and caching. Use separate owned run IDs. Define the common acceptance mask and eligible observation IDs as external fixture ground truth. Baseline records contain no quality sub-properties or assessments. The two quality modes implement the declared immediate-gate policy and runtime vocabulary.",
+      "outputs": "Workload hash, complete configuration, raw per-run request records and operation counts.",
+      "status": "specified_future_measurement_not_executed",
+      "runtime_vocabulary": {
+        "archive_quality_level": "synthetic-valid",
+        "prospective_eligible_runtime_quality_level": "valid",
+        "mapping_scope": "The future broker fixture declares a versioned test-policy/context mapping from the archive label synthetic-valid to valid for the corresponding eligible runtime test case. Invalid or failed-gate cases retain the decisions prescribed by the test policy.",
+        "archived_fixture_and_results_modified": false
+      }
+    },
+    {
+      "id": "P2",
+      "stage": "Current and temporal storage",
+      "proposed_design": "Measure serialized payload bytes, database relation/table bytes, index bytes and WAL growth as distinct quantities before and after each matched workload. Report current-entity and retained-history results separately; verify actual sample and assessment counts.",
+      "controls": "Identical database version/schema/indexes and history/retention policy; isolated experimental tenant or database; reset only owned experimental records. Exclude and clear the 60 warm-up observations and their assessments before taking each storage baseline, then verify exactly 3,600 measured observation records. Record checkpoint/compaction timing and distinguish deletion from physical reclamation. Do not infer persistent history from a latest-value entity read.",
+      "outputs": "Per-run storage deltas with measurement commands, relation inventory, row/sample counts and collection times.",
+      "status": "specified_future_measurement_not_executed"
+    },
+    {
+      "id": "P3",
+      "stage": "Matched native queries",
+      "proposed_design": "The baseline executes only a matched-ID selector using the external acceptance mask. Each quality-bearing mode executes that selector control and its native quality predicate against the same expected observation IDs, returned attributes, result cardinality and pagination. Collect at least 100 timed requests per query per run after query warm-up, reporting median/p95 with sample counts, errors and throughput. Separately report the practical unfiltered-versus-filtered scenario.",
+      "controls": "Do not apply a quality predicate to baseline entities that lack quality attributes. Use the declared prospective test-policy/context vocabulary, including the explicit synthetic-valid-to-valid mapping, without modifying the archived fixture or results. Distinguish cold/warm cache and fixed concurrency. Include evidence fetch and validation in a separately labelled end-to-end consumer metric. Never compare three returned entities with one and call the difference predicate overhead.",
+      "outputs": "Exact predicates, expected/observed ID sets, query-result hashes, response bytes, per-request latencies/errors and per-run summaries.",
+      "status": "specified_future_measurement_not_executed"
+    },
+    {
+      "id": "P4",
+      "stage": "Subscriptions, loss and recovery",
+      "proposed_design": "Use an owned reachable callback and fixed entity/attribute selectors, fan-out and throttling. Assign correlation/sequence IDs; count expected qualifying updates, received unique updates, duplicate deliveries and updates missing at a stated deadline. Report callback payload bytes and median/p95 source-to-receiver delay, plus a separately authorized controlled restart/recovery scenario.",
+      "controls": "Record source and callback clock synchronization/error, HTTP acknowledgement behavior, timeout/retry policy and deadline. Prefer a common measurement clock when possible. Use a subscriptor role; restart only a dedicated experimental deployment, not the shared public service.",
+      "outputs": "Subscription definitions, sanitized callback journal, sequence accounting, timing method and restart/recovery trace.",
+      "status": "specified_future_measurement_not_executed"
+    },
+    {
+      "id": "P5",
+      "stage": "Independent producer/consumer and governed exchange",
+      "proposed_design": "Use separate processes and credentials for provider and consumer. On one supported DSR connector path, record catalogue discovery, policy/contract decision and data transfer. Include allowed quality evidence, denied access, stale evidence and digest mismatch cases, and capture each consumer decision.",
+      "controls": "Pin connector type/version and endpoints actually configured. Retain asset/offer/agreement/transfer IDs and issuer/key references without storing secrets. Keep simple two-process broker access distinct from a cross-organization governed transfer.",
+      "outputs": "Sanitized transaction chain, policy decisions, source and consumer payload hashes, evidence validation outcome and cleanup inventory.",
+      "status": "specified_future_measurement_not_executed"
+    }
+  ],
+  "study_execution_boundary": {
+    "real_ngsi_ld_broker_executed": false,
+    "data_space_connector_executed": false,
+    "municipal_deployment_evaluated": false,
+    "existing_executed_evidence": "Local JSON Schema/RDF/SHACL/SPARQL/runtime-gate/signature tests; local 3,600-observation serialization/hash/signing experiment; separately documented historical paired-data descriptive analysis.",
+    "prepared_runner": "probe.py with offline test-double verification; no subscription/storage/cross-party measurement capability is attributed to that bounded runner.",
+    "reachability_records": [
+      "access_observation.json",
+      "followup_access_observation.json"
+    ],
+    "latest_observation": "2026-10-28T06:24:59.870123+00:00: unauthenticated bounded GET returned HTTP 503 with upstream connection timeout before profile execution; elapsed 5.013 seconds is reachability timing, not a benchmark.",
+    "author_confirmed_open_registration": true,
+    "public_release_of_study_artifacts_verified": false,
+    "new_live_probes_performed_for_this_addendum": false
+  }
+}

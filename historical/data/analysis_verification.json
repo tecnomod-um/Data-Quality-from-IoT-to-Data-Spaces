@@ -1,0 +1,330 @@
+{
+  "source_columns_sha256": "b7dca4c3eca7bc555db30f73c8e8c88040a7f72ef89f19e160ed0687d7650b06",
+  "protected_source_columns": [
+    "dataset_id",
+    "series_id",
+    "pollutant",
+    "device_identity",
+    "reference_identity",
+    "source_row",
+    "pdf_page",
+    "pdf_page_end",
+    "page_row",
+    "timestamp_source",
+    "timestamp_iso",
+    "timezone_status",
+    "sensor_value",
+    "reference_value",
+    "pair_status",
+    "reported_unit",
+    "unit_status",
+    "source_row_text"
+  ],
+  "source_columns_unchanged": true,
+  "rows": 12610,
+  "complete_pairs": 12168,
+  "confirmed_unit_complete_pairs": 7370,
+  "pair_status_counts": {
+    "complete": 12168,
+    "reference_missing": 367,
+    "sensor_missing": 69,
+    "both_missing": 6
+  },
+  "independent_numeric_check": "Decimal precision50, raw-moment formulas versus centred binary-float analysis",
+  "relative_or_absolute_tolerance": 1e-10,
+  "numeric_comparisons": 48,
+  "maximum_absolute_numeric_difference": 3.123106645557433e-15,
+  "comparisons": [
+    {
+      "pollutant": "NO2",
+      "metric": "bias_sensor_minus_reference",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "pollutant": "NO2",
+      "metric": "mae",
+      "absolute_difference": 1e-15,
+      "passed": true
+    },
+    {
+      "pollutant": "NO2",
+      "metric": "rmse",
+      "absolute_difference": 3.537346245464289e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "NO2",
+      "metric": "pearson_r",
+      "absolute_difference": 7.030072513393127e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "NO2",
+      "metric": "ols_slope_sensor_on_reference",
+      "absolute_difference": 2.3412410278773637e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "NO2",
+      "metric": "ols_intercept_sensor_on_reference",
+      "absolute_difference": 6.676991227646466e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "NO",
+      "metric": "bias_sensor_minus_reference",
+      "absolute_difference": 3.807106598984771e-18,
+      "passed": true
+    },
+    {
+      "pollutant": "NO",
+      "metric": "mae",
+      "absolute_difference": 1.8781725888324873e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "NO",
+      "metric": "rmse",
+      "absolute_difference": 6.764706708018294e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "NO",
+      "metric": "pearson_r",
+      "absolute_difference": 1.1546213641015098e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "NO",
+      "metric": "ols_slope_sensor_on_reference",
+      "absolute_difference": 6.341677098159712e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "NO",
+      "metric": "ols_intercept_sensor_on_reference",
+      "absolute_difference": 1.1179019462651774e-15,
+      "passed": true
+    },
+    {
+      "pollutant": "O3",
+      "metric": "bias_sensor_minus_reference",
+      "absolute_difference": 3.979328165374677e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "O3",
+      "metric": "mae",
+      "absolute_difference": 1.4056847545219638e-15,
+      "passed": true
+    },
+    {
+      "pollutant": "O3",
+      "metric": "rmse",
+      "absolute_difference": 3.3106086095727964e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "O3",
+      "metric": "pearson_r",
+      "absolute_difference": 3.4000064261926926e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "O3",
+      "metric": "ols_slope_sensor_on_reference",
+      "absolute_difference": 5.653173385195512e-18,
+      "passed": true
+    },
+    {
+      "pollutant": "O3",
+      "metric": "ols_intercept_sensor_on_reference",
+      "absolute_difference": 1.2254867509938193e-15,
+      "passed": true
+    },
+    {
+      "pollutant": "SO2",
+      "metric": "bias_sensor_minus_reference",
+      "absolute_difference": 9.906542056074766e-18,
+      "passed": true
+    },
+    {
+      "pollutant": "SO2",
+      "metric": "mae",
+      "absolute_difference": 1.1775700934579439e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "SO2",
+      "metric": "rmse",
+      "absolute_difference": 3.812106913804213e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "SO2",
+      "metric": "pearson_r",
+      "absolute_difference": 5.545294129431644e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "SO2",
+      "metric": "ols_slope_sensor_on_reference",
+      "absolute_difference": 1.2421439875043673e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "SO2",
+      "metric": "ols_intercept_sensor_on_reference",
+      "absolute_difference": 3.3080132355056825e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "CO",
+      "metric": "bias_sensor_minus_reference",
+      "absolute_difference": 2.6758620689655173e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "CO",
+      "metric": "mae",
+      "absolute_difference": 1.6551724137931034e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "CO",
+      "metric": "rmse",
+      "absolute_difference": 2.2152428497140002e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "CO",
+      "metric": "pearson_r",
+      "absolute_difference": 3.846720034393666e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "CO",
+      "metric": "ols_slope_sensor_on_reference",
+      "absolute_difference": 2.6962025316455697e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "CO",
+      "metric": "ols_intercept_sensor_on_reference",
+      "absolute_difference": 6.329113924050633e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "PM10",
+      "metric": "bias_sensor_minus_reference",
+      "absolute_difference": 9.081908190819082e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "PM10",
+      "metric": "mae",
+      "absolute_difference": 3.2313231323132313e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "PM10",
+      "metric": "rmse",
+      "absolute_difference": 3.5871994657872884e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "PM10",
+      "metric": "pearson_r",
+      "absolute_difference": 1.9805536926174634e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "PM10",
+      "metric": "ols_slope_sensor_on_reference",
+      "absolute_difference": 1.6953627352975185e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "PM10",
+      "metric": "ols_intercept_sensor_on_reference",
+      "absolute_difference": 3.123106645557433e-15,
+      "passed": true
+    },
+    {
+      "pollutant": "PM2.5",
+      "metric": "bias_sensor_minus_reference",
+      "absolute_difference": 7.857785778577857e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "PM2.5",
+      "metric": "mae",
+      "absolute_difference": 2.7002700270027e-18,
+      "passed": true
+    },
+    {
+      "pollutant": "PM2.5",
+      "metric": "rmse",
+      "absolute_difference": 3.9995627761378695e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "PM2.5",
+      "metric": "pearson_r",
+      "absolute_difference": 9.470728418444223e-18,
+      "passed": true
+    },
+    {
+      "pollutant": "PM2.5",
+      "metric": "ols_slope_sensor_on_reference",
+      "absolute_difference": 2.3737231675991142e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "PM2.5",
+      "metric": "ols_intercept_sensor_on_reference",
+      "absolute_difference": 5.783354796927992e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "PM1",
+      "metric": "bias_sensor_minus_reference",
+      "absolute_difference": 1.4664443518132556e-15,
+      "passed": true
+    },
+    {
+      "pollutant": "PM1",
+      "metric": "mae",
+      "absolute_difference": 1.3789078782826178e-15,
+      "passed": true
+    },
+    {
+      "pollutant": "PM1",
+      "metric": "rmse",
+      "absolute_difference": 1.328557637477923e-16,
+      "passed": true
+    },
+    {
+      "pollutant": "PM1",
+      "metric": "pearson_r",
+      "absolute_difference": 6.646499123109702e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "PM1",
+      "metric": "ols_slope_sensor_on_reference",
+      "absolute_difference": 2.6614795221077858e-17,
+      "passed": true
+    },
+    {
+      "pollutant": "PM1",
+      "metric": "ols_intercept_sensor_on_reference",
+      "absolute_difference": 5.343741269575395e-16,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "metrics_csv_sha256": "75d824830d147e31fffee2200542f5a83e1a34e3a2e0f93106c51e13f79a56c6",
+  "scope": "Numerical and provenance integrity; no independent certification of the source measurements or author assertions."
+}

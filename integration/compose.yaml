@@ -1,0 +1,23 @@
+# OPTIONAL INTEGRATION RECIPE. NOT EXECUTED FOR THE REPORTED MANUSCRIPT RESULTS.
+# This deploys two brokers, not an IDSA/Gaia-X data-space connector.
+# Use only in an isolated test environment. There is no authentication/TLS here.
+services:
+  contexts:
+    image: python:3.12.8-alpine
+    working_dir: /contexts
+    volumes: ["../contexts:/contexts:ro"]
+    command: ["python", "-m", "http.server", "8080", "--bind", "0.0.0.0"]
+  mongo-a:
+    image: mongo:6.0.20
+  mongo-b:
+    image: mongo:6.0.20
+  broker-a:
+    image: quay.io/fiware/orion-ld:1.12.0
+    depends_on: [mongo-a, contexts]
+    ports: ["127.0.0.1:1026:1026"]
+    command: ["-dbhost", "mongo-a", "-logLevel", "ERROR"]
+  broker-b:
+    image: quay.io/fiware/orion-ld:1.12.0
+    depends_on: [mongo-b, contexts]
+    ports: ["127.0.0.1:1027:1026"]
+    command: ["-dbhost", "mongo-b", "-logLevel", "ERROR"]

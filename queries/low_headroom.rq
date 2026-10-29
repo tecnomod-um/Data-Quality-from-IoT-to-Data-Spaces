@@ -1,0 +1,7 @@
+PREFIX dqv: <http://www.w3.org/ns/dqv#>
+PREFIX ex: <https://example.org/dq-profile#>
+SELECT ?measurement ?value ?limit WHERE {
+ ?measurement a dqv:QualityMeasurement ; dqv:isMeasurementOf ex:expanded_uncertainty_at_limit ;
+ dqv:value ?value ; ex:thresholdMax ?limit .
+ FILTER (?value / ?limit > 0.90)
+} ORDER BY ?measurement

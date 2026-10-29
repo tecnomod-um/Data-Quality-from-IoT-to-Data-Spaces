@@ -1,0 +1,857 @@
+[
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:regression_a",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:regression_a",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:regression_a",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:regression_b",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:regression_b",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:regression_b",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:u_between_sensors",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:u_between_sensors",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:u_between_sensors",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:expanded_uncertainty_at_limit",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D1:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:expanded_uncertainty_at_limit",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D2:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:expanded_uncertainty_at_limit",
+    "context": "2024-11-02/2024-12-11",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO2:D3:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:regression_a",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:regression_a",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:regression_a",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:regression_b",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:regression_b",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:regression_b",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:u_between_sensors",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:u_between_sensors",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:u_between_sensors",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:expanded_uncertainty_at_limit",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D1:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:expanded_uncertainty_at_limit",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D2:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:expanded_uncertainty_at_limit",
+    "context": "2025-07-29/2025-09-06",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:O3:D3:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:regression_a",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:regression_a",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:regression_a",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:regression_b",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:regression_b",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:regression_b",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:u_between_sensors",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:u_between_sensors",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:u_between_sensors",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:expanded_uncertainty_at_limit",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D1:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:expanded_uncertainty_at_limit",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D2:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:expanded_uncertainty_at_limit",
+    "context": "2025-05-02/2025-06-10",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:NO:D3:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:regression_a",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:regression_a",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:regression_a",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:regression_b",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:regression_b",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:regression_b",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:u_between_sensors",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:u_between_sensors",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:u_between_sensors",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:expanded_uncertainty_at_limit",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D1:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:expanded_uncertainty_at_limit",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D2:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:expanded_uncertainty_at_limit",
+    "context": "2024-12-13/2025-01-21",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:CO:D3:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:regression_a",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:regression_a",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:regression_a",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:regression_b",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:regression_b",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:regression_b",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:u_between_sensors",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:u_between_sensors",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:u_between_sensors",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:expanded_uncertainty_at_limit",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D1:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:expanded_uncertainty_at_limit",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D2:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:expanded_uncertainty_at_limit",
+    "context": "2024-11-22/2024-12-31",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:SO2:D3:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:regression_a",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:regression_a",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:regression_a",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:regression_b",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:regression_b",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:regression_b",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:u_between_sensors",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:u_between_sensors",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:u_between_sensors",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:expanded_uncertainty_at_limit",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D1:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:expanded_uncertainty_at_limit",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D2:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:expanded_uncertainty_at_limit",
+    "context": "2026-03-10/2026-04-18",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM2.5:D3:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:regression_a",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:regression_a",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:regression_a",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:regression_a"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:regression_b",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:regression_b",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:regression_b",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:regression_b"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:u_between_sensors",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:u_between_sensors",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:u_between_sensors",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:u_between_sensors"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:expanded_uncertainty_at_limit",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D1:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:expanded_uncertainty_at_limit",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D2:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:expanded_uncertainty_at_limit",
+    "context": "2026-03-07/2026-04-15",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:field:PM10:D3:expanded_uncertainty_at_limit"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:repeatability_r",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:repeatability_r"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:limit_of_detection",
+    "context": "controlled laboratory Step 1",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:limit_of_detection"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D1:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D2:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO:D3:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:response_time_up",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:response_time_up"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:response_time_down",
+    "context": "controlled laboratory Step 1; 1 h averaging period",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:response_time_down"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:relative_error",
+    "context": "controlled concentration 105 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:relative_error:context-f3ce2859e187"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:relative_error",
+    "context": "controlled concentration 105 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:relative_error:context-f3ce2859e187"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:relative_error",
+    "context": "controlled concentration 105 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:relative_error:context-f3ce2859e187"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:relative_error",
+    "context": "controlled concentration 26 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D1:relative_error:context-d6b1094b23eb"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:relative_error",
+    "context": "controlled concentration 26 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D2:relative_error:context-d6b1094b23eb"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:relative_error",
+    "context": "controlled concentration 26 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:NO2:D3:relative_error:context-d6b1094b23eb"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:relative_error",
+    "context": "controlled concentration 60 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:relative_error:context-433fa3dc8db3"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:relative_error",
+    "context": "controlled concentration 60 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:relative_error:context-433fa3dc8db3"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:relative_error",
+    "context": "controlled concentration 60 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:relative_error:context-433fa3dc8db3"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:relative_error",
+    "context": "controlled concentration 50 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D1:relative_error:context-681ba9840f4d"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:relative_error",
+    "context": "controlled concentration 50 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D2:relative_error:context-681ba9840f4d"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:relative_error",
+    "context": "controlled concentration 50 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:O3:D3:relative_error:context-681ba9840f4d"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:relative_error",
+    "context": "controlled concentration 5020 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:relative_error:context-3f7a6044a4cc"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:relative_error",
+    "context": "controlled concentration 5020 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:relative_error:context-3f7a6044a4cc"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:relative_error",
+    "context": "controlled concentration 5020 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:relative_error:context-3f7a6044a4cc"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:relative_error",
+    "context": "controlled concentration 2010 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D1:relative_error:context-708e4665fcee"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:relative_error",
+    "context": "controlled concentration 2010 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D2:relative_error:context-708e4665fcee"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:relative_error",
+    "context": "controlled concentration 2010 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:CO:D3:relative_error:context-708e4665fcee"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error",
+    "context": "controlled concentration 132 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-3add45a0d284"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error",
+    "context": "controlled concentration 132 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-3add45a0d284"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error",
+    "context": "controlled concentration 132 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-3add45a0d284"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error",
+    "context": "controlled concentration 47 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-d654b1fb22bd"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error",
+    "context": "controlled concentration 47 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-d654b1fb22bd"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error",
+    "context": "controlled concentration 47 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-d654b1fb22bd"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error",
+    "context": "controlled concentration 19 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D1:relative_error:context-ca08e76b7000"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error",
+    "context": "controlled concentration 19 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D2:relative_error:context-ca08e76b7000"
+  },
+  {
+    "source_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error",
+    "context": "controlled concentration 19 ppb",
+    "revised_id": "urn:ngsi-ld:DataQualityAssessment:cen17660:laboratory:SO2:D3:relative_error:context-ca08e76b7000"
+  }
+]

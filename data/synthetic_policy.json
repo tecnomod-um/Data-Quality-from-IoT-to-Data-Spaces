@@ -1,0 +1,21 @@
+{
+  "id": "urn:revision:policy:synthetic-runtime:1",
+  "synthetic": true,
+  "expected_samples": 60,
+  "window_seconds": 60,
+  "weights": {
+    "completeness": 0.5,
+    "freshness": 0.3,
+    "schema": 0.2
+  },
+  "freshness_grace_seconds": 60,
+  "freshness_decay_seconds": 60,
+  "gate_min_completeness": 0.9,
+  "gate_max_age_seconds": 120,
+  "gate_schema_score": 1.0,
+  "minimum_aggregate": 0.9,
+  "unit": "synthetic-S01",
+  "firmware": "v1",
+  "scope": "site-A",
+  "note": "Illustrative policy, not calibrated from the CEN certificates or a municipal service."
+}

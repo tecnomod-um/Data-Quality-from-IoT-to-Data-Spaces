@@ -1,0 +1,38 @@
+[
+  {
+    "mode": "baseline",
+    "observations": 3600,
+    "repetitions": 7,
+    "median_ms": 13.042537,
+    "min_ms": 12.889069,
+    "max_ms": 13.428874,
+    "serialized_bytes": 966214,
+    "assessments": 0,
+    "sha256_digests": 0,
+    "ed25519_signatures": 0
+  },
+  {
+    "mode": "per_observation",
+    "observations": 3600,
+    "repetitions": 7,
+    "median_ms": 194.362771,
+    "min_ms": 188.53918,
+    "max_ms": 230.132759,
+    "serialized_bytes": 5834797,
+    "assessments": 3600,
+    "sha256_digests": 3600,
+    "ed25519_signatures": 3600
+  },
+  {
+    "mode": "window_60s",
+    "observations": 3600,
+    "repetitions": 7,
+    "median_ms": 26.683159,
+    "min_ms": 25.143062,
+    "max_ms": 27.517904,
+    "serialized_bytes": 1815717,
+    "assessments": 60,
+    "sha256_digests": 60,
+    "ed25519_signatures": 60
+  }
+]

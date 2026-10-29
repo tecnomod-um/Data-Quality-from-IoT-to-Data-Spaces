@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-28T06:24:59.870123+00:00",
+  "purpose": "Read-only follow-up reachability check after author confirmation of open registration; not an experiment",
+  "host_provenance": "user supplied testbed URL",
+  "path_provenance": "DP-1.0.0 APISIX /cb/* source route",
+  "target_runtime_route_verified": false,
+  "request_method": "GET",
+  "credentials_supplied": false,
+  "mutations_performed": false,
+  "broker_experiment_executed": false,
+  "url": "https://dpl-int.ldttoolbox.app/cb/ngsi-ld/v1/entities?id=urn:ngsi-ld:DataQualityProbe:nonexistent:206ec98b-ba2a-40f2-a8a9-00e857d145e6",
+  "http_status": 503,
+  "content_type": "text/plain",
+  "body_excerpt": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout",
+  "elapsed_seconds": 5.013
+}

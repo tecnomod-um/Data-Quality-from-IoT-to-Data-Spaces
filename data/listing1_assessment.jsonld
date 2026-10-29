@@ -1,0 +1,171 @@
+{
+  "id": "urn:ngsi-ld:DataQualityAssessment:synthetic:S01:example",
+  "type": "DataQualityAssessment",
+  "@context": {
+    "id": "@id",
+    "type": "@type",
+    "Property": "https://uri.etsi.org/ngsi-ld/Property",
+    "Relationship": "https://uri.etsi.org/ngsi-ld/Relationship",
+    "value": "https://uri.etsi.org/ngsi-ld/hasValue",
+    "object": {
+      "@id": "https://uri.etsi.org/ngsi-ld/hasObject",
+      "@type": "@id"
+    },
+    "observedAt": {
+      "@id": "https://uri.etsi.org/ngsi-ld/observedAt",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "unitCode": "https://uri.etsi.org/ngsi-ld/unitCode",
+    "AirQualityObserved": "https://smartdatamodels.org/dataModel.Environment/AirQualityObserved",
+    "DataQualityAssessment": "https://example.org/dq-profile#DataQualityAssessment",
+    "SensorQualityProfile": "https://example.org/dq-profile#SensorQualityProfile",
+    "NO2": "https://example.org/dq-profile#NO2",
+    "refEntity": "https://example.org/dq-profile#refEntity",
+    "refProperty": "https://example.org/dq-profile#refProperty",
+    "phase": "https://example.org/dq-profile#phase",
+    "standard": "https://example.org/dq-profile#standard",
+    "pollutant": "https://example.org/dq-profile#pollutant",
+    "device": "https://example.org/dq-profile#device",
+    "dimension": "https://example.org/dq-profile#dimension",
+    "metricCode": "https://example.org/dq-profile#metricCode",
+    "metricValue": "https://example.org/dq-profile#metricValue",
+    "unit": "https://example.org/dq-profile#unit",
+    "thresholdMin": "https://example.org/dq-profile#thresholdMin",
+    "thresholdMax": "https://example.org/dq-profile#thresholdMax",
+    "result": "https://example.org/dq-profile#result",
+    "contextWindow": "https://example.org/dq-profile#contextWindow",
+    "evaluator": "https://example.org/dq-profile#evaluator",
+    "evidenceSource": "https://example.org/dq-profile#evidenceSource",
+    "qualityClass": "https://example.org/dq-profile#qualityClass",
+    "evidenceHash": "https://example.org/dq-profile#evidenceHash",
+    "evidenceHashScope": "https://example.org/dq-profile#evidenceHashScope",
+    "evidenceIntegrityStatus": "https://example.org/dq-profile#evidenceIntegrityStatus",
+    "sourceRecord": "https://example.org/dq-profile#sourceRecord",
+    "qualityScore": "https://example.org/dq-profile#qualityScore",
+    "qualityLevel": "https://example.org/dq-profile#qualityLevel",
+    "hasQualityAssessment": "https://example.org/dq-profile#hasQualityAssessment",
+    "completeness": "https://example.org/dq-profile#completeness",
+    "freshness": "https://example.org/dq-profile#freshness",
+    "schemaScore": "https://example.org/dq-profile#schemaScore",
+    "sampleCount": "https://example.org/dq-profile#sampleCount",
+    "expectedCount": "https://example.org/dq-profile#expectedCount",
+    "policyVersion": "https://example.org/dq-profile#policyVersion",
+    "synthetic": "https://example.org/dq-profile#synthetic",
+    "windowStart": "https://example.org/dq-profile#windowStart",
+    "windowEnd": "https://example.org/dq-profile#windowEnd",
+    "refDevice": "https://example.org/dq-profile#refDevice",
+    "sourceApplicability": "https://example.org/dq-profile#sourceApplicability",
+    "decision": "https://example.org/dq-profile#decision",
+    "reason": "https://example.org/dq-profile#reason",
+    "sequence": "https://example.org/dq-profile#sequence",
+    "evaluatedAt": "https://example.org/dq-profile#evaluatedAt",
+    "ageSeconds": "https://example.org/dq-profile#ageSeconds",
+    "calibrationValid": "https://example.org/dq-profile#calibrationValid",
+    "firmwareVersion": "https://example.org/dq-profile#firmwareVersion",
+    "siteScope": "https://example.org/dq-profile#siteScope",
+    "sourceQualificationAssumption": "https://example.org/dq-profile#sourceQualificationAssumption",
+    "securityAssumption": "https://example.org/dq-profile#securityAssumption",
+    "ruleReference": "https://example.org/dq-profile#ruleReference",
+    "Device": "https://example.org/dq-profile#SyntheticDevice"
+  },
+  "synthetic": {
+    "type": "Property",
+    "value": true
+  },
+  "refEntity": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:AirQualityObserved:synthetic:S01:example"
+  },
+  "refProperty": {
+    "type": "Property",
+    "value": "NO2"
+  },
+  "metricCode": {
+    "type": "Property",
+    "value": "synthetic_runtime_weighted_score"
+  },
+  "metricValue": {
+    "type": "Property",
+    "value": 0.9833333333333334
+  },
+  "unit": {
+    "type": "Property",
+    "value": "1"
+  },
+  "thresholdMin": {
+    "type": "Property",
+    "value": 0.9
+  },
+  "policyVersion": {
+    "type": "Property",
+    "value": "urn:revision:policy:synthetic-runtime:1"
+  },
+  "result": {
+    "type": "Property",
+    "value": "pass"
+  },
+  "decision": {
+    "type": "Property",
+    "value": "accept"
+  },
+  "completeness": {
+    "type": "Property",
+    "value": 0.9666666666666667
+  },
+  "freshness": {
+    "type": "Property",
+    "value": 1.0
+  },
+  "schemaScore": {
+    "type": "Property",
+    "value": 1.0
+  },
+  "sampleCount": {
+    "type": "Property",
+    "value": 58
+  },
+  "expectedCount": {
+    "type": "Property",
+    "value": 60
+  },
+  "ageSeconds": {
+    "type": "Property",
+    "value": 7
+  },
+  "windowStart": {
+    "type": "Property",
+    "value": "2026-06-15T09:59:01Z"
+  },
+  "windowEnd": {
+    "type": "Property",
+    "value": "2026-06-15T10:00:01Z"
+  },
+  "evaluatedAt": {
+    "type": "Property",
+    "value": "2026-06-15T10:00:07Z"
+  },
+  "evaluator": {
+    "type": "Property",
+    "value": "Synthetic local policy fixture"
+  },
+  "sourceApplicability": {
+    "type": "Property",
+    "value": "Assumed for synthetic S01 at site A with firmware v1 only"
+  },
+  "evidenceHash": {
+    "type": "Property",
+    "value": "sha256:31d38b026088078e6e8cf037b13ab00d8e08667e8560511bdd0789b36cce3602"
+  },
+  "evidenceHashScope": {
+    "type": "Property",
+    "value": "listing1_inputs.json serialized by encode in make_listing_example.py"
+  },
+  "evidenceIntegrityStatus": {
+    "type": "Property",
+    "value": "synthetic-fixture-only; no original source report"
+  },
+  "sourceRecord": {
+    "type": "Relationship",
+    "object": "urn:sha256:31d38b026088078e6e8cf037b13ab00d8e08667e8560511bdd0789b36cce3602"
+  }
+}

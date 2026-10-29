@@ -1,0 +1,42 @@
+{
+  "dataset_id": "H2022",
+  "version": "1.1.0",
+  "report_revision": "2",
+  "report_cover_date": "2022-05",
+  "source_pdf_pages": 1085,
+  "source_sha256": "f0da594d8506e937ed9134840687c746ebb099a354440b7c5062b981b28b4234",
+  "source_byte_length": 7387671,
+  "embedded_signature_field_present": true,
+  "embedded_signature_time": "2023-05-12T09:09:38+02:00",
+  "cryptographic_signature_verified": false,
+  "original_pdf_included": false,
+  "physical_device_identity_established": false,
+  "reported_unit": null,
+  "analysis_status": "descriptive_comparison_author_units_with_unresolved_provenance",
+  "relation_to_paper_171_records": {
+    "status": "author_confirmed_related_reports",
+    "authorized_use": true,
+    "exact_cohort_mapping_to_171_records": "unverified",
+    "physical_serial_mapping_to_D1_D3": "not_provided",
+    "correction_of_conflicting_dates": "not_provided",
+    "correction_of_conflicting_uncertainty_or_summary_values": "not_provided"
+  },
+  "anonymity_claimed": false,
+  "public_license_asserted": false,
+  "extraction_engine": "pdftotext version 24.02.0",
+  "geometry_engine": "PyMuPDF 1.26.6",
+  "author_annotation_id": "H2022-A1",
+  "author_annotation_file": "docs/author_annotations.json",
+  "effective_units": {
+    "NO2": "ug/m3",
+    "NO": "ug/m3",
+    "O3": "ug/m3",
+    "SO2": "ug/m3",
+    "CO": "mg/m3",
+    "PM10": "ug/m3",
+    "PM2.5": "ug/m3",
+    "PM1": null
+  },
+  "effective_unit_basis": "author confirmation for seven pollutants; PM1 not confirmed",
+  "immutable_source_columns_sha256": "b7dca4c3eca7bc555db30f73c8e8c88040a7f72ef89f19e160ed0687d7650b06"
+}

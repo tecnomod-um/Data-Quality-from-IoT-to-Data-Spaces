@@ -1,0 +1,9 @@
+{
+  "public_test_key_hex": "eff10642aff5014eaf0494905b41fc9d3982d6d3e160ee4980d10af5dd9b2902",
+  "message_sha256": "486c40eff86ada84513f1ce5caf22bf946d10bde9361c9b5587d579cdad985fa",
+  "signature_hex": "431b0c7a7df12b752a6786913058842dc25c14617c3058eb703dc3c5ef2553928456f208d91bd1cc734ed82afdeb565ad3d954f5186940b0cc6b90e953675e06",
+  "original_signature_verified": true,
+  "tampered_payload_rejected": true,
+  "source_identity_authenticated": false,
+  "scope": "Public test key; authenticates no laboratory, certificate, organization, or live device"
+}

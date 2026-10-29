@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0.0",
+  "annotation_id": "H2022-A1",
+  "recorded_date": "2026-10-28",
+  "provenance": {
+    "kind": "author_revision_correspondence",
+    "basis": "The author confirmed that the historical reports are related to the paper, authorized their use, and confirmed that the same measurement units apply to the seven pollutants present in the paper.",
+    "independent_metrological_verification": false,
+    "basis_text_type": "Paraphrase of the exact author answers retained below, with the operational interpretation recorded explicitly.",
+    "author_statements_verbatim": [
+      {
+        "topic": "relationship and use",
+        "answer": "I confirm they are related use them"
+      },
+      {
+        "topic": "units",
+        "answer": "Confirmed the units are the same"
+      }
+    ],
+    "interpretation_limits": "The phrase units is interpreted as measurement units consistent with the paper, not physical device identities. The author did not provide serial mapping or corrections to conflicting dates or uncertainty summaries. PM1 was not in the original seven-pollutant corpus and is excluded from the unit confirmation."
+  },
+  "source_sha256": "f0da594d8506e937ed9134840687c746ebb099a354440b7c5062b981b28b4234",
+  "immutable_source_columns_sha256": "b7dca4c3eca7bc555db30f73c8e8c88040a7f72ef89f19e160ed0687d7650b06",
+  "report_relationship": {
+    "status": "author_confirmed_related_reports",
+    "authorized_use": true,
+    "exact_cohort_mapping_to_171_records": "unverified",
+    "physical_serial_mapping_to_D1_D3": "not_provided",
+    "correction_of_conflicting_dates": "not_provided",
+    "correction_of_conflicting_uncertainty_or_summary_values": "not_provided"
+  },
+  "units": [
+    {
+      "pollutant": "NO2",
+      "effective_unit": "ug/m3",
+      "display": "µg/m³",
+      "applies_to": [
+        "sensor_value",
+        "reference_value"
+      ],
+      "basis": "author_confirmation",
+      "reported_unit_in_annex": null,
+      "numeric_conversion_applied": false
+    },
+    {
+      "pollutant": "NO",
+      "effective_unit": "ug/m3",
+      "display": "µg/m³",
+      "applies_to": [
+        "sensor_value",
+        "reference_value"
+      ],
+      "basis": "author_confirmation",
+      "reported_unit_in_annex": null,
+      "numeric_conversion_applied": false
+    },
+    {
+      "pollutant": "O3",
+      "effective_unit": "ug/m3",
+      "display": "µg/m³",
+      "applies_to": [
+        "sensor_value",
+        "reference_value"
+      ],
+      "basis": "author_confirmation",
+      "reported_unit_in_annex": null,
+      "numeric_conversion_applied": false
+    },
+    {
+      "pollutant": "SO2",
+      "effective_unit": "ug/m3",
+      "display": "µg/m³",
+      "applies_to": [
+        "sensor_value",
+        "reference_value"
+      ],
+      "basis": "author_confirmation",
+      "reported_unit_in_annex": null,
+      "numeric_conversion_applied": false
+    },
+    {
+      "pollutant": "CO",
+      "effective_unit": "mg/m3",
+      "display": "mg/m³",
+      "applies_to": [
+        "sensor_value",
+        "reference_value"
+      ],
+      "basis": "author_confirmation",
+      "reported_unit_in_annex": null,
+      "numeric_conversion_applied": false
+    },
+    {
+      "pollutant": "PM10",
+      "effective_unit": "ug/m3",
+      "display": "µg/m³",
+      "applies_to": [
+        "sensor_value",
+        "reference_value"
+      ],
+      "basis": "author_confirmation",
+      "reported_unit_in_annex": null,
+      "numeric_conversion_applied": false
+    },
+    {
+      "pollutant": "PM2.5",
+      "effective_unit": "ug/m3",
+      "display": "µg/m³",
+      "applies_to": [
+        "sensor_value",
+        "reference_value"
+      ],
+      "basis": "author_confirmation",
+      "reported_unit_in_annex": null,
+      "numeric_conversion_applied": false
+    },
+    {
+      "pollutant": "PM1",
+      "effective_unit": null,
+      "display": null,
+      "applies_to": [
+        "sensor_value",
+        "reference_value"
+      ],
+      "basis": "not_confirmed_PM1_outside_original_pollutant_corpus",
+      "reported_unit_in_annex": null,
+      "numeric_conversion_applied": false
+    }
+  ],
+  "allowed_analysis": "Unweighted descriptive agreement of complete pairs exactly as tabulated; no new temporal alignment, calibration, conformity classification or current-cohort attribution.",
+  "unresolved": [
+    "Physical device and reference serial identities",
+    "Exact cohort/row mapping to the171-record corpus",
+    "NO2/SO2/CO date conflicts",
+    "NO2 station conflict",
+    "CO clock and timezone ambiguity; PM10/PM2.5 timezone unspecified",
+    "Source summary/uncertainty conflicts",
+    "Per-row uncertainty and coverage factors",
+    "PM1 physical unit"
+  ]
+}

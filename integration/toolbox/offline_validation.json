@@ -1,0 +1,61 @@
+{
+  "kind": "local_validation_of_proposed_artifacts",
+  "live_broker_mutations": 0,
+  "offline_tests_passed": 9,
+  "python_compile_passed": true,
+  "offline_plan_requests": 0,
+  "captured_manuscript_results_modified": false,
+  "package_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "f118848120508ea6e38279d5700d2b7d22ed8a3f85a672bd8291cf8f81b713f9"
+    },
+    {
+      "path": "README.md",
+      "sha256": "3f6112740c278cb49aba1e5682032a1fbd0fe29ca42e432eb22fd6a27ff20b88"
+    },
+    {
+      "path": "access_observation.json",
+      "sha256": "55d9785198a04940e4329ac620681cc95d9226903374bc5dea011bb4e534389f"
+    },
+    {
+      "path": "config.example.json",
+      "sha256": "cd191a18645d74b726aa4e2c602512218fa3662cfb6136239f2aa91eb319fa2a"
+    },
+    {
+      "path": "context.jsonld",
+      "sha256": "2bef5d99119b2b36763a424eb508de456b8cc8c00026321746052a76e98fbfac"
+    },
+    {
+      "path": "env.example",
+      "sha256": "bdde4759e4a68939036b691308bb93cbc1c5fe727a0e4a277d44bde4f5448d97"
+    },
+    {
+      "path": "followup_access_observation.json",
+      "sha256": "839e1697bb01cba6a235468c31e843a6f6a6571f2f2eba4ba6701ac1755dff90"
+    },
+    {
+      "path": "probe.py",
+      "sha256": "69cdf317bf7de45dfc9d1f501894a509cf83b7d4c1ce48550b629f1b3473a156"
+    },
+    {
+      "path": "source_reference.json",
+      "sha256": "f7acd2fabd7d48cb50506503c00f4eb8bc7b512a016937b045f3f3648b6292e8"
+    },
+    {
+      "path": "tests/test_probe.py",
+      "sha256": "f58d228a28cc363f9bdc6979782f21704da90a8d4b64f7c498c695aea8c87568"
+    }
+  ],
+  "network_requests_during_offline_validation": 0,
+  "copied_package_plan_verified": true,
+  "copied_package_plan_network_requests": 0,
+  "metadata_refresh": {
+    "date": "2026-10-28",
+    "scope": "Documentation/configuration/source metadata and follow-up access record; tested probe.py unchanged.",
+    "author_confirmed_open_registration_recorded": true,
+    "original_access_observation_preserved": true,
+    "followup_api_http_status": 503,
+    "live_experiment_claim_added": false
+  }
+}

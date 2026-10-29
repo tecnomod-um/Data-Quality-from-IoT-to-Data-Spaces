@@ -1,0 +1,214 @@
+CONFERENCE-BASELINE COMPARISON
+Anonymous supplement to the revised journal manuscript
+
+1. Source and version boundary
+
+Conference DOI: 10.1007/978-3-032-29430-2_25
+Public publisher record:
+https://link.springer.com/chapter/10.1007/978-3-032-29430-2_25
+Public access page supplied for this revision:
+https://www.springerprofessional.de/en/operationalizing-data-quality-in-data-spaces-standards-metrics-a/53676854
+
+The substantive comparison below uses a complete fourteen-page author
+manuscript corresponding to the conference chapter. The inspected PDF contains
+seven numbered sections, three tables and three numbered equations. Its own
+pagination is 1--14. The title, author list and abstract match the public
+publisher record. The abstract matches after removing non-alphanumeric
+characters to accommodate PDF line wrapping and typography.
+
+Source format: PDF, 483208 bytes, 14 pages.
+SHA-256 of the inspected PDF bytes:
+b8a232b2b813838a04611efc028ace0ba22715d1b7cfa06283440e82d6696da9
+
+This digest identifies the inspected byte sequence; it does not authenticate
+an author, publisher or publication version. The comparison is against the
+complete author manuscript, not an authenticated publisher version of record.
+Equivalence with the final typeset chapter has not been established. All page
+locators below refer to the author's own pagination, not the publisher's
+pagination 304--317. Bibliographic information in the paper follows the DOI
+record. The identifying PDF, source-provider identifiers and full extracted
+text are kept outside this anonymous supplement.
+
+The public publisher page and the supplied public access page expose metadata
+and an abstract. Their accessible previews are used for bibliographic and
+abstract matching only. A summary explicitly labelled as AI-generated on the
+access page is not evidence for this comparison.
+
+2. Comparison method
+
+The complete author manuscript was inspected for antecedents of the revised
+paper's claims. Each item below separates a concept or method already present
+from a more precise specification, correction, added case or executed check in
+the revision. A detail is not treated as novel merely because the revision
+gives it a new symbol, entity name or equation number. Reported absences concern
+the inspected author version; they are not claims about unseen changes in the
+publisher's final text. Current-paper locators use subsection headings because
+final page and section numbers may change during typesetting.
+
+3. Detailed comparison
+
+01. Standards composition and fitness for use
+    Prior locus: Sections 1--2, pp. 1--4; Table 1, p. 3.
+    Inherited basis: Complementary governance, evaluation, sensor-performance,
+    runtime and semantic layers; intended use, requirements, metrics, methods,
+    thresholds, provenance and accountability.
+    Revision: Background and relationship to existing work; Formal evidence
+    model. The contribution is a constrained composition with explicit field
+    associations and applicability rules. Neither the multilayer motivation
+    nor fitness-for-use principle is claimed as new.
+
+02. Metric catalogue and scalar aggregation
+    Prior locus: Section 3, Eq. (1), p. 4; Table 2, pp. 5--7.
+    Inherited basis: Weighted sum of normalized dimensions, weights summing to
+    one, and a warning that the aggregate must not replace dimension-specific
+    evidence. The catalogue includes completeness, exponential freshness,
+    schema-check ratios, uncertainty, calibration age and evidence completeness.
+    Revision: Metrics, policy scores, and non-compensable gates. Added details
+    are an instantiated policy, denominators and bounds, missing-input behavior,
+    separation of uncertainty reserve from runtime quality, and executed
+    synthetic decisions. The weighted sum and freshness recipe are inherited.
+
+03. Critical gates
+    Prior locus: Section 4.2, p. 8; related exclusions in Sections 4.1 and 6.
+    Inherited basis: Reject, delay or escalate when calibration, security or
+    evidence completeness is below a required minimum.
+    Revision: From source qualification to observation applicability; Metrics,
+    policy scores, and non-compensable gates. The explicit Boolean eligibility
+    product and treatment of unknown evidence refine an existing gate principle.
+    The synthetic fixtures exercise supplied gate inputs; they do not establish
+    integration with operational calibration or security infrastructure.
+
+04. Fusion
+    Prior locus: Section 4.2, Eq. (3), p. 8.
+    Inherited basis: A heuristic that multiplies source-quality scores into
+    inverse-variance-like weights with an epsilon in the denominator. The
+    inspected version gives no corresponding derivation or numerical test.
+    Revision: Conditional uncertainty-aware fusion. The heuristic is corrected
+    to binary eligibility with compatible support, unbiased-error assumptions
+    and applicable positive variances. Independent and correlated cases are
+    distinguished, the empty eligible set is explicit, and a numerical example
+    is executable. Standard inverse-variance estimation is not a new algorithm.
+
+05. Evidence tuple and field associations
+    Prior locus: Section 1, p. 2; Table 2, p. 7; Table 3, p. 11;
+    Section 6, p. 12.
+    Inherited basis: Target/property, dimension, metric/value, criterion,
+    method/tool/standard, time window, provenance, evaluator, evidence,
+    hash/signature and result.
+    Revision: Formal evidence model. The tuple formalizes existing ingredients
+    and adds explicit applicability and verification-status interpretation,
+    associated metric/value/unit/criterion representation, and a distinction
+    between an original report and a digest of a derived representation.
+
+06. Source profiles, validity and lifecycle
+    Prior locus: Table 2, p. 6; Table 3, p. 11; conclusion, pp. 12--13.
+    Inherited basis: Calibration intervals, certification status, source
+    profiles, rule validity/version, label validity periods and conditional
+    context rules. Validity and versioning are not newly introduced here.
+    Revision: From source qualification to observation applicability. Added
+    precision covers joint unit/type, configuration, scope, time and state
+    eligibility; explicit unqualified, valid, suspended, expired and superseded
+    states; effective-dated revocation; and preservation of evidence versions.
+
+07. Dual NGSI-LD representation
+    Prior locus: Section 6, Listing 1.1, p. 10; Table 3, p. 11;
+    surrounding discussion, pp. 10--12.
+    Inherited basis: Compact property sub-properties plus linked detailed
+    quality assessments, including an illustrative pollutant value and score.
+    Revision: The NGSI-LD application profile and reproducible listing fixture.
+    The current score is calculated from declared synthetic inputs, the local
+    context is complete, and linked files plus a generator are supplied.
+    These are concrete implementation refinements of the inherited pattern.
+
+08. Supporting entity families
+    Prior locus: Table 3, p. 11.
+    Inherited basis: DataQualityAssessment, SensorQualityProfile,
+    DataQualityRule, DataQualityIncident, DataQualityLabel,
+    AIOutputQualityAssessment and the quality-dimension vocabulary.
+    Revision: The application-profile constraints refine these existing roles.
+    Their names or existence are not presented as new journal contributions or
+    as acceptance into a canonical Smart Data Models repository.
+
+09. Processing placement and failure handling
+    Prior locus: Section 5, pp. 9--10; Section 6, pp. 11--12.
+    Inherited basis: Inexpensive edge/gateway checks, expensive back-end
+    analysis, ingestion validation, retention of suspect records with flags,
+    broker links and publication of assessments.
+    Revision: High-frequency evidence generation and integrity; architecture
+    and Toolbox mapping. Added engineering detail includes bounded windows,
+    immediate/provisional versus final-window status, deterministic publication,
+    idempotency, failure handling and evidence preservation. Only the explicitly
+    scoped local processing costs are measured.
+
+10. Evidence bundle and integrity
+    Prior locus: Section 4.5, p. 9; Section 6, p. 12.
+    Inherited basis: Signed labels or credentials; an export containing semantic
+    representation, usage policy and quality evidence, including a method,
+    window, evaluator and signature or hash.
+    Revision: A concrete derivative-byte contract, computed derivative digests,
+    source-unverified labels, a standalone test-key signature/tamper example,
+    and stated issuer-authentication limits. Bundling and signing in principle
+    are inherited. The source reports are not authenticated by these tests.
+
+11. Specific report-summary reconstruction
+    Prior locus: Section 4.1, pp. 7--8.
+    Inherited basis: CEN/TS 17660 and laboratory/field performance metrics.
+    The inspected author version does not contain the current 171-assertion
+    corpus, its three-device tables, seven field windows or threshold-utilisation
+    reconstruction.
+    Revision: Source corpus and evidence boundaries; reported reconstruction
+    results. Added work is the specific arithmetic and representation audit,
+    including identifier collisions and group-statistic semantics. It does
+    not constitute newly performed sensor certification or independently
+    reproduced laboratory/field experiments.
+
+12. Executable semantic, failure and integrity checks
+    Prior locus: Sections 5--6, pp. 9--12.
+    Inherited basis: JSON Schema, SHACL, semantic validation, hashes and flags
+    are discussed. No corresponding all-record execution, RDF round trip,
+    malformed-input suite, twelve-case synthetic decision execution or captured
+    signature-tamper result is reported in the inspected version.
+    Revision: Validation protocol, local results and executable supplement.
+    The increment is an instantiated and reproducible evaluation of this
+    profile, not invention of the validation technologies.
+
+13. Local representation cost
+    Prior locus: No corresponding workload or repeated timing result in the
+    inspected author manuscript; conceptual placement appears in Sections 5--6.
+    Revision: High-frequency evidence generation and integrity; local cost
+    results. The revision adds a defined 3600-observation synthetic workload,
+    seven recorded runs and a per-observation versus windowed representation
+    comparison. Timings concern assembly, hashing and signing. They exclude
+    gate evaluation, signature verification, network, broker and database costs.
+
+14. Toolbox and Madrid design applications
+    Prior locus: Sections 4 and 6, pp. 7--12.
+    Inherited basis: Generic smart-city, digital-twin, industrial and data-space
+    applications. No current EU LDT Toolbox block mapping or Madrid governance
+    blueprint appears in the inspected author manuscript.
+    Revision: The specific capability/evidence mapping and municipal governance
+    blueprint are additional design applications. Availability of a replication
+    testbed does not supply missing profile-specific deployment measurements.
+
+15. Cross-domain scope
+    Prior locus: Sections 4.1--4.6, pp. 7--9; Section 6, pp. 10--12.
+    Inherited basis: Air quality, toxic-gas safety, crowd sensing, industrial
+    AI, marketplaces, AI outputs and other Smart Data Models domains.
+    Revision: More specific transfer examples and applicability conditions
+    respond to the reviewer. Cross-domain applicability itself is inherited,
+    and the present experiments do not validate all those domains.
+
+4. Consequence for contribution claims
+
+The journal revision is an incremental specification, correction and evaluation
+of the antecedent profile. Defensible additions are the explicit applicability
+and missing-evidence contract, conditional fusion correction, specific supplied
+corpus reconstruction and representation repairs, executable checks, bounded
+local cost measurements, and Toolbox evidence-propagation mapping. The evidence
+ingredients, weighted score, freshness recipe, gate principle, dual pattern,
+entity families, validity/version concepts, processing split and bundle are
+credited to the conference baseline in the revised manuscript.
+
+This comparison does not establish publisher-version identity, authenticity of
+the source sensor reports, deployment of the profile, or publication of the
+profile in an external standards repository.

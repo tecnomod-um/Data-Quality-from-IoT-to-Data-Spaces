@@ -1,0 +1,14 @@
+{
+  "source_tag": "DP-1.0.0",
+  "source_commit": "efc368c81a4e78d61615ba32b17c1c8dac35a174",
+  "api_base_url": "https://dpl-int.ldttoolbox.app/cb/ngsi-ld/v1",
+  "api_base_evidence": "Host supplied by author; /cb/ngsi-ld/v1 prefix derived from pinned APISIX source. Two recorded unauthenticated checks on 2026-10-28 returned HTTP 503 in the revision environment. Open registration is author-confirmed; authentication was not reached.",
+  "running_configuration_verified": false,
+  "tenant": null,
+  "context_url": null,
+  "context_file": "context.jsonld",
+  "timeout_seconds": 15,
+  "repetitions": 7,
+  "pause_seconds": 0.2,
+  "ca_bundle": null
+}

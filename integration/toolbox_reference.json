@@ -1,0 +1,113 @@
+{
+  "kind": "pinned_public_source_configuration_reference",
+  "purpose": "Record the inspected Toolbox reference and distinguish it from the alternative recipe and unexecuted study experiment.",
+  "repository": {
+    "group_url": "https://code.europa.eu/ldt-toolbox/",
+    "project_url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform",
+    "tag": "DP-1.0.0",
+    "commit": "efc368c81a4e78d61615ba32b17c1c8dac35a174",
+    "commit_date": "2026-07-22",
+    "manifest_path": "infrastructure/local/base/1-ContextData/Scorpio/deployment.yml",
+    "manifest_url": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform/-/blob/DP-1.0.0/infrastructure/local/base/1-ContextData/Scorpio/deployment.yml",
+    "broker": "Scorpio",
+    "broker_image_tag": "java-6.0.0",
+    "verification_scope": "Public repository tag, commit and deployment manifest inspected; no deployment or profile-specific broker experiment executed."
+  },
+  "author_confirmed_testbed": {
+    "availability_confirmed": true,
+    "contexts": [
+      "EU LDT Toolbox",
+      "LDT CitiVerse EDIC",
+      "CitCom.ai"
+    ],
+    "replication_access_supplied": true,
+    "actual_experiment_configuration_supplied": false,
+    "running_configuration_matches_reference_verified": false,
+    "study_specific_operational_results_supplied": false,
+    "application_endpoint_supplied": true,
+    "application_url": "https://dpl-int.ldttoolbox.app/data/sources/list",
+    "identity_provider_origin": "https://im-int.ldttoolbox.app",
+    "replication_access_usable": false,
+    "authentication_reached": false,
+    "access_observation": "toolbox/access_observation.json",
+    "candidate_api_base": "https://dpl-int.ldttoolbox.app/cb/ngsi-ld/v1",
+    "candidate_api_base_verified_running": false,
+    "open_registration_confirmed_by_author": true,
+    "registration_statement_basis": "Author clarification on 2026-10-28: the integration environment is open and anyone can register.",
+    "registration_completed_in_revision_environment": false,
+    "followup_access_observation": "toolbox/followup_access_observation.json",
+    "last_recorded_access_at_utc": "2026-10-28T06:24:59.870123+00:00",
+    "last_recorded_api_http_status": 503,
+    "access_observation_scope": "Revision-environment attempts timed out upstream before authentication; public registration is author-confirmed and was not reached by these attempts."
+  },
+  "alternative_recipe": {
+    "files": [
+      "compose.yaml",
+      "broker_smoke_test.py"
+    ],
+    "broker": "Orion-LD",
+    "version": "1.12.0",
+    "status": "ALTERNATIVE \u2014 NOT EXECUTED",
+    "is_actual_toolbox_configuration": false,
+    "scope": "Two broker/database pairs and a context server; not a deployed data-space connector or a production identity system."
+  },
+  "dataset_release": {
+    "permission_confirmed": true,
+    "commitment_confirmed": true,
+    "destination": "https://code.europa.eu/ldt-toolbox/",
+    "manuscript_specific_release_url": null,
+    "anonymous_reviewer_access_reference": null,
+    "completed_study_deposit_verified": false,
+    "alignment_project": "https://code.europa.eu/ldt-toolbox/eu_ldt_data_platform",
+    "proposed_study_directory": "tests/reproducibility/data_quality/",
+    "directory_is_published": false,
+    "historical_report_table_recovery": {
+      "path": "../historical/",
+      "version": "1.1.0",
+      "rows": 12610,
+      "complete_pairs": 12168,
+      "relation_to_principal_corpus": {
+        "status": "author_confirmed_related_reports",
+        "authorized_use": true,
+        "exact_cohort_mapping_to_171_records": "unverified",
+        "physical_serial_mapping_to_D1_D3": "not_provided",
+        "correction_of_conflicting_dates": "not_provided",
+        "correction_of_conflicting_uncertainty_or_summary_values": "not_provided"
+      },
+      "exact_current_campaign_mapping_verified": false,
+      "analysis_status": "descriptive_comparison_author_units_with_unresolved_provenance",
+      "author_annotation_id": "H2022-A1",
+      "author_annotation_path": "../historical/docs/author_annotations.json",
+      "effective_units": {
+        "NO2": "ug/m3",
+        "NO": "ug/m3",
+        "O3": "ug/m3",
+        "SO2": "ug/m3",
+        "CO": "mg/m3",
+        "PM10": "ug/m3",
+        "PM2.5": "ug/m3",
+        "PM1": null
+      },
+      "effective_unit_basis": "author confirmation for seven pollutants; PM1 not confirmed",
+      "author_confirmed_unit_rows": 7370,
+      "unconfirmed_unit_rows": 5240,
+      "source_columns_unchanged_after_annotation": true,
+      "numeric_conversion_applied": false,
+      "date_correction_applied": false
+    }
+  },
+  "captured_results": {
+    "modified_by_documentation_update": false,
+    "real_ngsi_ld_broker_executed": false,
+    "data_space_connector_executed": false,
+    "municipal_deployment_evaluated": false,
+    "note": "Existing captured local results and source-unverified states are retained; these flags describe the reported experiments, not the existence of external infrastructure."
+  },
+  "primary_toolbox_preparation": {
+    "path": "toolbox/",
+    "status": "PREPARED_NOT_EXECUTED_ON_BROKER",
+    "offline_tests_passed": 9,
+    "live_quality_query_executed": false,
+    "independent_cross_party_exchange_executed": false
+  }
+}
